@@ -1,0 +1,37 @@
+{
+  "raw": {
+    "path": "data/PRDECT-ID Dataset.csv",
+    "rows": 5400,
+    "sha256": "1dfdde6bb169ad57aab4211ecf45a75a4111b774ab43932f6d39c349bfd92bde"
+  },
+  "dedup_rows": 5263,
+  "conflicts_resolved": 30,
+  "locked_test_excluded_from_train_dev": 100,
+  "splits": {
+    "train": {
+      "path": "data/processed/train.csv",
+      "rows": 3875,
+      "sha256": "81d6eadc2019aa5a5c258908e32fb931cc19efec6511672d764e8627082f39a4"
+    },
+    "dev": {
+      "path": "data/processed/dev.csv",
+      "rows": 765,
+      "sha256": "1a7269780e79e45027c2710304939ee79e37612bdaaafd51ebad9151cc856aa3"
+    },
+    "test_pool": {
+      "path": "data/processed/test_pool.csv",
+      "rows": 429,
+      "sha256": "9025f897538f97c25b60ff93557a21e0c8664d6a30a075ca9ce3b8bea6c77769"
+    },
+    "ood_test": {
+      "path": "data/processed/ood_test.csv",
+      "rows": 194,
+      "sha256": "42834a72eeca2d020a12e22a05fea33176f09f32840f1109980d757375693dd6"
+    },
+    "benchmark_120": {
+      "path": "data/benchmark/benchmark_120.jsonl",
+      "rows": 120,
+      "sha256": "3ef8bb943f680d6ed0def1ce62ff0ab30090fb6381b72d8095798fd042231269"
+    }
+  }
+}

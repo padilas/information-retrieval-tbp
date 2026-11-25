@@ -1,0 +1,2764 @@
+{
+  "split": "dev",
+  "model": "qwen2.5:1.5b",
+  "chunking": "heading_aware",
+  "metrics": {
+    "B0": {
+      "macro_f1_emotion": 0.2541,
+      "macro_f1_sentiment": 0.5521,
+      "evidence_support": 0.7083,
+      "p95_latency_ms": 9910.0,
+      "avg_tokens": 250.4,
+      "samples": 24
+    },
+    "B1": {
+      "macro_f1_emotion": 0.5,
+      "macro_f1_sentiment": 1.0,
+      "evidence_support": 0.9167,
+      "p95_latency_ms": 9122.8,
+      "avg_tokens": 526.2,
+      "samples": 24
+    },
+    "B2": {
+      "macro_f1_emotion": 0.5705,
+      "macro_f1_sentiment": 0.7766,
+      "evidence_support": 0.4167,
+      "p95_latency_ms": 15530.9,
+      "avg_tokens": 532.0,
+      "samples": 24
+    },
+    "B3": {
+      "macro_f1_emotion": 0.5902,
+      "macro_f1_sentiment": 0.6977,
+      "evidence_support": 0.625,
+      "p95_latency_ms": 14441.2,
+      "avg_tokens": 662.1,
+      "samples": 24
+    }
+  },
+  "outputs": {
+    "B0": [
+      {
+        "query_id": "D_ANS_001",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Suara noise seperti saat sedang mencari saluran radio dan agak meletup2 sangat mengganggu, padahal sedang berada pada mode bluetooth untuk mendengarkan musik.",
+          "Bikin sakit telinga."
+        ],
+        "policy_citations": [],
+        "guideline_version": null,
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6504.2,
+        "tokens": 274,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"Suara noise seperti saat sedang mencari saluran radio dan agak meletup2 sangat mengganggu, padahal sedang berada pada mode bluetooth untuk mendengarkan musik.\",\n    \"Bikin sakit telinga.\"\n  ],\n  \"policy_citations\": null,\n  \"guideline_version\": null,\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_008",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Seller very slow response",
+          "all step selalu last minute baru lanjut",
+          "official store lain, hanya butuh 1-2 maks 3 hari barang sampai setelah order, ini baru diterima setelah 5 hari"
+        ],
+        "policy_citations": [],
+        "guideline_version": null,
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6957.0,
+        "tokens": 277,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"Seller very slow response\",\n    \"all step selalu last minute baru lanjut\",\n    \"official store lain, hanya butuh 1-2 maks 3 hari barang sampai setelah order, ini baru diterima setelah 5 hari\"\n  ],\n  \"policy_citations\": null,\n  \"guideline_version\": null,\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_015",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "tolong di perhatikan bagian karet nya",
+          "kebalik karetnya",
+          "ga sm lurus jahit nya",
+          "malah dkirimin brg reject"
+        ],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6682.2,
+        "tokens": 260,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"tolong di perhatikan bagian karet nya\",\n    \"kebalik karetnya\",\n    \"ga sm lurus jahit nya\",\n    \"malah dkirimin brg reject\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}"
+      },
+      {
+        "query_id": "D_ANS_022",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "gak pernah saya kasih bintang 1 ke toko manapun, tapi untuk x ini saya kecewa",
+          "Barang saya yg minyak kayu putih gak di kirim",
+          "semoga berkah ka walau cuma uang sgitu"
+        ],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 7847.6,
+        "tokens": 314,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"gak pernah saya kasih bintang 1 ke toko manapun, tapi untuk x ini saya kecewa\",\n    \"Barang saya yg minyak kayu putih gak di kirim\",\n    \"semoga berkah ka walau cuma uang sgitu\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}"
+      },
+      {
+        "query_id": "D_ANS_002",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Saya puas barangnya bagus sampai saat tidak ada masalah"
+        ],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5566.5,
+        "tokens": 206,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"Saya puas barangnya bagus sampai saat tidak ada masalah\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}"
+      },
+      {
+        "query_id": "D_ANS_004",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "barang nya sesuai deskripsi dan foto",
+          "bener2 bersih saat di coba",
+          "dpat bebas ongkir jga dan cpat smpai",
+          "terimakasih tokopedia dan seller"
+        ],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 7723.6,
+        "tokens": 273,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"barang nya sesuai deskripsi dan foto\",\n    \"bener2 bersih saat di coba\",\n    \"dpat bebas ongkir jga dan cpat smpai\",\n    \"terimakasih tokopedia dan seller\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}"
+      },
+      {
+        "query_id": "D_ANS_005",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.0,
+        "evidence_spans": [],
+        "policy_citations": [],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "parse_error",
+        "start": 0,
+        "end": 4,
+        "span": "Packaging baik",
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 14583.3,
+        "tokens": 438,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    {\n      \"start\": 0,\n      \"end\": 4,\n      \"span\": \"Packaging baik\"\n    },\n    {\n      \"start\": 14,\n      \"end\": 17,\n      \"span\": \"barang utuh\"\n    },\n    {\n      \"start\": 21,\n      \"end\": 24,\n      \"span\": \"sudah dikirim ke anggota keluarga isoman\"\n    },\n    {\n      \"start\": 26,\n      \"end\": 28,\n      \"span\": \"sudah dikirim ke anggota keluarga isoman\"\n    },\n    {\n      \"start\": 30,\n      \"end\": 31,\n      \"span\": \"sudah dikirim ke anggota keluarga isoman\"\n    },\n    {\n      \"start\": 33,\n      \"end\": 35,\n      \"span\": \"sudah dikirim ke anggota keluarga isoman\"\n    },\n    {\n      \"start\": 37,\n      \"end\": 39,\n      \"span\": \"sudah dikirim ke anggota keluarga isoman\"\n    },\n    {\n      \"start\": 41,\n      \"end\":"
+      },
+      {
+        "query_id": "D_ANS_021",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "pengiriman cepat",
+          "harga murah",
+          "bahan sesuai harga"
+        ],
+        "policy_citations": [],
+        "guideline_version": "Not Applicable",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5733.8,
+        "tokens": 222,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"pengiriman cepat\",\n    \"harga murah\",\n    \"bahan sesuai harga\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"Not Applicable\",\n  \"abstain\": false,\n  \"abstain_reason\": \"All evidence spans are positive and align with the sentiment and emotion.\"\n}"
+      },
+      {
+        "query_id": "D_ANS_003",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "buku original",
+          "harga sangat murah jauh dibandingkan ditempat lain",
+          "seller ramah",
+          "packing rapi",
+          "bubble wrapnya sangat tebel banget",
+          "puas Maksimal",
+          "terima kasih seller"
+        ],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 7551.4,
+        "tokens": 296,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"buku original\",\n    \"harga sangat murah jauh dibandingkan ditempat lain\",\n    \"seller ramah\",\n    \"packing rapi\",\n    \"bubble wrapnya sangat tebel banget\",\n    \"puas Maksimal\",\n    \"terima kasih seller\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"All evidence spans are positive and align with the overall sentiment of the review.\"\n}"
+      },
+      {
+        "query_id": "D_ANS_013",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "mantabs sih",
+          "build quality nya bagus banget..",
+          "dan satisfying banget pas ambil bulu kucing dari sela sela sisir nya.."
+        ],
+        "policy_citations": [],
+        "guideline_version": null,
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6179.7,
+        "tokens": 245,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"mantabs sih\",\n    \"build quality nya bagus banget..\",\n    \"dan satisfying banget pas ambil bulu kucing dari sela sela sisir nya..\"\n  ],\n  \"policy_citations\": null,\n  \"guideline_version\": null,\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_017",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "cinta bangettt sama produk ini",
+          "rambut jd lembut dan wangi bangettss",
+          "always pake shampoo ini mah exp 2024",
+          "packingan mantap"
+        ],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6505.2,
+        "tokens": 261,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"cinta bangettt sama produk ini\",\n    \"rambut jd lembut dan wangi bangettss\",\n    \"always pake shampoo ini mah exp 2024\",\n    \"packingan mantap\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}"
+      },
+      {
+        "query_id": "D_ANS_018",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "hasil ajib",
+          "seller nya juga ajib"
+        ],
+        "policy_citations": [],
+        "guideline_version": null,
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5183.7,
+        "tokens": 211,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"hasil ajib\",\n    \"seller nya juga ajib\"\n  ],\n  \"policy_citations\": null,\n  \"guideline_version\": null,\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_006",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "jdi malu krn diperumahan ada yg jual tp mlh beli online",
+          "soalnya paket dtng ditaruh di kursi pos satpam (khusus buat semua paket seperumahan)mikir2 klo mau beli disini lgi"
+        ],
+        "policy_citations": [],
+        "guideline_version": null,
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 7440.0,
+        "tokens": 318,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"jdi malu krn diperumahan ada yg jual tp mlh beli online\",\n    \"soalnya paket dtng ditaruh di kursi pos satpam (khusus buat semua paket seperumahan)mikir2 klo mau beli disini lgi\"\n  ],\n  \"policy_citations\": null,\n  \"guideline_version\": null,\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_007",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Buku kondisinya kurang baik",
+          "ada sobeknya",
+          "audio rusak",
+          "mesti download sendiri"
+        ],
+        "policy_citations": [],
+        "guideline_version": null,
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5681.7,
+        "tokens": 219,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"Buku kondisinya kurang baik\", \"ada sobeknya\", \"audio rusak\", \"mesti download sendiri\"],\n  \"policy_citations\": null,\n  \"guideline_version\": null,\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_012",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "barang datang tidak lengkap",
+          "yidak akan pernah belanja lagi di toko remi loreal"
+        ],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6377.1,
+        "tokens": 240,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"barang datang tidak lengkap\",\n    \"yidak akan pernah belanja lagi di toko remi loreal\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The evidence spans are not provided, but the sentiment and emotion can be inferred from the text.\"\n}"
+      },
+      {
+        "query_id": "D_ANS_014",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "baru dipake beberapa hari udah rusak aja"
+        ],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5557.4,
+        "tokens": 207,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"baru dipake beberapa hari udah rusak aja\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The statement is clearly negative and focuses on a problem (product malfunction).\"\n}"
+      },
+      {
+        "query_id": "D_ANS_009",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "{'start': 0, 'end': 14}"
+        ],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6216.6,
+        "tokens": 239,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    {\n      \"start\": 0,\n      \"end\": 14\n    }\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The statement is clearly negative and does not contain any positive or neutral sentiment.\"\n}"
+      },
+      {
+        "query_id": "D_ANS_010",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "JELEK BARU DICOBA 2KALI UDAH RUSAK.",
+          "GIGINYA GA BISA DI PENCET LAGI"
+        ],
+        "policy_citations": [],
+        "guideline_version": null,
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6356.0,
+        "tokens": 244,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"JELEK BARU DICOBA 2KALI UDAH RUSAK.\",\n    \"GIGINYA GA BISA DI PENCET LAGI\"\n  ],\n  \"policy_citations\": null,\n  \"guideline_version\": null,\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_011",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "jelak.. ada yg patah, pedang pada meletot semua, apa lagi warna ya ada yg salah.. fatal"
+        ],
+        "policy_citations": [],
+        "guideline_version": null,
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6130.5,
+        "tokens": 231,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"jelak.. ada yg patah, pedang pada meletot semua, apa lagi warna ya ada yg salah.. fatal\"\n  ],\n  \"policy_citations\": null,\n  \"guideline_version\": null,\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_016",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "sprti barang bekas"
+        ],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5047.5,
+        "tokens": 183,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"sprti barang bekas\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}"
+      },
+      {
+        "query_id": "D_UNANS_001",
+        "sentiment": "Neutral",
+        "emotion": "Neutral",
+        "confidence_score": 0.5,
+        "evidence_spans": [],
+        "policy_citations": [],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5602.2,
+        "tokens": 205,
+        "raw_output": "{\n  \"sentiment\": \"Neutral\",\n  \"emotion\": \"Neutral\",\n  \"confidence_score\": 0.5,\n  \"evidence_spans\": [],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The input text is not a coherent review or comment, and it does not contain any sentiment or emotion indicators.\"\n}"
+      },
+      {
+        "query_id": "D_UNANS_002",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.0,
+        "evidence_spans": [],
+        "policy_citations": [],
+        "guideline_version": "",
+        "abstain": true,
+        "abstain_reason": "The input text is not clear and does not contain any sentiment or emotion information.",
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5441.8,
+        "tokens": 205,
+        "raw_output": "{\n  \"sentiment\": \"abstain\",\n  \"emotion\": \"abstain\",\n  \"confidence_score\": 0.0,\n  \"evidence_spans\": [],\n  \"policy_citations\": [],\n  \"guideline_version\": \"\",\n  \"abstain\": true,\n  \"abstain_reason\": \"The input text is not clear and does not contain any sentiment or emotion information.\"\n}"
+      },
+      {
+        "query_id": "D_UNANS_003",
+        "sentiment": "Neutral",
+        "emotion": "Neutral",
+        "confidence_score": 0.5,
+        "evidence_spans": [],
+        "policy_citations": [],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5274.7,
+        "tokens": 202,
+        "raw_output": "{\n  \"sentiment\": \"Neutral\",\n  \"emotion\": \"Neutral\",\n  \"confidence_score\": 0.5,\n  \"evidence_spans\": [],\n  \"policy_citations\": [],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The input text is not a valid review or product description.\"\n}"
+      },
+      {
+        "query_id": "D_UNANS_004",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "I love this product! It's exactly what I was looking for and it works perfectly.",
+          "The customer service was amazing. They were very helpful and responsive to my concerns."
+        ],
+        "policy_citations": [],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B0",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b0_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 10273.9,
+        "tokens": 240,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"I love this product! It's exactly what I was looking for and it works perfectly.\",\n    \"The customer service was amazing. They were very helpful and responsive to my concerns.\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"Based on the positive sentiment and evidence provided, the product is clearly positive and the customer is happy with the product and the service.\"\n}"
+      }
+    ],
+    "B1": [
+      {
+        "query_id": "D_ANS_001",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.92,
+        "evidence_spans": [
+          "noise seperti saat sedang mencari saluran radio",
+          "meletup2 sangat mengganggu"
+        ],
+        "policy_citations": [
+          "POLICY_P01"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 11352.2,
+        "tokens": 528,
+        "raw_output": "{\"sentiment\":\"Negative\",\"emotion\":\"Sadness\",\"confidence_score\":0.92,\"evidence_spans\":[\"noise seperti saat sedang mencari saluran radio\",\"meletup2 sangat mengganggu\"],\"policy_citations\":[\"POLICY_P01\"],\"guideline_version\":\"v1.0\",\"abstain\":false,\"abstain_reason\":null}"
+      },
+      {
+        "query_id": "D_ANS_008",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.94,
+        "evidence_spans": [
+          "Seller very slow response",
+          "semua step selalu last minute baru lanjut",
+          "ketika official store lain, hanya butuh 1-2 maks 3 hari barang sampai setelah order, ini baru diterima setelah 5 hari"
+        ],
+        "policy_citations": [
+          "POLICY_P02"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 8125.5,
+        "tokens": 587,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.94,\n  \"evidence_spans\": [\"Seller very slow response\", \"semua step selalu last minute baru lanjut\", \"ketika official store lain, hanya butuh 1-2 maks 3 hari barang sampai setelah order, ini baru diterima setelah 5 hari\"],\n  \"policy_citations\": [\"POLICY_P02\"],\n  \"guideline_version\": \"v1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_015",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.92,
+        "evidence_spans": [
+          "tolong di perhatikan bagian karet nya",
+          "kebalik karetnya",
+          "ga sm lurus jahit nya",
+          "dkirimin brg reject"
+        ],
+        "policy_citations": [
+          "POLICY_P01"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6039.4,
+        "tokens": 535,
+        "raw_output": "{\"sentiment\":\"Negative\",\"emotion\":\"Sadness\",\"confidence_score\":0.92,\"evidence_spans\":[\"tolong di perhatikan bagian karet nya\",\"kebalik karetnya\",\"ga sm lurus jahit nya\",\"dkirimin brg reject\"],\"policy_citations\":[\"POLICY_P01\"],\"guideline_version\":\"v1.0\",\"abstain\":false,\"abstain_reason\":null}"
+      },
+      {
+        "query_id": "D_ANS_022",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.94,
+        "evidence_spans": [
+          "gak di kirim",
+          "GAK AMANAH ini"
+        ],
+        "policy_citations": [
+          "POLICY_P02"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6442.7,
+        "tokens": 571,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.94,\n  \"evidence_spans\": [\"gak di kirim\", \"GAK AMANAH ini\"],\n  \"policy_citations\": [\"POLICY_P02\"],\n  \"guideline_version\": \"v1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_002",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.92,
+        "evidence_spans": [
+          "Saya puas",
+          "barangnya bagus"
+        ],
+        "policy_citations": [
+          "POLICY_P01"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5683.4,
+        "tokens": 508,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.92,\n  \"evidence_spans\": [\"Saya puas\", \"barangnya bagus\"],\n  \"policy_citations\": [\"POLICY_P01\"],\n  \"guideline_version\": \"v1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_004",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.92,
+        "evidence_spans": [
+          "barang nya sesuai deskripsi",
+          "bersih saat di coba",
+          "dpat bebas ongkir jga",
+          "cpat smpai"
+        ],
+        "policy_citations": [
+          "POLICY_P01"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6865.7,
+        "tokens": 560,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.92,\n  \"evidence_spans\": [\"barang nya sesuai deskripsi\", \"bersih saat di coba\", \"dpat bebas ongkir jga\", \"cpat smpai\"],\n  \"policy_citations\": [\"POLICY_P01\"],\n  \"guideline_version\": \"v1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_005",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.92,
+        "evidence_spans": [
+          "Packaging baik",
+          "barang utuh",
+          "sudah dikirim ke anggoto keluarga isoman",
+          "Sempat membantu pemulihan",
+          "Sering promo ya real food"
+        ],
+        "policy_citations": [
+          "POLICY_P01",
+          "POLICY_P02",
+          "POLICY_P05"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 7776.8,
+        "tokens": 577,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.92,\n  \"evidence_spans\": [\"Packaging baik\", \"barang utuh\", \"sudah dikirim ke anggoto keluarga isoman\", \"Sempat membantu pemulihan\", \"Sering promo ya real food\"],\n  \"policy_citations\": [\"POLICY_P01\", \"POLICY_P02\", \"POLICY_P05\"],\n  \"guideline_version\": \"v1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_021",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.92,
+        "evidence_spans": [
+          "pengiriman cepat",
+          "harga murah",
+          "bahan sesuai harga"
+        ],
+        "policy_citations": [
+          "POLICY_P01"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5916.2,
+        "tokens": 515,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.92,\n  \"evidence_spans\": [\"pengiriman cepat\", \"harga murah\", \"bahan sesuai harga\"],\n  \"policy_citations\": [\"POLICY_P01\"],\n  \"guideline_version\": \"v1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_003",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "buku original",
+          "harga sangat murah",
+          "seller ramah",
+          "packing rapi",
+          "buble wrapnya sangat tebel banget",
+          "puas Maksimal",
+          "terima kasih seller"
+        ],
+        "policy_citations": [
+          "POLICY_P01",
+          "POLICY_P02",
+          "POLICY_P03"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 7934.9,
+        "tokens": 589,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"buku original\", \"harga sangat murah\", \"seller ramah\", \"packing rapi\", \"buble wrapnya sangat tebel banget\", \"puas Maksimal\", \"terima kasih seller\"],\n  \"policy_citations\": [\"POLICY_P01\", \"POLICY_P02\", \"POLICY_P03\"],\n  \"guideline_version\": \"v1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_013",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.92,
+        "evidence_spans": [
+          "mantabs sih",
+          "build quality nya bagus banget",
+          "satisfying banget"
+        ],
+        "policy_citations": [
+          "POLICY_P01"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6233.8,
+        "tokens": 536,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.92,\n  \"evidence_spans\": [\"mantabs sih\", \"build quality nya bagus banget\", \"satisfying banget\"],\n  \"policy_citations\": [\"POLICY_P01\"],\n  \"guideline_version\": \"v1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_017",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "cinta bangettt",
+          "rambut jd lembut dan wangi bangettss",
+          "exp 2024",
+          "packingan mantap"
+        ],
+        "policy_citations": [
+          "POLICY_P01",
+          "POLICY_P02"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 7253.9,
+        "tokens": 563,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"cinta bangettt\", \"rambut jd lembut dan wangi bangettss\", \"exp 2024\", \"packingan mantap\"],\n  \"policy_citations\": [\"POLICY_P01\", \"POLICY_P02\"],\n  \"guideline_version\": \"v1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_018",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "hasil ajib",
+          "seller nya juga ajib"
+        ],
+        "policy_citations": [
+          "POLICY_P01"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 4766.3,
+        "tokens": 495,
+        "raw_output": "{\"sentiment\":\"Positive\",\"emotion\":\"Love\",\"confidence_score\":0.95,\"evidence_spans\":[\"hasil ajib\",\"seller nya juga ajib\"],\"policy_citations\":[\"POLICY_P01\"],\"guideline_version\":\"v1.0\",\"abstain\":false,\"abstain_reason\":null}"
+      },
+      {
+        "query_id": "D_ANS_006",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "dibngkus pake plastik bening",
+          "mlh beli online"
+        ],
+        "policy_citations": [
+          "POLICY_P02"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5500.5,
+        "tokens": 555,
+        "raw_output": "{\"sentiment\":\"Negative\",\"emotion\":\"Sadness\",\"confidence_score\":0.95,\"evidence_spans\":[\"dibngkus pake plastik bening\",\"mlh beli online\"],\"policy_citations\":[\"POLICY_P02\"],\"guideline_version\":\"v1.0\",\"abstain\":false,\"abstain_reason\":null}"
+      },
+      {
+        "query_id": "D_ANS_007",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Buku kondisinya kurang baik",
+          "ada sobeknya",
+          "audio rusak"
+        ],
+        "policy_citations": [
+          "POLICY_P01",
+          "POLICY_P02"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 9298.8,
+        "tokens": 533,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"Buku kondisinya kurang baik\", \"ada sobeknya\", \"audio rusak\"],\n  \"policy_citations\": [\"POLICY_P01\", \"POLICY_P02\"],\n  \"guideline_version\": \"v1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": null\n}"
+      },
+      {
+        "query_id": "D_ANS_012",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "barang datang tidak lengkap",
+          "tidak akan pernah belanja lagi di toko remi loreal"
+        ],
+        "policy_citations": [
+          "POLICY_P01"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 8044.6,
+        "tokens": 505,
+        "raw_output": "{\"sentiment\":\"Negative\",\"emotion\":\"Sadness\",\"confidence_score\":0.95,\"evidence_spans\":[\"barang datang tidak lengkap\",\"tidak akan pernah belanja lagi di toko remi loreal\"],\"policy_citations\":[\"POLICY_P01\"],\"guideline_version\":\"v1.0\",\"abstain\":false,\"abstain_reason\":null}"
+      },
+      {
+        "query_id": "D_ANS_014",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "baru dipake beberapa hari udah rusak aja"
+        ],
+        "policy_citations": [
+          "POLICY_P01"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6478.5,
+        "tokens": 483,
+        "raw_output": "{\"sentiment\":\"Negative\",\"emotion\":\"Sadness\",\"confidence_score\":0.95,\"evidence_spans\":[\"baru dipake beberapa hari udah rusak aja\"],\"policy_citations\":[\"POLICY_P01\"],\"guideline_version\":\"v1.0\",\"abstain\":false,\"abstain_reason\":null}"
+      },
+      {
+        "query_id": "D_ANS_009",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.94,
+        "evidence_spans": [
+          "BARANG TIDAK SESUAI PESANAN",
+          "DIMINTA GOLD MALAH D KIRIM WARNA PUTIH DAN MERK LAIN!!"
+        ],
+        "policy_citations": [
+          "POLICY_P02"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 7966.5,
+        "tokens": 527,
+        "raw_output": "{\"sentiment\":\"Negative\",\"emotion\":\"Anger\",\"confidence_score\":0.94,\"evidence_spans\":[\"BARANG TIDAK SESUAI PESANAN\",\"DIMINTA GOLD MALAH D KIRIM WARNA PUTIH DAN MERK LAIN!!\"],\"policy_citations\":[\"POLICY_P02\"],\"guideline_version\":\"v1.0\",\"abstain\":false,\"abstain_reason\":null}"
+      },
+      {
+        "query_id": "D_ANS_010",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "JELEK BARU DICOBA 2KALI UDAH RUSAK",
+          "GIGINYA GA BISA DI PENCET LAGI"
+        ],
+        "policy_citations": [
+          "POLICY_P02"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6530.3,
+        "tokens": 528,
+        "raw_output": "{\"sentiment\":\"Negative\",\"emotion\":\"Sadness\",\"confidence_score\":0.95,\"evidence_spans\":[\"JELEK BARU DICOBA 2KALI UDAH RUSAK\",\"GIGINYA GA BISA DI PENCET LAGI\"],\"policy_citations\":[\"POLICY_P02\"],\"guideline_version\":\"v1.0\",\"abstain\":false,\"abstain_reason\":null}"
+      },
+      {
+        "query_id": "D_ANS_011",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "jelak",
+          "ada yg patah",
+          "pedang pada meletot semua",
+          "warna ya ada yg salah"
+        ],
+        "policy_citations": [
+          "POLICY_P02"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 7121.2,
+        "tokens": 513,
+        "raw_output": "{\"sentiment\":\"Negative\",\"emotion\":\"Sadness\",\"confidence_score\":0.95,\"evidence_spans\":[\"jelak\",\"ada yg patah\",\"pedang pada meletot semua\",\"warna ya ada yg salah\"],\"policy_citations\":[\"POLICY_P02\"],\"guideline_version\":\"v1.0\",\"abstain\":false,\"abstain_reason\":null}"
+      },
+      {
+        "query_id": "D_ANS_016",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "sprti barang bekas"
+        ],
+        "policy_citations": [
+          "POLICY_P01"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 5746.5,
+        "tokens": 471,
+        "raw_output": "{\"sentiment\":\"Negative\",\"emotion\":\"Sadness\",\"confidence_score\":0.95,\"evidence_spans\":[\"sprti barang bekas\"],\"policy_citations\":[\"POLICY_P01\"],\"guideline_version\":\"v1.0\",\"abstain\":false,\"abstain_reason\":null}"
+      },
+      {
+        "query_id": "D_UNANS_001",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.98,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_P05"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks gibberish bukan ulasan",
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 6074.8,
+        "tokens": 487,
+        "raw_output": "{\"sentiment\":\"ABSTAIN\",\"emotion\":\"ABSTAIN\",\"confidence_score\":0.98,\"evidence_spans\":[],\"policy_citations\":[\"POLICY_P05\"],\"guideline_version\":\"v1.0\",\"abstain\":true,\"abstain_reason\":\"Teks gibberish bukan ulasan\"}"
+      },
+      {
+        "query_id": "D_UNANS_002",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.98,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_P05"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks gibberish bukan ulasan",
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 4768.8,
+        "tokens": 493,
+        "raw_output": "{\"sentiment\":\"ABSTAIN\",\"emotion\":\"ABSTAIN\",\"confidence_score\":0.98,\"evidence_spans\":[],\"policy_citations\":[\"POLICY_P05\"],\"guideline_version\":\"v1.0\",\"abstain\":true,\"abstain_reason\":\"Teks gibberish bukan ulasan\"}"
+      },
+      {
+        "query_id": "D_UNANS_003",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.98,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_P05"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks gibberish bukan ulasan",
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 4821.4,
+        "tokens": 493,
+        "raw_output": "{\"sentiment\":\"ABSTAIN\",\"emotion\":\"ABSTAIN\",\"confidence_score\":0.98,\"evidence_spans\":[],\"policy_citations\":[\"POLICY_P05\"],\"guideline_version\":\"v1.0\",\"abstain\":true,\"abstain_reason\":\"Teks gibberish bukan ulasan\"}"
+      },
+      {
+        "query_id": "D_UNANS_004",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.98,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_P05"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks gibberish bukan ulasan",
+        "config": "B1",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b1_v1",
+        "index_version": null,
+        "seed": 42,
+        "latency_ms": 4666.9,
+        "tokens": 476,
+        "raw_output": "{\"sentiment\":\"ABSTAIN\",\"emotion\":\"ABSTAIN\",\"confidence_score\":0.98,\"evidence_spans\":[],\"policy_citations\":[\"POLICY_P05\"],\"guideline_version\":\"v1.0\",\"abstain\":true,\"abstain_reason\":\"Teks gibberish bukan ulasan\"}"
+      }
+    ],
+    "B2": [
+      {
+        "query_id": "D_ANS_001",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.5,
+        "evidence_spans": [
+          "Suara noise seperti saat sedang mencari saluran radio dan agak meletup2 sangat mengganggu",
+          "sedang berada pada mode bluetooth untuk mendengarkan musik"
+        ],
+        "policy_citations": [
+          "EXEMP_0083",
+          "EXEMP_0289",
+          "EXEMP_0074",
+          "EXEMP_0184",
+          "EXEMP_0314"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 14209.3,
+        "tokens": 617,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.5,\n  \"evidence_spans\": [\"Suara noise seperti saat sedang mencari saluran radio dan agak meletup2 sangat mengganggu\", \"sedang berada pada mode bluetooth untuk mendengarkan musik\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The statement does not contain a clear sentiment or emotion that can be classified as positive, negative, or neutral.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0083",
+          "EXEMP_0289",
+          "EXEMP_0074",
+          "EXEMP_0184",
+          "EXEMP_0314"
+        ]
+      },
+      {
+        "query_id": "D_ANS_008",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Selera very slow response, semua step selalu last minute baru lanjut. Ketika official store lain, hanya butuh 1-2 maks 3 hari barang sampai setelah order, ini baru diterima setelah 5 hari",
+          "Selera very slow response, semua step selalu last minute baru lanjut. Ketika official store lain, hanya butuh 1-2 maks 3 hari barang sampai setelah order, ini baru diterima setelah 5 hari"
+        ],
+        "policy_citations": [
+          "EXEMP_0287",
+          "EXEMP_0225",
+          "EXEMP_0310",
+          "EXEMP_0296",
+          "EXEMP_0325"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 16208.3,
+        "tokens": 687,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"Selera very slow response, semua step selalu last minute baru lanjut. Ketika official store lain, hanya butuh 1-2 maks 3 hari barang sampai setelah order, ini baru diterima setelah 5 hari\",\n    \"Selera very slow response, semua step selalu last minute baru lanjut. Ketika official store lain, hanya butuh 1-2 maks 3 hari barang sampai setelah order, ini baru diterima setelah 5 hari\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0287",
+          "EXEMP_0225",
+          "EXEMP_0310",
+          "EXEMP_0296",
+          "EXEMP_0325"
+        ]
+      },
+      {
+        "query_id": "D_ANS_015",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "Dus ndak dikirim",
+          "Karet nya ga sm lurus jahit nya, malah dikirim brg reject"
+        ],
+        "policy_citations": [
+          "EXEMP_0172",
+          "EXEMP_0158",
+          "EXEMP_0306",
+          "EXEMP_0312",
+          "EXEMP_0287"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 11012.6,
+        "tokens": 559,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Fear\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\n    \"Dus ndak dikirim\",\n    \"Karet nya ga sm lurus jahit nya, malah dikirim brg reject\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The statement does not contain a clear sentiment or emotion that can be classified as positive, negative, or neutral.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0172",
+          "EXEMP_0158",
+          "EXEMP_0306",
+          "EXEMP_0312",
+          "EXEMP_0287"
+        ]
+      },
+      {
+        "query_id": "D_ANS_022",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "SANGAT KECEWA ..!!! INI REAL YG SAYA ALAMI ... SILAHKAN BACA CHAT SAYA DGN SELLER INI SEBELUM MEMBELI, BARANG DIKIRIM TIDAK SESUAI PESANAN, SUDAH DIRETUR, TAPI",
+          "nya, box nya cuma 1, box aslinya aja d bungkus, alhasil box aslinya penyok2 . . Udah complain tapi belum ditanggapi... sayang sekali padahal saya sudah sering b",
+          "a nya sudah kembali ke saya tapi tetep ada rasa kecewa karna penjual lagi� tidak menginformasikan ketersediaan barang dan saya lagi perlu banget . maaf dikasih"
+        ],
+        "policy_citations": [
+          "EXEMP_0263",
+          "EXEMP_0161",
+          "EXEMP_0124",
+          "EXEMP_0119",
+          "EXEMP_0289"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 15661.0,
+        "tokens": 800,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\n    \"SANGAT KECEWA ..!!! INI REAL YG SAYA ALAMI ... SILAHKAN BACA CHAT SAYA DGN SELLER INI SEBELUM MEMBELI, BARANG DIKIRIM TIDAK SESUAI PESANAN, SUDAH DIRETUR, TAPI\",\n    \"nya, box nya cuma 1, box aslinya aja d bungkus, alhasil box aslinya penyok2 . . Udah complain tapi belum ditanggapi... sayang sekali padahal saya sudah sering b\",\n    \"a nya sudah kembali ke saya tapi tetep ada rasa kecewa karna penjual lagi� tidak menginformasikan ketersediaan barang dan saya lagi perlu banget . maaf dikasih\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0263",
+          "EXEMP_0161",
+          "EXEMP_0124",
+          "EXEMP_0119",
+          "EXEMP_0289"
+        ]
+      },
+      {
+        "query_id": "D_ANS_002",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Kualitas Produk Bagus. Produk Sesuai",
+          "Barangnya bagus sesuai deskripsi",
+          "Material Produk Bagus. Produk Sesuai. Kualitas Produk Bagus. Produk Original.",
+          "makasih gun barang nya udh sampai sesuai pesanan..",
+          "bagus barangnya,cepet nyampeknya"
+        ],
+        "policy_citations": [
+          "EXEMP_0038",
+          "EXEMP_0033",
+          "EXEMP_0056",
+          "EXEMP_0053",
+          "EXEMP_0027"
+        ],
+        "guideline_version": "ABSTAIN",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 8753.7,
+        "tokens": 455,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"Kualitas Produk Bagus. Produk Sesuai\", \"Barangnya bagus sesuai deskripsi\", \"Material Produk Bagus. Produk Sesuai. Kualitas Produk Bagus. Produk Original.\", \"makasih gun barang nya udh sampai sesuai pesanan..\", \"bagus barangnya,cepet nyampeknya\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"ABSTAIN\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The evidence spans provided are all positive statements about the product quality and satisfaction.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0038",
+          "EXEMP_0033",
+          "EXEMP_0056",
+          "EXEMP_0053",
+          "EXEMP_0027"
+        ]
+      },
+      {
+        "query_id": "D_ANS_004",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "barang sudah sampai, dipacking dengan aman dan dpt hrga promo lg, thanks seller",
+          "barang sudah diterima sesuai dgn deskripsinya, terimakasih",
+          "Produk sesuai dan nyaman dipakai. Terima kasih."
+        ],
+        "policy_citations": [
+          "EXEMP_0035",
+          "EXEMP_0014",
+          "EXEMP_0050",
+          "EXEMP_0246",
+          "EXEMP_0017"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 8861.0,
+        "tokens": 510,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"barang sudah sampai, dipacking dengan aman dan dpt hrga promo lg, thanks seller\",\n    \"barang sudah diterima sesuai dgn deskripsinya, terimakasih\",\n    \"Produk sesuai dan nyaman dipakai. Terima kasih.\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0035",
+          "EXEMP_0014",
+          "EXEMP_0050",
+          "EXEMP_0246",
+          "EXEMP_0017"
+        ]
+      },
+      {
+        "query_id": "D_ANS_005",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "packing aman",
+          "barang utuh",
+          "sudah dikirim ke anggota keluarga isoman",
+          "promo real food",
+          "sukses selalu"
+        ],
+        "policy_citations": [
+          "EXEMP_0058",
+          "EXEMP_0028",
+          "EXEMP_0042",
+          "EXEMP_0215",
+          "EXEMP_0060"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 8641.5,
+        "tokens": 499,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"packing aman\",\n    \"barang utuh\",\n    \"sudah dikirim ke anggota keluarga isoman\",\n    \"promo real food\",\n    \"sukses selalu\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"All evidence spans are positive and relevant to the sentiment and emotion.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0058",
+          "EXEMP_0028",
+          "EXEMP_0042",
+          "EXEMP_0215",
+          "EXEMP_0060"
+        ]
+      },
+      {
+        "query_id": "D_ANS_021",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "pengiriman cepat",
+          "harga murah",
+          "bahan sesuai harga"
+        ],
+        "policy_citations": [
+          "EXEMP_0061",
+          "EXEMP_0230",
+          "EXEMP_0016",
+          "EXEMP_0213",
+          "EXEMP_0247"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 7390.8,
+        "tokens": 419,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"pengiriman cepat\", \"harga murah\", \"bahan sesuai harga\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"All evidence spans are positive and align with the positive sentiment.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0061",
+          "EXEMP_0230",
+          "EXEMP_0016",
+          "EXEMP_0213",
+          "EXEMP_0247"
+        ]
+      },
+      {
+        "query_id": "D_ANS_003",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "harga sangat murah jauh dibandingkan ditempat lain",
+          "seller ramah",
+          "packing rapi",
+          "buble wrapnya sangat tebel banget",
+          "puas Maksimal",
+          "terima kasih seller"
+        ],
+        "policy_citations": [
+          "EXEMP_0225",
+          "EXEMP_0020",
+          "EXEMP_0185",
+          "EXEMP_0058",
+          "EXEMP_0060"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 10346.3,
+        "tokens": 578,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"harga sangat murah jauh dibandingkan ditempat lain\", \"seller ramah\", \"packing rapi\", \"buble wrapnya sangat tebel banget\", \"puas Maksimal\", \"terima kasih seller\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The evidence spans provide clear positive sentiment and evidence for the positive sentiment.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0225",
+          "EXEMP_0020",
+          "EXEMP_0185",
+          "EXEMP_0058",
+          "EXEMP_0060"
+        ]
+      },
+      {
+        "query_id": "D_ANS_013",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Suka banget wangi bgt teksturnya juga bagus bangeetPacking rapi",
+          "trima kasih yah, berfungsi dgn sangat baik. Produk nyaman & mudah dipakai. Packing aman . Kualitas bahan tinggi . Dijamin Termurah"
+        ],
+        "policy_citations": [
+          "EXEMP_0250",
+          "EXEMP_0001",
+          "EXEMP_0211",
+          "EXEMP_0049",
+          "EXEMP_0199"
+        ],
+        "guideline_version": "ABSTAIN",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 11088.4,
+        "tokens": 591,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"Suka banget wangi bgt teksturnya juga bagus bangeetPacking rapi\", \"trima kasih yah, berfungsi dgn sangat baik. Produk nyaman & mudah dipakai. Packing aman . Kualitas bahan tinggi . Dijamin Termurah\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"ABSTAIN\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The evidence spans contain both positive and negative aspects, but the overall sentiment is clearly positive.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0250",
+          "EXEMP_0001",
+          "EXEMP_0211",
+          "EXEMP_0049",
+          "EXEMP_0199"
+        ]
+      },
+      {
+        "query_id": "D_ANS_017",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "cinta bangettt sama produk ini",
+          "rambut jd lembut dan wangi bangettss",
+          "always pake shampoo ini mah exp 2024",
+          "packingan mantap"
+        ],
+        "policy_citations": [
+          "EXEMP_0225",
+          "EXEMP_0219",
+          "EXEMP_0211",
+          "EXEMP_0246",
+          "EXEMP_0002"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 9526.3,
+        "tokens": 497,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"cinta bangettt sama produk ini\",\n    \"rambut jd lembut dan wangi bangettss\",\n    \"always pake shampoo ini mah exp 2024\",\n    \"packingan mantap\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0225",
+          "EXEMP_0219",
+          "EXEMP_0211",
+          "EXEMP_0246",
+          "EXEMP_0002"
+        ]
+      },
+      {
+        "query_id": "D_ANS_018",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Konteks retrieval: [EXEMP_0258] (Sentiment=Positive, Emotion=Love): no comment deh. udh berkali kali beli cat ini. TOP BGT",
+          "Konteks retrieval: [EXEMP_0246] (Sentiment=Positive, Emotion=Love): Barang sudah sampai dengan selamat Barang sesuai dengan deskripsi produk Packing oke Recommended seller!!!"
+        ],
+        "policy_citations": [
+          "EXEMP_0258",
+          "EXEMP_0035",
+          "EXEMP_0246",
+          "EXEMP_0232",
+          "EXEMP_0220"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 11776.1,
+        "tokens": 508,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"Konteks retrieval: [EXEMP_0258] (Sentiment=Positive, Emotion=Love): no comment deh. udh berkali kali beli cat ini. TOP BGT\",\n    \"Konteks retrieval: [EXEMP_0246] (Sentiment=Positive, Emotion=Love): Barang sudah sampai dengan selamat Barang sesuai dengan deskripsi produk Packing oke Recommended seller!!!\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0258",
+          "EXEMP_0035",
+          "EXEMP_0246",
+          "EXEMP_0232",
+          "EXEMP_0220"
+        ]
+      },
+      {
+        "query_id": "D_ANS_006",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "tnya. Padahal buat stok. Najong banget dah. Di chat ga dibales. Kapok lah gw belanja disini.",
+          "Moon maaf ya gan, tadi paketnya sy buka ternyata ada 1 bungkus seperti sudah di buka dengan silet/cutter krn sobekannya rapih dari ujung ke ujung dan bungkusnya"
+        ],
+        "policy_citations": [
+          "EXEMP_0174",
+          "EXEMP_0152",
+          "EXEMP_0148",
+          "EXEMP_0135",
+          "EXEMP_0161"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 11683.4,
+        "tokens": 700,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Fear\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\n    \"tnya. Padahal buat stok. Najong banget dah. Di chat ga dibales. Kapok lah gw belanja disini.\",\n    \"Moon maaf ya gan, tadi paketnya sy buka ternyata ada 1 bungkus seperti sudah di buka dengan silet/cutter krn sobekannya rapih dari ujung ke ujung dan bungkusnya\"\n  ],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The evidence spans do not provide clear sentiment or emotion indicators.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0174",
+          "EXEMP_0152",
+          "EXEMP_0148",
+          "EXEMP_0135",
+          "EXEMP_0161"
+        ]
+      },
+      {
+        "query_id": "D_ANS_007",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "Buku kondisinya kurang baik",
+          "ada sobeknya",
+          "audio rusak"
+        ],
+        "policy_citations": [
+          "EXEMP_0101",
+          "EXEMP_0282",
+          "EXEMP_0087",
+          "EXEMP_0074",
+          "EXEMP_0281"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 8045.9,
+        "tokens": 509,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"Buku kondisinya kurang baik\", \"ada sobeknya\", \"audio rusak\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The statement does not contain a clear sentiment or emotion that can be classified as positive, negative, or neutral.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0101",
+          "EXEMP_0282",
+          "EXEMP_0087",
+          "EXEMP_0074",
+          "EXEMP_0281"
+        ]
+      },
+      {
+        "query_id": "D_ANS_012",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "Tidak dikirim lilin nya padahal sdh beli",
+          "parahhh, barang rusak retak di komplain malah urusannya sgt ribet! tidak akan beli lagi d sini"
+        ],
+        "policy_citations": [
+          "EXEMP_0232",
+          "EXEMP_0220",
+          "EXEMP_0134",
+          "EXEMP_0285",
+          "EXEMP_0161"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 8399.5,
+        "tokens": 481,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Fear\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"Tidak dikirim lilin nya padahal sdh beli\", \"parahhh, barang rusak retak di komplain malah urusannya sgt ribet! tidak akan beli lagi d sini\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"Not enough evidence to determine sentiment\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0232",
+          "EXEMP_0220",
+          "EXEMP_0134",
+          "EXEMP_0285",
+          "EXEMP_0161"
+        ]
+      },
+      {
+        "query_id": "D_ANS_014",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "baru dipake beberapa hari udah rusak aja."
+        ],
+        "policy_citations": [
+          "EXEMP_0104",
+          "EXEMP_0095",
+          "EXEMP_0281",
+          "EXEMP_0269",
+          "EXEMP_0110"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 7104.1,
+        "tokens": 400,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"baru dipake beberapa hari udah rusak aja.\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The statement does not contain any clear positive, negative, or neutral sentiment or emotion.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0104",
+          "EXEMP_0095",
+          "EXEMP_0281",
+          "EXEMP_0269",
+          "EXEMP_0110"
+        ]
+      },
+      {
+        "query_id": "D_ANS_009",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "BARANG TIDAK SESUAI PESANAN.. DIMINTA GOLD MALAH D KIRIM WARNA PUTIH DAN MERK LAIN!!"
+        ],
+        "policy_citations": [
+          "EXEMP_0266",
+          "EXEMP_0312",
+          "EXEMP_0073",
+          "EXEMP_0159",
+          "EXEMP_0076"
+        ],
+        "guideline_version": "",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 9129.4,
+        "tokens": 531,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"BARANG TIDAK SESUAI PESANAN.. DIMINTA GOLD MALAH D KIRIM WARNA PUTIH DAN MERK LAIN!!\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The statement does not contain a clear sentiment or emotion that can be classified as positive, negative, or neutral.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0266",
+          "EXEMP_0312",
+          "EXEMP_0073",
+          "EXEMP_0159",
+          "EXEMP_0076"
+        ]
+      },
+      {
+        "query_id": "D_ANS_010",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "Konteks retrieval: (Sentiment=Negative, Emotion=Sadness): cepet banget rusaknya baru sebulan pake gak bisa nyala ._.",
+          "Konteks retrieval: (Sentiment=Negative, Emotion=Fear): Yg satu kuasnya diangkat sudah dalam keadaan patah /lepas.. brushnya nyemplung di dalam.. Mohon dicek kembali sblm dikirim",
+          "Konteks retrieval: (Sentiment=Negative, Emotion=Sadness): pembelian ke 2 rada kecewa... Baut pegangan uda doll nih drat nya.. sudah di kencangkan baut nya tp ttp pegangan nya goyah gak kokoh.. produk reject...",
+          "Konteks retrieval: (Sentiment=Negative, Emotion=Fear): Bukunya cepet rontok lem nya ga kuat"
+        ],
+        "policy_citations": [
+          "EXEMP_0095",
+          "EXEMP_0191",
+          "EXEMP_0139",
+          "EXEMP_0129",
+          "EXEMP_0145"
+        ],
+        "guideline_version": "N/A",
+        "abstain": true,
+        "abstain_reason": "The evidence spans provided do not contain any explicit positive sentiment or emotion that could be used to determine the sentiment or emotion of the statement.",
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 14793.7,
+        "tokens": 700,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"Konteks retrieval: (Sentiment=Negative, Emotion=Sadness): cepet banget rusaknya baru sebulan pake gak bisa nyala ._.\", \"Konteks retrieval: (Sentiment=Negative, Emotion=Fear): Yg satu kuasnya diangkat sudah dalam keadaan patah /lepas.. brushnya nyemplung di dalam.. Mohon dicek kembali sblm dikirim\", \"Konteks retrieval: (Sentiment=Negative, Emotion=Sadness): pembelian ke 2 rada kecewa... Baut pegangan uda doll nih drat nya.. sudah di kencangkan baut nya tp ttp pegangan nya goyah gak kokoh.. produk reject...\", \"Konteks retrieval: (Sentiment=Negative, Emotion=Fear): Bukunya cepet rontok lem nya ga kuat\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": \"ABSTAIN\",\n  \"abstain_reason\": \"The evidence spans provided do not contain any explicit positive sentiment or emotion that could be used to determine the sentiment or emotion of the statement.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0095",
+          "EXEMP_0191",
+          "EXEMP_0139",
+          "EXEMP_0129",
+          "EXEMP_0145"
+        ]
+      },
+      {
+        "query_id": "D_ANS_011",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "jelak.. ada yg patah",
+          "pedang pada meletot semua",
+          "warna ya ada yg salah"
+        ],
+        "policy_citations": [
+          "EXEMP_0281",
+          "EXEMP_0103",
+          "EXEMP_0269",
+          "EXEMP_0193",
+          "EXEMP_0191"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 7824.3,
+        "tokens": 467,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"jelak.. ada yg patah\", \"pedang pada meletot semua\", \"warna ya ada yg salah\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The evidence spans do not clearly indicate a positive sentiment or a negative sentiment, but rather a mix of negative and neutral elements.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0281",
+          "EXEMP_0103",
+          "EXEMP_0269",
+          "EXEMP_0193",
+          "EXEMP_0191"
+        ]
+      },
+      {
+        "query_id": "D_ANS_016",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "Barang sudah sampai dengan selamat",
+          "Packing oke",
+          "Recommended seller"
+        ],
+        "policy_citations": [
+          "The policy on positive reviews is to provide a high confidence score for sentiment and emotion"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 7910.6,
+        "tokens": 431,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"Barang sudah sampai dengan selamat\", \"Packing oke\", \"Recommended seller\"],\n  \"policy_citations\": [\"The policy on positive reviews is to provide a high confidence score for sentiment and emotion\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The evidence spans provided are clear positive indicators, so a positive sentiment and emotion are inferred.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0274",
+          "EXEMP_0246",
+          "EXEMP_0084",
+          "EXEMP_0232",
+          "EXEMP_0303"
+        ]
+      },
+      {
+        "query_id": "D_UNANS_001",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.5,
+        "evidence_spans": [],
+        "policy_citations": [
+          "EXEMP_0005",
+          "EXEMP_0016",
+          "EXEMP_0165",
+          "EXEMP_0006",
+          "EXEMP_0050"
+        ],
+        "guideline_version": "1.0",
+        "abstain": true,
+        "abstain_reason": "The provided text does not contain any sentiment or emotion-related information.",
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 6603.9,
+        "tokens": 383,
+        "raw_output": "{\n  \"sentiment\": \"ABSTAIN\",\n  \"emotion\": \"ABSTAIN\",\n  \"confidence_score\": 0.5,\n  \"evidence_spans\": [],\n  \"policy_citations\": [],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": true,\n  \"abstain_reason\": \"The provided text does not contain any sentiment or emotion-related information.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0005",
+          "EXEMP_0016",
+          "EXEMP_0165",
+          "EXEMP_0006",
+          "EXEMP_0050"
+        ]
+      },
+      {
+        "query_id": "D_UNANS_002",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.0,
+        "evidence_spans": [],
+        "policy_citations": [
+          "EXEMP_0005",
+          "EXEMP_0039",
+          "EXEMP_0016",
+          "EXEMP_0050",
+          "EXEMP_0229"
+        ],
+        "guideline_version": "1.0",
+        "abstain": true,
+        "abstain_reason": "The provided text is not related to the given sentiment and emotion categories.",
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 6624.8,
+        "tokens": 383,
+        "raw_output": "{\n  \"sentiment\": \"ABSTAIN\",\n  \"emotion\": \"ABSTAIN\",\n  \"confidence_score\": 0.0,\n  \"evidence_spans\": [],\n  \"policy_citations\": [],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": true,\n  \"abstain_reason\": \"The provided text is not related to the given sentiment and emotion categories.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0005",
+          "EXEMP_0039",
+          "EXEMP_0016",
+          "EXEMP_0050",
+          "EXEMP_0229"
+        ]
+      },
+      {
+        "query_id": "D_UNANS_003",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Sudah purchase kedua kali dan cocok dengan kulit tangan yg agak sensitif.",
+          "Pengiriman cepat, respon penjual cepat.",
+          "Bagus barangnya udah berkali kali beli di sini"
+        ],
+        "policy_citations": [
+          "EXEMP_0161",
+          "EXEMP_0220",
+          "EXEMP_0016",
+          "EXEMP_0232",
+          "EXEMP_0005"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 8464.1,
+        "tokens": 461,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"Sudah purchase kedua kali dan cocok dengan kulit tangan yg agak sensitif.\", \"Pengiriman cepat, respon penjual cepat.\", \"Bagus barangnya udah berkali kali beli di sini\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"All evidence spans are positive.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0161",
+          "EXEMP_0220",
+          "EXEMP_0016",
+          "EXEMP_0232",
+          "EXEMP_0005"
+        ]
+      },
+      {
+        "query_id": "D_UNANS_004",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Konteks retrieval: [EXEMP_0294] (Sentiment=Negative, Emotion=Anger): Beli sabtu sampainya kamis ..lama betul",
+          "Konteks retrieval: [EXEMP_0110] (Sentiment=Negative, Emotion=Sadness): packing hancur sampai lebur sampai rumah",
+          "Konteks retrieval: [EXEMP_0304] (Sentiment=Negative, Emotion=Anger): Lama sekali sampainya, pesan rabu baru hari senin sampai",
+          "Konteks retrieval: [EXEMP_0278] (Sentiment=Negative, Emotion=Anger): butut konyol minta kuning di kasih ijo stabilo barang jelek",
+          "Konteks retrieval: [EXEMP_0300] (Sentiment=Negative, Emotion=Anger): prosedur, sandal yang dilem bisa ditarik. menjengkelkan"
+        ],
+        "policy_citations": [
+          "EXEMP_0294",
+          "EXEMP_0110",
+          "EXEMP_0304",
+          "EXEMP_0278",
+          "EXEMP_0300"
+        ],
+        "guideline_version": "N/A",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B2",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b2_v1",
+        "index_version": "corpus_v3_fixed",
+        "seed": 42,
+        "latency_ms": 14231.6,
+        "tokens": 603,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"Konteks retrieval: [EXEMP_0294] (Sentiment=Negative, Emotion=Anger): Beli sabtu sampainya kamis ..lama betul\", \"Konteks retrieval: [EXEMP_0110] (Sentiment=Negative, Emotion=Sadness): packing hancur sampai lebur sampai rumah\", \"Konteks retrieval: [EXEMP_0304] (Sentiment=Negative, Emotion=Anger): Lama sekali sampainya, pesan rabu baru hari senin sampai\", \"Konteks retrieval: [EXEMP_0278] (Sentiment=Negative, Emotion=Anger): butut konyol minta kuning di kasih ijo stabilo barang jelek\", \"Konteks retrieval: [EXEMP_0300] (Sentiment=Negative, Emotion=Anger): prosedur, sandal yang dilem bisa ditarik. menjengkelkan\"],\n  \"policy_citations\": [],\n  \"guideline_version\": \"N/A\",\n  \"abstain\": false,\n  \"abstain_reason\": \"N/A\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0294",
+          "EXEMP_0110",
+          "EXEMP_0304",
+          "EXEMP_0278",
+          "EXEMP_0300"
+        ]
+      }
+    ],
+    "B3": [
+      {
+        "query_id": "D_ANS_001",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "Suara noise seperti saat sedang mencari saluran radio dan agak meletup2 sangat mengganggu, padahal sedang berada pada mode bluetooth untuk mendengarkan musik. Bikin sakit telinga."
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 9524.7,
+        "tokens": 751,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"Suara noise seperti saat sedang mencari saluran radio dan agak meletup2 sangat mengganggu, padahal sedang berada pada mode bluetooth untuk mendengarkan musik. Bikin sakit telinga.\"],\n  \"policy_citations\": [\"[POLICY_SADNESS]\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is not an explicit review of a product, it is a complaint about noise interference with Bluetooth headphones.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0130",
+          "POLICY_SADNESS",
+          "EXEMP_0289",
+          "EXEMP_0325",
+          "EXEMP_0083"
+        ]
+      },
+      {
+        "query_id": "D_ANS_008",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Seller very slow response, semua step selalu last minute baru lanjut.",
+          "ketika official store lain, hanya butuh 1-2 maks 3 hari barang sampai setelah order, ini baru diterima setelah 5 hari"
+        ],
+        "policy_citations": [
+          "POLICY_SLANG"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 8068.2,
+        "tokens": 927,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"Seller very slow response, semua step selalu last minute baru lanjut.\",\n    \"ketika official store lain, hanya butuh 1-2 maks 3 hari barang sampai setelah order, ini baru diterima setelah 5 hari\"\n  ],\n  \"policy_citations\": [\n    \"POLICY_SLANG\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is a complaint about a slow response from a seller, which is a negative sentiment and emotion. The evidence spans provide specific examples of the slow response and the delay in delivery.\"\n}",
+        "retrieved_ids": [
+          "POLICY_SLANG",
+          "EXEMP_0304",
+          "EXEMP_0296",
+          "EXEMP_0287",
+          "EXEMP_0161"
+        ]
+      },
+      {
+        "query_id": "D_ANS_015",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "Pembelian ke 2 rata kecewa... Baut pegangan udah doll nih drat nya.. sudah di kencangkan baut nya tapi ttp pegangan nya goyah gak kokoh.. produk reject...",
+          "Parah pake banget.. kalengnya aja udh gimana bentuknya.. peyot super parah.. tolong packing lbh di perhatikan..!!! mengecewakan"
+        ],
+        "policy_citations": [
+          "POLICY_SLANG"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 11668.7,
+        "tokens": 681,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\n    \"Pembelian ke 2 rata kecewa... Baut pegangan udah doll nih drat nya.. sudah di kencangkan baut nya tapi ttp pegangan nya goyah gak kokoh.. produk reject...\",\n    \"Parah pake banget.. kalengnya aja udh gimana bentuknya.. peyot super parah.. tolong packing lbh di perhatikan..!!! mengecewakan\"\n  ],\n  \"policy_citations\": [\n    \"POLICY_SLANG\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is not an explicit product review and does not provide clear evidence of sentiment or emotion.\"\n}",
+        "retrieved_ids": [
+          "POLICY_SLANG",
+          "EXEMP_0129",
+          "EXEMP_0080",
+          "EXEMP_0264",
+          "EXEMP_0150"
+        ]
+      },
+      {
+        "query_id": "D_ANS_022",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.0,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_ANGER",
+          "EXEMP_0143",
+          "EXEMP_0077",
+          "EXEMP_0263",
+          "EXEMP_0124"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "parse_error",
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 16109.6,
+        "tokens": 1081,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"hadiah gak di kirim\",\n    \"kecewa dengan pelayanan toko ini\",\n    \"barang tidak berfungsi masih saja menolak komplain\",\n    \"SANGAT KECEWA ..!!! INI REAL YG SAYA ALAMI\",\n    \"Saya pesan double box ini karena mau beli sepatu untuk kado, maksudnya biar ga rusak box aslinya...Tapi pas sampe barangnya, box nya cuma 1, box aslinya aja d bungkus, alhasil box aslinya penyok2 . . Udah complain tapi belum ditanggapi... sayang sekali padahal saya sudah sering belanja d toko ini, cm gara2 hal kecil jd mengecewakan...\"\n  ],\n  \"policy_citations\": [\n    \"POLICY_ANGER\",\n    \"EXEMP_0077\",\n    \"EXEMP_0263\",\n    \"EXEMP_0124\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is an explicit complaint about a product delivery issue, which aligns with the policy on",
+        "retrieved_ids": [
+          "POLICY_ANGER",
+          "EXEMP_0143",
+          "EXEMP_0077",
+          "EXEMP_0263",
+          "EXEMP_0124"
+        ]
+      },
+      {
+        "query_id": "D_ANS_002",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Saya puas barangnya bagus sampai saat tidak ada masalah"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 8773.7,
+        "tokens": 580,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"Saya puas barangnya bagus sampai saat tidak ada masalah\"],\n  \"policy_citations\": [\"[POLICY_HAPPY]\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is a positive statement about the product's quality and satisfaction, which aligns with the Happy sentiment indicator.\"\n}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0042",
+          "EXEMP_0056",
+          "EXEMP_0013",
+          "EXEMP_0038"
+        ]
+      },
+      {
+        "query_id": "D_ANS_004",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "barang nya sesuai deskripsi dan foto, bener2 bersih saat di coba, dpat bebas ongkir jga dan cpat smpai, terimakasih tokopedia dan seller"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 10660.0,
+        "tokens": 620,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"barang nya sesuai deskripsi dan foto, bener2 bersih saat di coba, dpat bebas ongkir jga dan cpat smpai, terimakasih tokopedia dan seller\"\n  ],\n  \"policy_citations\": [\n    \"POLICY_HAPPY\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is a positive review of the product and does not contain gibberish or irrelevant information.\"\n}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0050",
+          "EXEMP_0013",
+          "EXEMP_0205",
+          "EXEMP_0213"
+        ]
+      },
+      {
+        "query_id": "D_ANS_005",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Packaging baik.",
+          "Barang utuh dan sudah dikirim ke anggoto keluarga isoman.",
+          "Sempatkan membantu pemulihan."
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 11265.0,
+        "tokens": 710,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"Packaging baik.\",\n    \"Barang utuh dan sudah dikirim ke anggoto keluarga isoman.\",\n    \"Sempatkan membantu pemulihan.\"\n  ],\n  \"policy_citations\": [\n    \"[POLICY_HAPPY]\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is a positive review of packaging and delivery, which is within the scope of the policy.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0224",
+          "POLICY_HAPPY",
+          "EXEMP_0252",
+          "EXEMP_0058",
+          "EXEMP_0080"
+        ]
+      },
+      {
+        "query_id": "D_ANS_021",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "pengiriman cepat",
+          "harga murah",
+          "bahan sesuai harga"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 8396.5,
+        "tokens": 522,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"pengiriman cepat\", \"harga murah\", \"bahan sesuai harga\"],\n  \"policy_citations\": [\"[POLICY_HAPPY]\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is a summary of the product's delivery time and price, which is not an evaluation of the product itself.\"\n}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0007",
+          "EXEMP_0061",
+          "EXEMP_0057",
+          "EXEMP_0046"
+        ]
+      },
+      {
+        "query_id": "D_ANS_003",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "buku original",
+          "harga sangat murah jauh dibandingkan ditempat lain",
+          "seller ramah",
+          "packing rapi",
+          "buble wrapnya sangat tebel banget",
+          "puas Maksimal",
+          "terima kasih seller"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 11755.8,
+        "tokens": 726,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Happy\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"buku original\",\n    \"harga sangat murah jauh dibandingkan ditempat lain\",\n    \"seller ramah\",\n    \"packing rapi\",\n    \"buble wrapnya sangat tebel banget\",\n    \"puas Maksimal\",\n    \"terima kasih seller\"\n  ],\n  \"policy_citations\": [\n    \"[POLICY_HAPPY]\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is a positive review of the product, mentioning the seller's friendly service, good packaging, and overall satisfaction.\"\n}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0185",
+          "EXEMP_0020",
+          "EXEMP_0254",
+          "EXEMP_0060"
+        ]
+      },
+      {
+        "query_id": "D_ANS_013",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "mantabs sih, build quality nya bagus banget.. dan satisfying banget pas ambil bulu kucing dari sela sela sisir nya.."
+        ],
+        "policy_citations": [
+          "POLICY_SLANG"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 10600.3,
+        "tokens": 607,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"mantabs sih, build quality nya bagus banget.. dan satisfying banget pas ambil bulu kucing dari sela sela sisir nya..\"\n  ],\n  \"policy_citations\": [\n    \"POLICY_SLANG\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is a positive sentiment about the product's build quality and satisfaction with using the sisir to remove cat hair, which is a valid positive sentiment.\"\n}",
+        "retrieved_ids": [
+          "POLICY_SLANG",
+          "EXEMP_0250",
+          "EXEMP_0239",
+          "EXEMP_0211",
+          "EXEMP_0240"
+        ]
+      },
+      {
+        "query_id": "D_ANS_017",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "cinta bangettt sama produk ini",
+          "rambut jd lembut dan wangi bangettss",
+          "always pake shampoo ini mah exp 2024",
+          "packingan mantap"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 10252.8,
+        "tokens": 585,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"cinta bangettt sama produk ini\", \"rambut jd lembut dan wangi bangettss\", \"always pake shampoo ini mah exp 2024\", \"packingan mantap\"],\n  \"policy_citations\": [\"[POLICY_LOVE]\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is a positive review of the product and contains clear evidence of the positive sentiment and emotion.\"\n}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0244",
+          "EXEMP_0157",
+          "EXEMP_0219",
+          "EXEMP_0211"
+        ]
+      },
+      {
+        "query_id": "D_ANS_018",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "langganan... recommended seller.... mohon maaf tidak menyertakan photo produk karena sudah dijahit dan dikirim, pokonya bagus, ini untuk pembelian kesekian sekian sekian sekian kali... terimakasih sehat selalu..."
+        ],
+        "policy_citations": [
+          "POLICY_SLANG"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 10812.8,
+        "tokens": 696,
+        "raw_output": "{\n  \"sentiment\": \"Positive\",\n  \"emotion\": \"Love\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"langganan... recommended seller.... mohon maaf tidak menyertakan photo produk karena sudah dijahit dan dikirim, pokonya bagus, ini untuk pembelian kesekian sekian sekian sekian kali... terimakasih sehat selalu...\"\n  ],\n  \"policy_citations\": [\n    \"POLICY_SLANG\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is a positive statement about a customer's loyalty and the seller's recommendation, which is not considered gibberish or irrelevant information.\"\n}",
+        "retrieved_ids": [
+          "POLICY_SLANG",
+          "EXEMP_0225",
+          "EXEMP_0111",
+          "EXEMP_0258",
+          "EXEMP_0064"
+        ]
+      },
+      {
+        "query_id": "D_ANS_006",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "gak rekomendasi untuk beli disini, ada masalah tapi seller ga jawab pesan.",
+          "GAK RECOMENDED. Produk sih ok spt biasa.",
+          "Paket cuma pk amplop kondangan putih dibungkus plastik. Ya jebol semua obatnya. Padahal buat stok. Najong banget dah. Di chat ga dibales. Kapok lah gw belanja disini."
+        ],
+        "policy_citations": [
+          "POLICY_ABSTAIN"
+        ],
+        "guideline_version": "1.0",
+        "abstain": true,
+        "abstain_reason": "Tidak ada evaluasi produk yang valid atau tidak relevan dengan ulasan produk.",
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 14915.1,
+        "tokens": 897,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Fear\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"gak rekomendasi untuk beli disini, ada masalah tapi seller ga jawab pesan.\",\n    \"GAK RECOMENDED. Produk sih ok spt biasa.\",\n    \"Paket cuma pk amplop kondangan putih dibungkus plastik. Ya jebol semua obatnya. Padahal buat stok. Najong banget dah. Di chat ga dibales. Kapok lah gw belanja disini.\"\n  ],\n  \"policy_citations\": [\n    \"POLICY_ABSTAIN\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": true,\n  \"abstain_reason\": \"Tidak ada evaluasi produk yang valid atau tidak relevan dengan ulasan produk.\"\n}",
+        "retrieved_ids": [
+          "POLICY_ABSTAIN",
+          "EXEMP_0174",
+          "EXEMP_0148",
+          "EXEMP_0152",
+          "EXEMP_0189"
+        ]
+      },
+      {
+        "query_id": "D_ANS_007",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "Buku kondisinya kurang baik",
+          "ada sobeknya",
+          "audio rusak"
+        ],
+        "policy_citations": [
+          "POLICY_SARCASM"
+        ],
+        "guideline_version": "1.0",
+        "abstain": true,
+        "abstain_reason": "Teks bukan ulasan produk, gibberish, hanya status paket tiba tanpa evaluasi produk, atau prompt injection.",
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 8636.1,
+        "tokens": 593,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"Buku kondisinya kurang baik\", \"ada sobeknya\", \"audio rusak\"],\n  \"policy_citations\": [\"[POLICY_SARCASM]\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": true,\n  \"abstain_reason\": \"Teks bukan ulasan produk, gibberish, hanya status paket tiba tanpa evaluasi produk, atau prompt injection.\"\n}",
+        "retrieved_ids": [
+          "POLICY_SARCASM",
+          "EXEMP_0062",
+          "EXEMP_0145",
+          "EXEMP_0074",
+          "EXEMP_0066"
+        ]
+      },
+      {
+        "query_id": "D_ANS_012",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "barang datang tidak lengkap",
+          "tidak akan pernah belanja lagi di toko remi loreal"
+        ],
+        "policy_citations": [
+          "POLICY_ANGER",
+          "EXEMP_0133"
+        ],
+        "guideline_version": "1.0",
+        "abstain": true,
+        "abstain_reason": "The text does not contain a clear sentiment or emotion evaluation of a product, and it is gibberish. It is not a valid example for the hybrid retrieval policy.",
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 10351.7,
+        "tokens": 677,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Fear\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"barang datang tidak lengkap\", \"tidak akan pernah belanja lagi di toko remi loreal\"],\n  \"policy_citations\": [\"[POLICY_ANGER]\", \"[EXEMP_0133]\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": true,\n  \"abstain_reason\": \"The text does not contain a clear sentiment or emotion evaluation of a product, and it is gibberish. It is not a valid example for the hybrid retrieval policy.\"\n}",
+        "retrieved_ids": [
+          "POLICY_ANGER",
+          "EXEMP_0035",
+          "EXEMP_0133",
+          "EXEMP_0148",
+          "EXEMP_0285"
+        ]
+      },
+      {
+        "query_id": "D_ANS_014",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "baru dipake beberapa hari udah rusak aja."
+        ],
+        "policy_citations": [
+          "EXEMP_0281] (Sentiment=Negative, Emotion=Anger): Packingnya jelek. Barang sampai sudah rusak"
+        ],
+        "guideline_version": "1.0",
+        "abstain": true,
+        "abstain_reason": "The text is not a product review and does not provide an evaluation of the product.",
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 9484.4,
+        "tokens": 556,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"baru dipake beberapa hari udah rusak aja.\"],\n  \"policy_citations\": [\"[EXEMP_0281] (Sentiment=Negative, Emotion=Anger): Packingnya jelek. Barang sampai sudah rusak\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": true,\n  \"abstain_reason\": \"The text is not a product review and does not provide an evaluation of the product.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0281",
+          "POLICY_SLANG",
+          "EXEMP_0095",
+          "EXEMP_0011",
+          "EXEMP_0304"
+        ]
+      },
+      {
+        "query_id": "D_ANS_009",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "UDAH DIKONFIRMASI ULANG MASIH AJA DIKIRIM WARNA PUTIH JELAS JELAS ORDER FULL BLACK, DAN PENGIRIMAN LAMA BANGET. *TIDAK AMANAH*"
+        ],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 11711.9,
+        "tokens": 695,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\n    \"UDAH DIKONFIRMASI ULANG MASIH AJA DIKIRIM WARNA PUTIH JELAS JELAS ORDER FULL BLACK, DAN PENGIRIMAN LAMA BANGET. *TIDAK AMANAH*\"\n  ],\n  \"policy_citations\": [\n    \"POLICY_ANGER\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is an example of a negative review with anger sentiment, and it provides clear evidence of the issue.\"\n}",
+        "retrieved_ids": [
+          "EXEMP_0266",
+          "EXEMP_0272",
+          "EXEMP_0076",
+          "POLICY_ANGER",
+          "EXEMP_0188"
+        ]
+      },
+      {
+        "query_id": "D_ANS_010",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "Barang sampai sudah rusak",
+          "GIGINYA GA BISA DI PENCET LAGI"
+        ],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 10465.3,
+        "tokens": 612,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"Barang sampai sudah rusak\", \"GIGINYA GA BISA DI PENCET LAGI\"],\n  \"policy_citations\": [\"[POLICY_ANGER]\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"Teks tidak merupakan ulasan produk dan tidak mencerminkan sentiment atau emosi produk.\"\n}",
+        "retrieved_ids": [
+          "POLICY_ANGER",
+          "EXEMP_0095",
+          "EXEMP_0321",
+          "EXEMP_0281",
+          "EXEMP_0118"
+        ]
+      },
+      {
+        "query_id": "D_ANS_011",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "jelak.. ada yg patah",
+          "pedang pada meletot semua",
+          "warna ya ada yg salah"
+        ],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 8071.6,
+        "tokens": 553,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"jelak.. ada yg patah\", \"pedang pada meletot semua\", \"warna ya ada yg salah\"],\n  \"policy_citations\": [\"[POLICY_ANGER]\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is not a product review and does not contain evaluative language.\"\n}",
+        "retrieved_ids": [
+          "POLICY_ANGER",
+          "EXEMP_0171",
+          "EXEMP_0283",
+          "EXEMP_0321",
+          "EXEMP_0111"
+        ]
+      },
+      {
+        "query_id": "D_ANS_016",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.9,
+        "evidence_spans": [
+          "barang bekas"
+        ],
+        "policy_citations": [
+          "POLICY_SLANG"
+        ],
+        "guideline_version": "1.0",
+        "abstain": true,
+        "abstain_reason": "Teks tidak merupakan ulasan produk, hanya menyatakan bahwa barang adalah barang bekas.",
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 7573.0,
+        "tokens": 530,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Sadness\",\n  \"confidence_score\": 0.9,\n  \"evidence_spans\": [\"barang bekas\"],\n  \"policy_citations\": [\"[POLICY_SLANG]\"],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": true,\n  \"abstain_reason\": \"Teks tidak merupakan ulasan produk, hanya menyatakan bahwa barang adalah barang bekas.\"\n}",
+        "retrieved_ids": [
+          "POLICY_SLANG",
+          "EXEMP_0303",
+          "EXEMP_0261",
+          "EXEMP_0158",
+          "EXEMP_0246"
+        ]
+      },
+      {
+        "query_id": "D_UNANS_001",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.0,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "1.0",
+        "abstain": true,
+        "abstain_reason": "Tidak ada teks yang dapat diinterpretasi sebagai ulasan produk yang sesuai dengan aturan yang diberikan.",
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 8498.6,
+        "tokens": 563,
+        "raw_output": "{\n  \"sentiment\": \"ABSTAIN\",\n  \"emotion\": \"ABSTAIN\",\n  \"confidence_score\": 0.0,\n  \"evidence_spans\": [],\n  \"policy_citations\": \"[POLICY_HAPPY]\",\n  \"guideline_version\": \"1.0\",\n  \"abstain\": true,\n  \"abstain_reason\": \"Tidak ada teks yang dapat diinterpretasi sebagai ulasan produk yang sesuai dengan aturan yang diberikan.\"\n}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0005",
+          "EXEMP_0318",
+          "EXEMP_0165",
+          "EXEMP_0325"
+        ]
+      },
+      {
+        "query_id": "D_UNANS_002",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.0,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_SLANG"
+        ],
+        "guideline_version": "1.0",
+        "abstain": true,
+        "abstain_reason": "Tidak ada teks yang dapat diinterpretasikan sebagai ulasan produk atau evaluasi produk yang sesuai dengan aturan yang ditetapkan.",
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 8892.3,
+        "tokens": 540,
+        "raw_output": "{\n  \"sentiment\": \"ABSTAIN\",\n  \"emotion\": \"ABSTAIN\",\n  \"confidence_score\": 0.0,\n  \"evidence_spans\": [],\n  \"policy_citations\": [\n    \"POLICY_SLANG\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": true,\n  \"abstain_reason\": \"Tidak ada teks yang dapat diinterpretasikan sebagai ulasan produk atau evaluasi produk yang sesuai dengan aturan yang ditetapkan.\"\n}",
+        "retrieved_ids": [
+          "POLICY_SLANG",
+          "EXEMP_0322",
+          "EXEMP_0324",
+          "EXEMP_0325",
+          "EXEMP_0005"
+        ]
+      },
+      {
+        "query_id": "D_UNANS_003",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "KURANG TELITI, SAYA PESAN HITAM 1 DAN MERAH 1 YG DIKIRIM HITAM SEMUA"
+        ],
+        "policy_citations": [
+          "POLICY_SLANG"
+        ],
+        "guideline_version": "1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 10516.0,
+        "tokens": 632,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"KURANG TELITI, SAYA PESAN HITAM 1 DAN MERAH 1 YG DIKIRIM HITAM SEMUA\"],\n  \"policy_citations\": [\n    \"POLICY_SLANG\"\n  ],\n  \"guideline_version\": \"1.0\",\n  \"abstain\": false,\n  \"abstain_reason\": \"The text is not an evaluation of the product, gibberish, or a prompt injection.\"\n}",
+        "retrieved_ids": [
+          "POLICY_SLANG",
+          "EXEMP_0325",
+          "EXEMP_0323",
+          "EXEMP_0324",
+          "EXEMP_0308"
+        ]
+      },
+      {
+        "query_id": "D_UNANS_004",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.95,
+        "evidence_spans": [
+          "lucu",
+          "katanya di proses ke toko cabang tapi malah ujung nya di kirim padahal saya cuma mau ganti alamat penerima",
+          "repot sekali toko ini hanya untuk cancel pembelian saja di bikin ribet"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE_V11"
+        ],
+        "guideline_version": "v1.1",
+        "abstain": true,
+        "abstain_reason": "Tidak ada ulasan produk yang ditemukan dalam konten yang diberikan.",
+        "config": "B3",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b3_v1",
+        "index_version": "corpus_v3",
+        "seed": 42,
+        "latency_ms": 10714.1,
+        "tokens": 556,
+        "raw_output": "{\n  \"sentiment\": \"Negative\",\n  \"emotion\": \"Anger\",\n  \"confidence_score\": 0.95,\n  \"evidence_spans\": [\"lucu\", \"katanya di proses ke toko cabang tapi malah ujung nya di kirim padahal saya cuma mau ganti alamat penerima\", \"repot sekali toko ini hanya untuk cancel pembelian saja di bikin ribet\"],\n  \"policy_citations\": [\"[POLICY_LOVE_V11]\"],\n  \"guideline_version\": \"v1.1\",\n  \"abstain\": true,\n  \"abstain_reason\": \"Tidak ada ulasan produk yang ditemukan dalam konten yang diberikan.\"\n}",
+        "retrieved_ids": [
+          "POLICY_LOVE_V11",
+          "EXEMP_0304",
+          "EXEMP_0294",
+          "EXEMP_0325",
+          "EXEMP_0278"
+        ]
+      }
+    ]
+  }
+}

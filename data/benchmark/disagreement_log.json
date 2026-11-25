@@ -1,0 +1,464 @@
+[
+  {
+    "query_id": "Q_ANS_003",
+    "text": "BAGUS BANGETT MAKASII DPT HADIAH DR TOKPEDDDDDTidak menerawang. Ukuran sesuai. Ringan dipakai. Warnanya bagus ??. Bahan menyerap keringat. Jahitannya rapi.",
+    "annotator_1": {
+      "sentiment": "Positive",
+      "emotion": "Love",
+      "span": "BAGUS BANGETT MAKASII DPT HADIAH DR TOKPEDDDDD"
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "BAGUS BANGETT MAKASII"
+    }
+  },
+  {
+    "query_id": "Q_ANS_004",
+    "text": "bagus dengan hrg segitu, cuman trnyata kecil aku kira agak gede",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "cuman trnyata kecil aku kira agak gede"
+    },
+    "annotator_2": {
+      "sentiment": "Neutral",
+      "emotion": "Neutral",
+      "span": "bagus dengan hrg segitu, cuman trnyata kecil"
+    }
+  },
+  {
+    "query_id": "Q_ANS_005",
+    "text": "packing sangat aman . selalu puas thx seller sukses",
+    "annotator_1": {
+      "sentiment": "Positive",
+      "emotion": "Love",
+      "span": "packing sangat aman . selalu puas"
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "packing sangat aman"
+    }
+  },
+  {
+    "query_id": "Q_ANS_006",
+    "text": "sangat mengecewakan... mengira dapat bonus ternyata zonk gara2 penawaran paksa ektra shipping.... hati2 guys sama jebakan free ongkir ini yg ternyata menghilangkan menghapu bonus...",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Fear",
+      "span": "hati2 guys sama jebakan free ongkir ini"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "hati2 guys sama jebakan free ongkir"
+    }
+  },
+  {
+    "query_id": "Q_ANS_007",
+    "text": "Untuk jar bahannya bagus. bahan2 yg lain lumayan. Namun untuk tutup jar pita tlg diperhatikan lubangnya terlalu besar. gampang ditarik smp lepas. tp terbalik dgn tutupnya stick yg kekecilan lobangnya. stick plastik g bisa masuk. akhirnya hrs diganti tutup stick jd tutup pita. tp y pe er ngerjainnya krn udh keiket kecil2 gt kan. maaf agak panjang reviewnya. untuk yang lain bagus.",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "lubangnya terlalu besar. gampang ditarik smp lepas"
+    },
+    "annotator_2": {
+      "sentiment": "Neutral",
+      "emotion": "Neutral",
+      "span": "tutup jar pita tlg diperhatikan lubangnya terlalu besar"
+    }
+  },
+  {
+    "query_id": "Q_ANS_008",
+    "text": "plastik, yah ada harga ada kualitas",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "plastik, yah ada harga ada kualitas"
+    },
+    "annotator_2": {
+      "sentiment": "Neutral",
+      "emotion": "Neutral",
+      "span": "ada harga ada kualitas"
+    }
+  },
+  {
+    "query_id": "Q_ANS_013",
+    "text": "mantap banget, recomend. barang yg diterima sesuai gambar!.",
+    "annotator_1": {
+      "sentiment": "Positive",
+      "emotion": "Love",
+      "span": "mantap banget, recomend."
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "mantap banget, recomend"
+    }
+  },
+  {
+    "query_id": "Q_ANS_017",
+    "text": "Bahasa Indonesia. Diterima dengan baik. Barang bagus dan ori. Pengiriman cepat. MANTAPP JIWAAA ????",
+    "annotator_1": {
+      "sentiment": "Positive",
+      "emotion": "Love",
+      "span": "Barang bagus dan ori. Pengiriman cepat. MANTAPP JIWAAA"
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "Barang bagus dan ori"
+    }
+  },
+  {
+    "query_id": "Q_ANS_029",
+    "text": "pengiriman cepet, tapi qualitas barangnya jelek, kekuatan baterai nya cuma bertahan 30-40 menit, klo dicas ada suara berdesis.",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Fear",
+      "span": "qualitas barangnya jelek, kekuatan baterai nya cuma bertahan 30-40 menit, klo dicas ada suara berdesis."
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "qualitas barangnya jelek"
+    }
+  },
+  {
+    "query_id": "Q_ANS_034",
+    "text": "pencetannya agak keras jd tkt cepat rusak. terus airnya jd bau plastik.. tidak dapat dipakai",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Fear",
+      "span": "pencetannya agak keras jd tkt cepat rusak. terus airnya jd bau plastik"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "airnya jd bau plastik"
+    }
+  },
+  {
+    "query_id": "Q_ANS_035",
+    "text": "packing hancur sampai lebur sampai rumah",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "packing hancur sampai lebur sampai rumah"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "packing hancur"
+    }
+  },
+  {
+    "query_id": "Q_ANS_037",
+    "text": "terbaik lah pokoknya. packing lakban doang rapih banget. keren ?? lakbannya juga rekat banget",
+    "annotator_1": {
+      "sentiment": "Positive",
+      "emotion": "Love",
+      "span": "terbaik lah pokoknya. packing lakban doang rapih banget. keren"
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "terbaik lah pokoknya"
+    }
+  },
+  {
+    "query_id": "Q_ANS_041",
+    "text": "Menggunakan bahan alami. Melembabkan kulit bayi. Tanpa bahan pengawet. Aman buat kulit bayi. Nggak lengket. Nggak memicu alergi. Proses pesanan cepat. Penjualnya ramah banget. Respon penjualnya top. Packaging aman ??. Packaging rapi.",
+    "annotator_1": {
+      "sentiment": "Positive",
+      "emotion": "Love",
+      "span": "Aman buat kulit bayi. Nggak lengket. Nggak memicu alergi. Proses pesanan cepat. Penjualnya ramah banget. Respon penjualnya top."
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "Aman buat kulit bayi"
+    }
+  },
+  {
+    "query_id": "Q_ANS_042",
+    "text": "Kurang cocok utk bayi kulit sensitif. Bbrp kali pakai, kulit bayi jd beruntusan.",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Fear",
+      "span": "Kurang cocok utk bayi kulit sensitif. Bbrp kali pakai, kulit bayi jd beruntusan."
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "kulit bayi jd beruntusan"
+    }
+  },
+  {
+    "query_id": "Q_ANS_045",
+    "text": "hati2 gaes, dikirim barang yg salah.",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Fear",
+      "span": "hati2 gaes, dikirim barang yg salah."
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "dikirim barang yg salah"
+    }
+  },
+  {
+    "query_id": "Q_ANS_050",
+    "text": "udang red bee yg dipesan tdk ada,sdh dikomplain malah diteruskan tokped dana nya ke penjual",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "udang red bee yg dipesan tdk ada,sdh dikomplain malah diteruskan tokped dana nya ke penjual"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "sdh dikomplain malah diteruskan tokped dana nya ke penjual"
+    }
+  },
+  {
+    "query_id": "Q_ANS_055",
+    "text": "Bau bgt kayak bau sampah",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "Bau bgt kayak bau sampah"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "Bau bgt kayak bau sampah"
+    }
+  },
+  {
+    "query_id": "Q_ANS_057",
+    "text": "barang rusak kok dikirim",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "barang rusak kok dikirim"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "barang rusak kok dikirim"
+    }
+  },
+  {
+    "query_id": "Q_ANS_059",
+    "text": "jumlahnya pas 40 pcs, buat ngiket rambut juga pas ga kekencengan cuma ya kalo boleh saran tambahin bubble wrap biar lebih safety, pouch nya kegunting jadinya :( pengemasan juga agak lama",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "pouch nya kegunting jadinya :( pengemasan juga agak lama"
+    },
+    "annotator_2": {
+      "sentiment": "Neutral",
+      "emotion": "Neutral",
+      "span": "pouch nya kegunting"
+    }
+  },
+  {
+    "query_id": "Q_ANS_064",
+    "text": "Empuk buat jalan. Bahannya berkualitas. Modelnya keren ??. bahannya ngga mengecewakan?? tapi ukuran nya kegedean padahal sudah saya ukur sebelum nya, tapi ngga masalah bisa buat jangka panjang ??",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "tapi ukuran nya kegedean padahal sudah saya ukur sebelum nya"
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "Bahannya berkualitas"
+    }
+  },
+  {
+    "query_id": "Q_ANS_068",
+    "text": "Packingnya BEST banget deh pokoknya aman. Kotak juga di double in, ada sterofoam didalam kotak jadi botol aman.",
+    "annotator_1": {
+      "sentiment": "Positive",
+      "emotion": "Love",
+      "span": "Packingnya BEST banget deh pokoknya aman."
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "Packingnya BEST banget"
+    }
+  },
+  {
+    "query_id": "Q_ANS_070",
+    "text": "slow respon, kecewa berat, sampe 1jam batal otomatis karna ga diproses",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "slow respon, kecewa berat, sampe 1jam batal otomatis karna ga diproses"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "kecewa berat"
+    }
+  },
+  {
+    "query_id": "Q_ANS_073",
+    "text": "Saran, dikasih logo/tulisan 1more di silikon nya, terus untuk indikator charge dikasih lubang biar keliatan jelas ngecas/ngga. Overall puas sama barangnya.",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "untuk indikator charge dikasih lubang biar keliatan jelas ngecas/ngga"
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "Overall puas sama barangnya"
+    }
+  },
+  {
+    "query_id": "Q_ANS_075",
+    "text": "Ya utk harga 100an lumayan worth, cuma rgb kanan dan kiri ga selaras sih, sama ada deflect gara gara pengiriman mungkin.",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "cuma rgb kanan dan kiri ga selaras sih, sama ada deflect"
+    },
+    "annotator_2": {
+      "sentiment": "Neutral",
+      "emotion": "Neutral",
+      "span": "lumayan worth, cuma rgb kanan dan kiri ga selaras"
+    }
+  },
+  {
+    "query_id": "Q_ANS_083",
+    "text": "biasa aja..harga lebih mahal dri toko sebelah",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "biasa aja..harga lebih mahal dri toko sebelah"
+    },
+    "annotator_2": {
+      "sentiment": "Neutral",
+      "emotion": "Neutral",
+      "span": "biasa aja"
+    }
+  },
+  {
+    "query_id": "Q_ANS_087",
+    "text": "Responnya sangat lambat padahal udah request untuk kirim pagi tapi justru sampai siang blm juga dikirim. Lain kali tolong diperhatikan lagi.",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "Responnya sangat lambat padahal udah request untuk kirim pagi tapi justru sampai siang blm juga dikirim."
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "Responnya sangat lambat"
+    }
+  },
+  {
+    "query_id": "Q_ANS_089",
+    "text": "maaf sya kasih bintang 1.. di keterangan udh jelas pilihan warna KUNING RUSA, pilihan warna lain jika tidak ada warna kuning warna HIJAU atau BIRU,, tapi yg dteng malah warna PINK, kalau stok warna yg saya ingin tidak ada harus.a konfirmasi terlebih dahulu. tapi ini tidak. kecewa si.. karna anak saya cowo bukan cewek malah di kasih warna pink. lain kali sblum di kirim coba di cek lagi.. ????",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "tapi yg dteng malah warna PINK"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "kecewa si"
+    }
+  },
+  {
+    "query_id": "Q_ANS_091",
+    "text": "produknya mudah rusak Dan kalo kena kuku Dan yg tajam2 runcing langsung robek Dan benangnya terurai. mau komplain udah terlanjur dibuka Dan dipakai semua barang nya. Saya merasa dirugikan apalagi Saya biasa beli yg bermerek walaupun Mahal puas. ini Saya coba beli produk ini malah bikin habis uang. Saya harus beli lagi CD SKRG",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "produknya mudah rusak Dan kalo kena kuku Dan yg tajam2 runcing langsung robek"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "Saya merasa dirugikan"
+    }
+  },
+  {
+    "query_id": "Q_ANS_093",
+    "text": "kecewa, padahal udah batalkan pesanan karena ada masalah produk, tapi masih aja dikirim, entah gak mau ribet sama sekali atau admin cuma terima pesanan langsung kemas?? big no buat sekelas official store. Poin plusnya produk yg dikirim sesuai dengan yang dipesan",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "kecewa, padahal udah batalkan pesanan karena ada masalah produk, tapi masih aja dikirim"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "big no buat sekelas official store"
+    }
+  },
+  {
+    "query_id": "Q_ANS_096",
+    "text": "Pesen kemarin, dateng hari ini. Cepet banget, sajadahnya bagus, bulunya halus, terus busanya beneran tebel. Semoga sholat saya bisa terus khusyukk karena sajadah ini, Aamiin. Terima kasih seller ??????Bahannya tebal. Bahannya lembut. Ukuran sesuai. Warnanya cantik ??. anti slip.",
+    "annotator_1": {
+      "sentiment": "Positive",
+      "emotion": "Love",
+      "span": "Cepet banget, sajadahnya bagus, bulunya halus, terus busanya beneran tebel."
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "sajadahnya bagus"
+    }
+  },
+  {
+    "query_id": "Q_ANS_097",
+    "text": "luar biasa , proses ya cepet banget ng sampe 1 jam langsung di proses, ng seperti lapak yg satu lagi yg di tanggerang, pengiriman juga cepet banget, recomended banget",
+    "annotator_1": {
+      "sentiment": "Positive",
+      "emotion": "Love",
+      "span": "luar biasa , proses ya cepet banget ng sampe 1 jam langsung di proses"
+    },
+    "annotator_2": {
+      "sentiment": "Positive",
+      "emotion": "Happy",
+      "span": "recomended banget"
+    }
+  },
+  {
+    "query_id": "Q_ANS_098",
+    "text": "penyelesaian permasalahan berbelit..zaman online kok ya masih lama",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "penyelesaian permasalahan berbelit..zaman online kok ya masih lama"
+    },
+    "annotator_2": {
+      "sentiment": "Negative",
+      "emotion": "Anger",
+      "span": "penyelesaian permasalahan berbelit"
+    }
+  },
+  {
+    "query_id": "Q_ANS_099",
+    "text": "pengemasan perlu ditingkatkan",
+    "annotator_1": {
+      "sentiment": "Negative",
+      "emotion": "Sadness",
+      "span": "pengemasan perlu ditingkatkan"
+    },
+    "annotator_2": {
+      "sentiment": "Neutral",
+      "emotion": "Neutral",
+      "span": "pengemasan perlu ditingkatkan"
+    }
+  }
+]

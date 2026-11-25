@@ -1,0 +1,101 @@
+query_id,category,text,sentiment,emotion,evidence_span
+"Q_ANS_001,Beauty,""barang dateng tidak sesuai dengan pesanan, beda warna"",Negative,Sadness,""tidak sesuai dengan pesanan, beda warna"""
+"Q_ANS_002,Kitchen,""Berfungsi dengan baik. Dapat flashsale harga murah, awalnya buat coba2 tapi ternyata oke. Bakal jadi andalan utk rebus telor."",Positive,Happy,Berfungsi dengan baik"
+Q_ANS_003,Women's Fashion,BAGUS BANGETT MAKASII DPT HADIAH DR TOKPEDDDDDTidak menerawang. Ukuran sesuai. Ringan dipakai. Warnanya bagus ??. Bahan menyerap keringat. Jahitannya rapi.,Positive,Happy,BAGUS BANGETT MAKASII
+"Q_ANS_004,Women's Fashion,""bagus dengan hrg segitu, cuman trnyata kecil aku kira agak gede"",Neutral,Neutral,""bagus dengan hrg segitu, cuman trnyata kecil"""
+Q_ANS_005,Mother and Baby,packing sangat aman . selalu puas thx seller sukses,Positive,Happy,packing sangat aman
+Q_ANS_006,Mother and Baby,sangat mengecewakan... mengira dapat bonus ternyata zonk gara2 penawaran paksa ektra shipping.... hati2 guys sama jebakan free ongkir ini yg ternyata menghilangkan menghapu bonus...,Negative,Anger,hati2 guys sama jebakan free ongkir
+Q_ANS_007,Toys and Hobbies,Untuk jar bahannya bagus. bahan2 yg lain lumayan. Namun untuk tutup jar pita tlg diperhatikan lubangnya terlalu besar. gampang ditarik smp lepas. tp terbalik dgn tutupnya stick yg kekecilan lobangnya. stick plastik g bisa masuk. akhirnya hrs diganti tutup stick jd tutup pita. tp y pe er ngerjainnya krn udh keiket kecil2 gt kan. maaf agak panjang reviewnya. untuk yang lain bagus.,Neutral,Neutral,tutup jar pita tlg diperhatikan lubangnya terlalu besar
+"Q_ANS_008,Carpentry,""plastik, yah ada harga ada kualitas"",Neutral,Neutral,ada harga ada kualitas"
+Q_ANS_009,Other Products,buruk super duper buruk kok bisa rusakk dlm nya ini pasti di banting2 sama JNE heran udah di bilang pake YESS YESS malah REG 15 sedia in yess dong tokopedia heran saya,Negative,Anger,buruk super duper buruk
+Q_ANS_010,Carpentry,packing nya jelek. casing nya penyok�...kualitas jg kurang...bbrp tidak pas ditempat nya,Negative,Sadness,packing nya jelek
+"Q_ANS_011,Camera,""Aduk Ka.kenapa ya makin ke sini pengiriman barang nya makin jelek..barang banyak yg keriput, kusut, rusak.. tolong dong ke depannya di perbaiki"",Negative,Sadness,pengiriman barang nya makin jelek"
+Q_ANS_012,Men's Fashion,Barang nya kotor banyak bintik hitam dan bintik putih mungkin jamuran.,Negative,Sadness,Barang nya kotor banyak bintik hitam
+"Q_ANS_013,Toys and Hobbies,""mantap banget, recomend. barang yg diterima sesuai gambar!."",Positive,Happy,""mantap banget, recomend"""
+"Q_ANS_014,Computers and Laptops,""Produk ini, chip di dalamnya didaur ulang dan dipasang kembali setelah menggiling kata-kata aslinya. Pembeli harap perhatikan Teman-teman, tolong beri perhatian khusus"",Negative,Fear,chip di dalamnya didaur ulang"
+"Q_ANS_015,Kitchen,""Packing tdk ada, sudah tau pengiriman jauh tp tdk dilapisi pelindung. Sisi2 sudut barang rusak"",Negative,Sadness,Packing tdk ada"
+"Q_ANS_016,Health,""Pengiriman Lama , Tidak Teliti , Barang yang dikirim kurang , buang2 waktu"",Negative,Anger,""Pengiriman Lama , Tidak Teliti"""
+Q_ANS_017,Books,Bahasa Indonesia. Diterima dengan baik. Barang bagus dan ori. Pengiriman cepat. MANTAPP JIWAAA ????,Positive,Happy,Barang bagus dan ori
+Q_ANS_018,Party Supplies and Craft,cantiik kertas kadonya... packaging ok dan delivery-nya juga OK. Mantab lah dan bakal langganan di toko ini,Positive,Love,bakal langganan di toko ini
+Q_ANS_019,Computers and Laptops,barang rusak di kirim,Negative,Sadness,barang rusak di kirim
+"Q_ANS_020,Beauty,""kualitas menurun, sambungan bagian tengah mudah sobek"",Negative,Sadness,kualitas menurun"
+Q_ANS_021,Books,barang bagus kualitas oke,Positive,Happy,barang bagus kualitas oke
+Q_ANS_022,Sport,gk di makan sama skali,Negative,Sadness,gk di makan sama skali
+Q_ANS_023,Kids and Baby Fashion,barang yang dikirim tidak sesuai walaupun tidak ada seharusnya 2 warna jangan satu warna,Negative,Sadness,barang yang dikirim tidak sesuai
+"Q_ANS_024,Beauty,""lumayan bagus ,isi banyak dan bahanny karet lentur banget ,pas banget di tangan"",Positive,Happy,lumayan bagus"
+Q_ANS_025,Other Products,Repurchase warna yg beda. Toko fast respond dan sesuai review sebelumnya bahwa item sesuai dan bahan bagus lgsg menyerap ke bahan canvas. Sukses selalu????????????,Positive,Love,Toko fast respond
+Q_ANS_026,Office & Stationery,adminnya kebanyakan bac00t.. lamban bgt.. kecewa banget dehhh,Negative,Anger,adminnya kebanyakan bac00t.. lamban bgt
+Q_ANS_027,Kids and Baby Fashion,Topinya bagus bahan nya,Positive,Happy,Topinya bagus
+Q_ANS_028,Health,Kualitas produk diragukan dan sudah komplain tapi jawaban kurang membantu,Negative,Sadness,Kualitas produk diragukan
+"Q_ANS_029,Electronics,""pengiriman cepet, tapi qualitas barangnya jelek, kekuatan baterai nya cuma bertahan 30-40 menit, klo dicas ada suara berdesis."",Negative,Sadness,qualitas barangnya jelek"
+Q_ANS_030,Muslim Fashion,Ukuran sesuai. Modelnya cantik ??. Bahannya adem. istri suka banget,Positive,Love,istri suka banget
+"Q_ANS_031,Muslim Fashion,""parah kecil banget. padahal ukurannya L dan XL. ini mah buat anak SD kaga bisa buat orang dewasa, sekalipun dengan Negativean kecil."",Negative,Anger,parah kecil banget"
+Q_ANS_032,Carpentry,Product kwalitas bagus..berfungsi dengan baik.,Positive,Happy,Product kwalitas bagus
+Q_ANS_033,Muslim Fashion,Bahannya ga enak,Negative,Sadness,Bahannya ga enak
+Q_ANS_034,Kitchen,pencetannya agak keras jd tkt cepat rusak. terus airnya jd bau plastik.. tidak dapat dipakai,Negative,Sadness,airnya jd bau plastik
+Q_ANS_035,Automotive,packing hancur sampai lebur sampai rumah,Negative,Anger,packing hancur
+Q_ANS_036,Sport,barang rusak,Negative,Sadness,barang rusak
+Q_ANS_037,Office & Stationery,terbaik lah pokoknya. packing lakban doang rapih banget. keren ?? lakbannya juga rekat banget,Positive,Happy,terbaik lah pokoknya
+"Q_ANS_038,Food and Drink,""Terima Kasih Banyak Telah Melayani dengan Baik. Semua Products Bagus & Packaging nya aman. Products Sesuai foto, Harga bersaing dengan bagus. Pengiriman Cepat &Tepat. Very Recommended Shop &Seller. Next pasti akan sering blanja Lagi di sini deh. Semoga semakin maju & sukses ya."",Positive,Love,Very Recommended Shop"
+"Q_ANS_039,Kitchen,""Barang yang dikirimkan tidak sesuai dengan orderan saya, ditanya pihak maxim tidak ada balasan sama sekali hanya dibaca saja. Dari pihak Tokopedia pun sudah dikomplain malah transaksinya selesai dan dananya diteruska ke Maxim. Lalu barang saya yang kurang bagaimana? Tokopedia bilang dichat saja. Pintar sekali jawabannya. Sudah saya komplain kalo penjual tidak merespon. Bobrok sekali sistemnya."",Negative,Anger,Bobrok sekali sistemnya"
+Q_ANS_040,Other Products,pesan 50pc dikirim 25pc padahal bayar 50pc?? sangat kecewa,Negative,Sadness,sangat kecewa
+Q_ANS_041,Mother and Baby,Menggunakan bahan alami. Melembabkan kulit bayi. Tanpa bahan pengawet. Aman buat kulit bayi. Nggak lengket. Nggak memicu alergi. Proses pesanan cepat. Penjualnya ramah banget. Respon penjualnya top. Packaging aman ??. Packaging rapi.,Positive,Happy,Aman buat kulit bayi
+"Q_ANS_042,Mother and Baby,""Kurang cocok utk bayi kulit sensitif. Bbrp kali pakai, kulit bayi jd beruntusan."",Negative,Sadness,kulit bayi jd beruntusan"
+"Q_ANS_043,Animal Care,""Sy pesan TIGA BUNGKUS mknan kucing merk Bolt ukuran SATU KILOGRAM. Tp dikirim HANYA SATU. Anehnya di label pengiriman tertulis 3 kg & 3 pieces (lihat foto). Dan nama penerima & alamatnya sudah benar. BAGAIMANA MUNGKIN? Padahal spt bisa dilihat di foto, dari ukuran bungkusnya saja TIDAK MUNGKIN hanya sebesar itu DAPAT berisi TIGA PCS / TIGA KILO. Sudah dikomplain tp TIDAK ADA RESPON yg berarti. Dana memang dikembalikan sebagian sesuai jumlah barang yg tidak dikirim. Tapi silahkan dinilai sendiri ..."",Negative,Anger,TIDAK ADA RESPON yg berarti"
+Q_ANS_044,Phones and Tablets,beda sma yg di gambar. pdahal udh pernh pesen skali di sni,Negative,Sadness,beda sma yg di gambar
+"Q_ANS_045,Toys and Hobbies,""hati2 gaes, dikirim barang yg salah."",Negative,Sadness,dikirim barang yg salah"
+"Q_ANS_046,Mother and Baby,""yang bener aja dong, saya beli susu masa kemasannya kaya gini...bener2 kecewa, sudah mah ya lama dtgnya pas di open box kok hancur gini.."",Negative,Anger,bener2 kecewa"
+Q_ANS_047,Muslim Fashion,jahitannya ngga rapih ..banyak benang2 yg belom kepotong.ada juga benang yang copot :'(((,Negative,Sadness,jahitannya ngga rapih
+Q_ANS_048,Sport,ukurannya terlalu pendek,Negative,Sadness,ukurannya terlalu pendek
+Q_ANS_049,Food and Drink,penjual responsive. barang sampai dengan selamat. sudah berkali2 order disini untuk saya bawa ke turki ka. terimakasih ya ka,Positive,Love,sudah berkali2 order disini
+"Q_ANS_050,Animal Care,""udang red bee yg dipesan tdk ada,sdh dikomplain malah diteruskan tokped dana nya ke penjual"",Negative,Anger,sdh dikomplain malah diteruskan tokped dana nya ke penjual"
+Q_ANS_051,Sport,Tidak sesuai dengan kualitasnya dan panjangnya di gambar,Negative,Sadness,Tidak sesuai dengan kualitasnya
+"Q_ANS_052,Body Care,""brg tdk saya terima, entah nyasar dimana... kurirnya bloon"",Negative,Anger,kurirnya bloon"
+"Q_ANS_053,Food and Drink,""keripik ususnya rada bau bangkai, rasa asin banget. Saya 100% me review karena saya memang kecewa atas kualitas kripik usus yang bau menyengat. Harusnya anda menjadikannya bahan introspeksi bukannya malah menuduh saya kompetitor anda. Toko macem apa ini!!"",Negative,Anger,Toko macem apa ini"
+"Q_ANS_054,Movies and Music,""Tidak sesuai ekspektasi, suara mic tetap kecil ga ada perubahan"",Negative,Sadness,Tidak sesuai ekspektasi"
+Q_ANS_055,Food and Drink,Bau bgt kayak bau sampah,Negative,Anger,Bau bgt kayak bau sampah
+Q_ANS_056,Office & Stationery,benar benar disarankan untuk pembeli lain membeli tambahan packing.. tapi selebihnya kertasnya ok tidak cacat sama sekali.. harganya juga terjangkau.. best lah??,Positive,Happy,kertasnya ok tidak cacat sama sekali
+Q_ANS_057,Carpentry,barang rusak kok dikirim,Negative,Anger,barang rusak kok dikirim
+"Q_ANS_058,Office & Stationery,""Merek pena favoritt, murah, tintanya nyata, ga pernah macet, selalu smooth klo buat nulis"",Positive,Love,Merek pena favoritt"
+"Q_ANS_059,Beauty,""jumlahnya pas 40 pcs, buat ngiket rambut juga pas ga kekencengan cuma ya kalo boleh saran tambahin bubble wrap biar lebih safety, pouch nya kegunting jadinya :( pengemasan juga agak lama"",Neutral,Neutral,pouch nya kegunting"
+"Q_ANS_060,Body Care,""Barang sdh smp, udah gitu kurirnya ngaco...barang blm diterima direport udh diterima. Trs, gak dpt pc Blackpink nya. Bkn nya klo ada tulisan Bebas Ongkir Ekstra itu hrsnya dpt pc Blackpink ? Krn yg sblm2nya sy belanja di store lain, yg ada tulisan Bebas Ongkir Ekstra, pasti dpt pc Blackpink. Ini lupa atw bgmn ? jujur kecewa..."",Negative,Sadness,jujur kecewa"
+"Q_ANS_061,Gaming,""puas, pengiriman cepat, barang datang tanpa cacat, pengemasan bagus trmksh"",Positive,Happy,puas"
+Q_ANS_062,Women's Fashion,kecewa.. beli nya 3 pcs tetapi yang datang hanya 2 pcs,Negative,Sadness,kecewa.. beli nya 3 pcs tetapi yang datang hanya 2 pcs
+Q_ANS_063,Kitchen,Barang sesuai deskripsi,Positive,Happy,Barang sesuai deskripsi
+"Q_ANS_064,Kids and Baby Fashion,""Empuk buat jalan. Bahannya berkualitas. Modelnya keren ??. bahannya ngga mengecewakan?? tapi ukuran nya kegedean padahal sudah saya ukur sebelum nya, tapi ngga masalah bisa buat jangka panjang ??"",Positive,Happy,Bahannya berkualitas"
+Q_ANS_065,Kitchen,Material Produk Bagus. Kualitas Produk Bagus. Produk Sesuai.,Positive,Happy,Kualitas Produk Bagus
+Q_ANS_066,Kids and Baby Fashion,barang sudah sampai sesuai dengan pesanan recommended,Positive,Happy,sesuai dengan pesanan recommended
+Q_ANS_067,Muslim Fashion,Alhamdulillah bagus,Positive,Happy,Alhamdulillah bagus
+"Q_ANS_068,Household,""Packingnya BEST banget deh pokoknya aman. Kotak juga di double in, ada sterofoam didalam kotak jadi botol aman."",Positive,Happy,Packingnya BEST banget"
+Q_ANS_069,Carpentry,Kesekian kali beli disini mantap,Positive,Love,Kesekian kali beli disini mantap
+"Q_ANS_070,Kids and Baby Fashion,""slow respon, kecewa berat, sampe 1jam batal otomatis karna ga diproses"",Negative,Anger,kecewa berat"
+"Q_ANS_071,Camera,""Pengiriman cepat, packaging oke, seller ramah, recommended sih, udah berkali-kali beli di sini. Kualitas juga oke, mantapp min, tingkatkan"",Positive,Love,udah berkali-kali beli di sini"
+Q_ANS_072,Kitchen,Mantap Tajam. Kualitas Produk Bagus. Produk Sesuai.,Positive,Happy,Mantap Tajam
+"Q_ANS_073,Gaming,""Saran, dikasih logo/tulisan 1more di silikon nya, terus untuk indikator charge dikasih lubang biar keliatan jelas ngecas/ngga. Overall puas sama barangnya."",Positive,Happy,Overall puas sama barangnya"
+Q_ANS_074,Toys and Hobbies,pengiriman cepat dan packing aman...dapat harga flashsale....,Positive,Happy,pengiriman cepat dan packing aman
+"Q_ANS_075,Electronics,""Ya utk harga 100an lumayan worth, cuma rgb kanan dan kiri ga selaras sih, sama ada deflect gara gara pengiriman mungkin."",Neutral,Neutral,""lumayan worth, cuma rgb kanan dan kiri ga selaras"""
+"Q_ANS_076,Office & Stationery,""kemasan rapi, brg sesuai pesanan"",Positive,Happy,brg sesuai pesanan"
+Q_ANS_077,Other Products,recommended seller..udah order yg ke 16 kali,Positive,Love,recommended seller
+Q_ANS_078,Household,Saat diterima kotak sudah kebuka. Ada 1 botol yang gak ada tutupnya,Negative,Sadness,kotak sudah kebuka
+"Q_ANS_079,Kids and Baby Fashion,""tipis banget, ukurannya terlalu kecil tidak sesuai usia"",Negative,Sadness,""tipis banget, ukurannya terlalu kecil"""
+"Q_ANS_080,Sport,""Nyaman dipakai ??. enak sih dipakai, kantong belakang ngebantu banget buat nyimpen hape."",Positive,Happy,Nyaman dipakai"
+"Q_ANS_081,Sport,""Instalasi Mudah. pengiriman cpt. respon cpt, trims seller smoga awet. Aamiin sukses selalu, seller & Tokopedia."",Positive,Happy,Instalasi Mudah"
+"Q_ANS_082,Women's Fashion,""Gak rapih bgt dalemnya, kayak gak di QC atau ntah karena diskon jadi barang yang agak rusak. Cukup kecewa sih"",Negative,Sadness,Cukup kecewa sih"
+Q_ANS_083,Mother and Baby,biasa aja..harga lebih mahal dri toko sebelah,Neutral,Neutral,biasa aja
+"Q_ANS_084,Gaming,""sayang banget analog kanan sama tombol arah ngga berfungsi,alangkah baiknya di tes dulu sebelum kirim"",Negative,Sadness,analog kanan sama tombol arah ngga berfungsi"
+Q_ANS_085,Sport,beli 2 datangnya 1 barang gk sesuai foto ketajaman biasa yg jual goblok selamat makan uang haram,Negative,Anger,selamat makan uang haram
+"Q_ANS_086,Health,""Pelayanan cepat, barang sesuai dan service bagus"",Positive,Happy,""Pelayanan cepat, barang sesuai"""
+Q_ANS_087,Kitchen,Responnya sangat lambat padahal udah request untuk kirim pagi tapi justru sampai siang blm juga dikirim. Lain kali tolong diperhatikan lagi.,Negative,Anger,Responnya sangat lambat
+"Q_ANS_088,Movies and Music,""dicharge lampu tidak nyala, sama sekali tidak bisa dipakai mau dikembalikan berat di ongkir HARUSNYA SEBELUM DIKIRIM DITES DULU, TOH PACKAGINYA TIDAK ADA SEGEL DITES DULU BOLEH KAYAKNYA SAYANGNYA BINTANG MINIMAL 1 NOT RECOMMEND"",Negative,Anger,sama sekali tidak bisa dipakai"
+"Q_ANS_089,Toys and Hobbies,""maaf sya kasih bintang 1.. di keterangan udh jelas pilihan warna KUNING RUSA, pilihan warna lain jika tidak ada warna kuning warna HIJAU atau BIRU,, tapi yg dteng malah warna PINK, kalau stok warna yg saya ingin tidak ada harus.a konfirmasi terlebih dahulu. tapi ini tidak. kecewa si.. karna anak saya cowo bukan cewek malah di kasih warna pink. lain kali sblum di kirim coba di cek lagi.. ????"",Negative,Anger,kecewa si"
+Q_ANS_090,Muslim Fashion,spesifikasi barang kurang lengkap dipakai dewasa ngga bisa hanya sampai leher,Negative,Sadness,spesifikasi barang kurang lengkap
+Q_ANS_091,Women's Fashion,produknya mudah rusak Dan kalo kena kuku Dan yg tajam2 runcing langsung robek Dan benangnya terurai. mau komplain udah terlanjur dibuka Dan dipakai semua barang nya. Saya merasa dirugikan apalagi Saya biasa beli yg bermerek walaupun Mahal puas. ini Saya coba beli produk ini malah bikin habis uang. Saya harus beli lagi CD SKRG,Negative,Anger,Saya merasa dirugikan
+Q_ANS_092,Food and Drink,Dimsum mantaap�.Selalu setia menemani dengan kehangatan di saat Musim hujan�.Setiap gigitannya Mak nyoos�Uenaaak Tenan�.Tks,Positive,Love,Dimsum mantaap
+"Q_ANS_093,Beauty,""kecewa, padahal udah batalkan pesanan karena ada masalah produk, tapi masih aja dikirim, entah gak mau ribet sama sekali atau admin cuma terima pesanan langsung kemas?? big no buat sekelas official store. Poin plusnya produk yg dikirim sesuai dengan yang dipesan"",Negative,Anger,big no buat sekelas official store"
+Q_ANS_094,Kids and Baby Fashion,bahan agak panas dn warnanya ga cocok,Negative,Sadness,bahan agak panas dn warnanya ga cocok
+"Q_ANS_095,Electronics,""dikirimnya lama, plus batrenya cuma 1500mah alias tdk sesuai pic."",Negative,Sadness,tdk sesuai pic"
+"Q_ANS_096,Muslim Fashion,""Pesen kemarin, dateng hari ini. Cepet banget, sajadahnya bagus, bulunya halus, terus busanya beneran tebel. Semoga sholat saya bisa terus khusyukk karena sajadah ini, Aamiin. Terima kasih seller ??????Bahannya tebal. Bahannya lembut. Ukuran sesuai. Warnanya cantik ??. anti slip."",Positive,Happy,sajadahnya bagus"
+"Q_ANS_097,Carpentry,""luar biasa , proses ya cepet banget ng sampe 1 jam langsung di proses, ng seperti lapak yg satu lagi yg di tanggerang, pengiriman juga cepet banget, recomended banget"",Positive,Happy,recomended banget"
+Q_ANS_098,Body Care,penyelesaian permasalahan berbelit..zaman online kok ya masih lama,Negative,Anger,penyelesaian permasalahan berbelit
+Q_ANS_099,Beauty,pengemasan perlu ditingkatkan,Neutral,Neutral,pengemasan perlu ditingkatkan
+Q_ANS_100,Muslim Fashion,barang sudah sampai dengan baik.. packing rapih.. dan baik.. terima kasih,Positive,Happy,barang sudah sampai dengan baik

@@ -1,0 +1,23 @@
+{
+  "split": "dev",
+  "model": "qwen2.5:1.5b",
+  "chunking": "heading_aware",
+  "samples": 20,
+  "budgets": {
+    "low_budget": {
+      "top_k": 2,
+      "max_ctx_chars": 900,
+      "macro_f1": 0.1556,
+      "p95_latency_ms": 15668.4,
+      "avg_tokens": 511.1
+    },
+    "high_budget": {
+      "top_k": 5,
+      "max_ctx_chars": 2800,
+      "macro_f1": 0.4417,
+      "p95_latency_ms": 17421.6,
+      "avg_tokens": 732.5
+    }
+  },
+  "selected": "high_budget"
+}

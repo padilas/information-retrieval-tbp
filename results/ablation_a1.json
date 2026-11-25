@@ -1,0 +1,65 @@
+{
+  "split": "dev",
+  "variable_changed": "chunking_strategy",
+  "fixed_controls": {
+    "retriever": "hybrid_rerank",
+    "top_k": 5,
+    "model": "qwen2.5:1.5b",
+    "qrels_sha256": "e4f2ff9e02bc863236691b06fd4bf809a853d9ec5070e90bcd05921754f67c88"
+  },
+  "definitions": {
+    "context_groundedness": "Proporsi dokumen relevan qrels di dalam Top-5 konteks yang di-retrieve.",
+    "answer_groundedness": "Proporsi output LLM yang seluruh evidence_spans muncul verbatim di teks ulasan dan seluruh policy_citations berasal dari dokumen yang di-retrieve."
+  },
+  "variants": {
+    "fixed": {
+      "index_size_chunks": 405,
+      "index_size_kb": 159.8,
+      "avg_chunk_chars": 93.8,
+      "context_length_chars": 512.5,
+      "context_length_tokens_est": 128.1,
+      "passage_recall@5": 0.5975,
+      "passage_recall@10": 0.7325,
+      "ndcg@5": 0.6381,
+      "ndcg@10": 0.6767,
+      "mrr@10": 0.713,
+      "context_groundedness": 0.478,
+      "answer_groundedness": 0.5333,
+      "queries": 100,
+      "llm_groundedness_samples": 15
+    },
+    "heading_aware": {
+      "index_size_chunks": 348,
+      "index_size_kb": 139.6,
+      "avg_chunk_chars": 100.0,
+      "context_length_chars": 755.5,
+      "context_length_tokens_est": 188.9,
+      "passage_recall@5": 0.595,
+      "passage_recall@10": 0.7275,
+      "ndcg@5": 0.6317,
+      "ndcg@10": 0.6697,
+      "mrr@10": 0.7062,
+      "context_groundedness": 0.476,
+      "answer_groundedness": 0.6,
+      "queries": 100,
+      "llm_groundedness_samples": 15
+    },
+    "hierarchical": {
+      "index_size_chunks": 362,
+      "index_size_kb": 179.7,
+      "avg_chunk_chars": 99.2,
+      "context_length_chars": 740.1,
+      "context_length_tokens_est": 185.0,
+      "passage_recall@5": 0.595,
+      "passage_recall@10": 0.7275,
+      "ndcg@5": 0.632,
+      "ndcg@10": 0.6701,
+      "mrr@10": 0.7065,
+      "context_groundedness": 0.476,
+      "answer_groundedness": 0.6667,
+      "queries": 100,
+      "llm_groundedness_samples": 15
+    }
+  },
+  "selected": "fixed"
+}

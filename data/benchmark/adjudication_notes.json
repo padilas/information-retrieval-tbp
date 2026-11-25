@@ -1,0 +1,275 @@
+{
+  "total_annotated": 100,
+  "raw_agreement_sentiment": 0.91,
+  "raw_agreement_emotion": 0.67,
+  "cohen_kappa_sentiment": 0.8254,
+  "cohen_kappa_emotion": 0.5666,
+  "disagreement_count": 33,
+  "gold_test_sha256": "a8998cf2580b5a26ce84bf6ac25679dde00a679bbec3163773e7c0da94fbd624",
+  "resolutions": [
+    {
+      "query_id": "Q_ANS_003",
+      "conflict": "Positive/Love vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Love",
+      "final_span": "BAGUS BANGETT MAKASII DPT HADIAH DR TOKPEDDDDD",
+      "resolution_note": "Adjudicated Love vs Happy -> Love (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_004",
+      "conflict": "Negative/Sadness vs Neutral/Neutral",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "cuman trnyata kecil aku kira agak gede",
+      "resolution_note": "Adjudicated Sadness vs Neutral -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_005",
+      "conflict": "Positive/Love vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Happy",
+      "final_span": "packing sangat aman",
+      "resolution_note": "Adjudicated Love vs Happy -> Happy (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_006",
+      "conflict": "Negative/Fear vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Fear",
+      "final_span": "hati2 guys sama jebakan free ongkir ini",
+      "resolution_note": "Adjudicated Fear vs Anger -> Fear (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_007",
+      "conflict": "Negative/Sadness vs Neutral/Neutral",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "lubangnya terlalu besar. gampang ditarik smp lepas",
+      "resolution_note": "Adjudicated Sadness vs Neutral -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_008",
+      "conflict": "Negative/Sadness vs Neutral/Neutral",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "plastik, yah ada harga ada kualitas",
+      "resolution_note": "Adjudicated Sadness vs Neutral -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_013",
+      "conflict": "Positive/Love vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Love",
+      "final_span": "mantap banget, recomend.",
+      "resolution_note": "Adjudicated Love vs Happy -> Love (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_017",
+      "conflict": "Positive/Love vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Love",
+      "final_span": "Barang bagus dan ori. Pengiriman cepat. MANTAPP JIWAAA",
+      "resolution_note": "Adjudicated Love vs Happy -> Love (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_029",
+      "conflict": "Negative/Fear vs Negative/Sadness",
+      "final_sentiment": "Negative",
+      "final_emotion": "Fear",
+      "final_span": "qualitas barangnya jelek, kekuatan baterai nya cuma bertahan 30-40 menit, klo dicas ada suara berdesis.",
+      "resolution_note": "Adjudicated Fear vs Sadness -> Fear (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_034",
+      "conflict": "Negative/Fear vs Negative/Sadness",
+      "final_sentiment": "Negative",
+      "final_emotion": "Fear",
+      "final_span": "pencetannya agak keras jd tkt cepat rusak. terus airnya jd bau plastik",
+      "resolution_note": "Adjudicated Fear vs Sadness -> Fear (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_035",
+      "conflict": "Negative/Sadness vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "packing hancur sampai lebur sampai rumah",
+      "resolution_note": "Adjudicated Sadness vs Anger -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_037",
+      "conflict": "Positive/Love vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Love",
+      "final_span": "terbaik lah pokoknya. packing lakban doang rapih banget. keren",
+      "resolution_note": "Adjudicated Love vs Happy -> Love (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_041",
+      "conflict": "Positive/Love vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Happy",
+      "final_span": "Aman buat kulit bayi",
+      "resolution_note": "Adjudicated Love vs Happy -> Happy (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_042",
+      "conflict": "Negative/Fear vs Negative/Sadness",
+      "final_sentiment": "Negative",
+      "final_emotion": "Fear",
+      "final_span": "Kurang cocok utk bayi kulit sensitif. Bbrp kali pakai, kulit bayi jd beruntusan.",
+      "resolution_note": "Adjudicated Fear vs Sadness -> Fear (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_045",
+      "conflict": "Negative/Fear vs Negative/Sadness",
+      "final_sentiment": "Negative",
+      "final_emotion": "Fear",
+      "final_span": "hati2 gaes, dikirim barang yg salah.",
+      "resolution_note": "Adjudicated Fear vs Sadness -> Fear (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_050",
+      "conflict": "Negative/Sadness vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Anger",
+      "final_span": "sdh dikomplain malah diteruskan tokped dana nya ke penjual",
+      "resolution_note": "Adjudicated Sadness vs Anger -> Anger (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_055",
+      "conflict": "Negative/Sadness vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Anger",
+      "final_span": "Bau bgt kayak bau sampah",
+      "resolution_note": "Adjudicated Sadness vs Anger -> Anger (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_057",
+      "conflict": "Negative/Sadness vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Anger",
+      "final_span": "barang rusak kok dikirim",
+      "resolution_note": "Adjudicated Sadness vs Anger -> Anger (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_059",
+      "conflict": "Negative/Sadness vs Neutral/Neutral",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "pouch nya kegunting jadinya :( pengemasan juga agak lama",
+      "resolution_note": "Adjudicated Sadness vs Neutral -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_064",
+      "conflict": "Negative/Sadness vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Happy",
+      "final_span": "Bahannya berkualitas",
+      "resolution_note": "Adjudicated Sadness vs Happy -> Happy (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_068",
+      "conflict": "Positive/Love vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Love",
+      "final_span": "Packingnya BEST banget deh pokoknya aman.",
+      "resolution_note": "Adjudicated Love vs Happy -> Love (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_070",
+      "conflict": "Negative/Sadness vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "slow respon, kecewa berat, sampe 1jam batal otomatis karna ga diproses",
+      "resolution_note": "Adjudicated Sadness vs Anger -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_073",
+      "conflict": "Negative/Sadness vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Happy",
+      "final_span": "Overall puas sama barangnya",
+      "resolution_note": "Adjudicated Sadness vs Happy -> Happy (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_075",
+      "conflict": "Negative/Sadness vs Neutral/Neutral",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "cuma rgb kanan dan kiri ga selaras sih, sama ada deflect",
+      "resolution_note": "Adjudicated Sadness vs Neutral -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_083",
+      "conflict": "Negative/Sadness vs Neutral/Neutral",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "biasa aja..harga lebih mahal dri toko sebelah",
+      "resolution_note": "Adjudicated Sadness vs Neutral -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_087",
+      "conflict": "Negative/Sadness vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "Responnya sangat lambat padahal udah request untuk kirim pagi tapi justru sampai siang blm juga dikirim.",
+      "resolution_note": "Adjudicated Sadness vs Anger -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_089",
+      "conflict": "Negative/Sadness vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "tapi yg dteng malah warna PINK",
+      "resolution_note": "Adjudicated Sadness vs Anger -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_091",
+      "conflict": "Negative/Sadness vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "produknya mudah rusak Dan kalo kena kuku Dan yg tajam2 runcing langsung robek",
+      "resolution_note": "Adjudicated Sadness vs Anger -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_093",
+      "conflict": "Negative/Sadness vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "kecewa, padahal udah batalkan pesanan karena ada masalah produk, tapi masih aja dikirim",
+      "resolution_note": "Adjudicated Sadness vs Anger -> Sadness (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_096",
+      "conflict": "Positive/Love vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Love",
+      "final_span": "Cepet banget, sajadahnya bagus, bulunya halus, terus busanya beneran tebel.",
+      "resolution_note": "Adjudicated Love vs Happy -> Love (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_097",
+      "conflict": "Positive/Love vs Positive/Happy",
+      "final_sentiment": "Positive",
+      "final_emotion": "Love",
+      "final_span": "luar biasa , proses ya cepet banget ng sampe 1 jam langsung di proses",
+      "resolution_note": "Adjudicated Love vs Happy -> Love (Positive) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_098",
+      "conflict": "Negative/Sadness vs Negative/Anger",
+      "final_sentiment": "Negative",
+      "final_emotion": "Anger",
+      "final_span": "penyelesaian permasalahan berbelit",
+      "resolution_note": "Adjudicated Sadness vs Anger -> Anger (Negative) per guideline."
+    },
+    {
+      "query_id": "Q_ANS_099",
+      "conflict": "Negative/Sadness vs Neutral/Neutral",
+      "final_sentiment": "Negative",
+      "final_emotion": "Sadness",
+      "final_span": "pengemasan perlu ditingkatkan",
+      "resolution_note": "Adjudicated Sadness vs Neutral -> Sadness (Negative) per guideline."
+    }
+  ]
+}

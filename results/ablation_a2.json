@@ -1,0 +1,46 @@
+{
+  "split": "dev",
+  "variable_changed": "retrieval_method",
+  "fixed_controls": {
+    "chunking": "heading_aware",
+    "embed_model": "intfloat/multilingual-e5-small",
+    "rrf_k": 60,
+    "qrels_file": "data/benchmark/qrels_dev.tsv",
+    "qrels_sha256": "e4f2ff9e02bc863236691b06fd4bf809a853d9ec5070e90bcd05921754f67c88"
+  },
+  "methods": {
+    "dense": {
+      "recall@5": 0.225,
+      "recall@10": 0.3475,
+      "ndcg@5": 0.1293,
+      "ndcg@10": 0.1641,
+      "mrr@10": 0.4329,
+      "queries": 100
+    },
+    "bm25": {
+      "recall@5": 0.29,
+      "recall@10": 0.4175,
+      "ndcg@5": 0.1825,
+      "ndcg@10": 0.2225,
+      "mrr@10": 0.4936,
+      "queries": 100
+    },
+    "hybrid": {
+      "recall@5": 0.355,
+      "recall@10": 0.445,
+      "ndcg@5": 0.2003,
+      "ndcg@10": 0.2263,
+      "mrr@10": 0.5773,
+      "queries": 100
+    },
+    "hybrid_rerank": {
+      "recall@5": 0.595,
+      "recall@10": 0.7275,
+      "ndcg@5": 0.6317,
+      "ndcg@10": 0.6697,
+      "mrr@10": 0.7062,
+      "queries": 100
+    }
+  },
+  "selected": "hybrid_rerank"
+}
