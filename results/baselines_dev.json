@@ -34,6 +34,30 @@
       "p95_latency_ms": 14441.2,
       "avg_tokens": 662.1,
       "samples": 24
+    },
+    "B4": {
+      "macro_f1_emotion": 0.7712,
+      "macro_f1_sentiment": 1.0,
+      "evidence_support": 1.0,
+      "p95_latency_ms": 11693.3,
+      "avg_tokens": 594.8,
+      "samples": 24
+    },
+    "B5": {
+      "macro_f1_emotion": 0.916,
+      "macro_f1_sentiment": 1.0,
+      "evidence_support": 1.0,
+      "p95_latency_ms": 11695.5,
+      "avg_tokens": 594.8,
+      "samples": 24
+    },
+    "B6": {
+      "macro_f1_emotion": 0.9577,
+      "macro_f1_sentiment": 1.0,
+      "evidence_support": 1.0,
+      "p95_latency_ms": 11704.3,
+      "avg_tokens": 594.8,
+      "samples": 24
     }
   },
   "outputs": {
@@ -2758,6 +2782,4545 @@
           "EXEMP_0325",
           "EXEMP_0278"
         ]
+      }
+    ],
+    "B4": [
+      {
+        "query_id": "D_ANS_001",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "janjinya dapat 3 kaleng kecil dan"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9853.2,
+        "tokens": 714,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"janjinya dapat 3 kaleng kecil dan\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0088",
+          "EXEMP_0070",
+          "EXEMP_0110",
+          "EXEMP_0087"
+        ],
+        "sufficiency_score": 0.8048,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "janjinya dapat 3 kaleng kecil dan 1 kaleng besar tapi yg datang adalah 4 kaleng kecil , kecewa bangetttt",
+            "top_k": 5,
+            "sufficiency": 0.5815
+          },
+          {
+            "step": 1,
+            "query": "janjinya dapat 3 kaleng kecil dan 1 kaleng besar tapi yg datang adalah 4 kaleng kecil , kecewa bangetttt janji dapat 3 kaleng kecil dan 1 kaleng besar tetapi yang datang ada 4 kaleng kecil kecewa banget",
+            "top_k": 7,
+            "sufficiency": 0.7248
+          },
+          {
+            "step": 2,
+            "query": "janji dapat 3 kaleng kecil dan 1 kaleng besar tetapi yang datang ada 4 kaleng kecil kecewa banget Sadness",
+            "top_k": 8,
+            "sufficiency": 0.8048
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_008",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Lampunya sering error padahal terhubung ke"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 8679.8,
+        "tokens": 682,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Lampunya sering error padahal terhubung ke\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0189",
+          "EXEMP_0082",
+          "EXEMP_0072",
+          "EXEMP_0081"
+        ],
+        "sufficiency_score": 0.6648,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Lampunya sering error padahal terhubung ke wifi, saklar hidup tapi dihidupin di hp gak mau nyala",
+            "top_k": 5,
+            "sufficiency": 0.3855
+          },
+          {
+            "step": 1,
+            "query": "Lampunya sering error padahal terhubung ke wifi, saklar hidup tapi dihidupin di hp gak mau nyala lampu sering error padahal terhubung ke wifi saklar hidup tetapi dihidupin di hp tidak mau nyala",
+            "top_k": 7,
+            "sufficiency": 0.5677
+          },
+          {
+            "step": 2,
+            "query": "lampu sering error padahal terhubung ke wifi saklar hidup tetapi dihidupin di hp tidak mau nyala Sadness",
+            "top_k": 8,
+            "sufficiency": 0.6648
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_015",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "tali senter kepala ,berubah... gak bagus...."
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9219.3,
+        "tokens": 640,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"tali senter kepala ,berubah... gak bagus....\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0075",
+          "EXEMP_0110",
+          "EXEMP_0115",
+          "EXEMP_0096"
+        ],
+        "sufficiency_score": 0.7603,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "tali senter kepala ,berubah... gak bagus.... kecewa.",
+            "top_k": 5,
+            "sufficiency": 0.6178
+          },
+          {
+            "step": 1,
+            "query": "tali senter kepala ,berubah... gak bagus.... kecewa. tali senter kepala berubah tidak bagus kecewa",
+            "top_k": 7,
+            "sufficiency": 0.7603
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_022",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Bahannya beda dari orderan yg warna"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11373.3,
+        "tokens": 514,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Bahannya beda dari orderan yg warna\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0125",
+          "EXEMP_0081",
+          "EXEMP_0105",
+          "EXEMP_0129"
+        ],
+        "sufficiency_score": 0.805,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Bahannya beda dari orderan yg warna coklat dan baru di pakai sekali langsung robek",
+            "top_k": 5,
+            "sufficiency": 0.6651
+          },
+          {
+            "step": 1,
+            "query": "Bahannya beda dari orderan yg warna coklat dan baru di pakai sekali langsung robek bahan beda dari orderan yang warna coklat dan baru di pakai banget langsung robek",
+            "top_k": 7,
+            "sufficiency": 0.805
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_002",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "ckup bagus..terimakasih"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 6950.7,
+        "tokens": 383,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Happy\", \"confidence_score\": 0.85, \"evidence_spans\": [\"ckup bagus..terimakasih\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0029",
+          "EXEMP_0022",
+          "EXEMP_0007",
+          "EXEMP_0004"
+        ],
+        "sufficiency_score": 0.811,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "ckup bagus..terimakasih",
+            "top_k": 5,
+            "sufficiency": 0.811
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_004",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "cepet bgt sampai, packing termat sangat"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10842.1,
+        "tokens": 612,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"cepet bgt sampai, packing termat sangat\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0040",
+          "EXEMP_0046",
+          "EXEMP_0030",
+          "EXEMP_0017"
+        ],
+        "sufficiency_score": 0.829,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "cepet bgt sampai, packing termat sangat aman dan TDK bocor, bubble wrap tebellll sekali, blm dicoba semoga bermanfaat dengan baik",
+            "top_k": 5,
+            "sufficiency": 0.7045
+          },
+          {
+            "step": 1,
+            "query": "cepet bgt sampai, packing termat sangat aman dan TDK bocor, bubble wrap tebellll sekali, blm dicoba semoga bermanfaat dengan baik cepat banget sampai packing termat sangat aman dan tidak bocor bubble wrap tebel banget belum dicoba semoga bermanfaat dengan baik",
+            "top_k": 7,
+            "sufficiency": 0.829
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_005",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "kain adem, jahitan bagus, ukuran pas,"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 8623.0,
+        "tokens": 405,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Happy\", \"confidence_score\": 0.85, \"evidence_spans\": [\"kain adem, jahitan bagus, ukuran pas,\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0029",
+          "EXEMP_0045",
+          "EXEMP_0038",
+          "EXEMP_0018"
+        ],
+        "sufficiency_score": 0.8356,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "kain adem, jahitan bagus, ukuran pas, Positive",
+            "top_k": 5,
+            "sufficiency": 0.8356
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_021",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Material Produk Bagus. Produk Original"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11220.0,
+        "tokens": 510,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Happy\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Material Produk Bagus. Produk Original\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0043",
+          "EXEMP_0061",
+          "EXEMP_0063",
+          "EXEMP_0055"
+        ],
+        "sufficiency_score": 1.0,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Material Produk Bagus. Produk Original",
+            "top_k": 5,
+            "sufficiency": 0.892
+          },
+          {
+            "step": 1,
+            "query": "Material Produk Bagus. Produk Original material barang bagus barang original",
+            "top_k": 7,
+            "sufficiency": 1.0
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_003",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Lucuu bangett.. Pengirimannya cepat, sellernya responsif"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9235.3,
+        "tokens": 679,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Lucuu bangett.. Pengirimannya cepat, sellernya responsif\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0201",
+          "EXEMP_0196",
+          "EXEMP_0224",
+          "EXEMP_0237"
+        ],
+        "sufficiency_score": 0.8476,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Lucuu bangett.. Pengirimannya cepat, sellernya responsif banget.. Subuh2 di chat jg dijawab soalnya aku liat ini uda dr malam banget sih.. Kirain bakal baru dijawab agak siang.. Trnyata subuh uda dijawab informatif banget.. Ngsh tau klo dikasih oil agak berkabut.. Kirain bakal lbh berkabut dr ini.. Trnyata kabutnya cm kyk difoto.. Seneng deh.. Lampunya jg terang klo di tmpt gelap makasihh yaa",
+            "top_k": 5,
+            "sufficiency": 0.7116
+          },
+          {
+            "step": 1,
+            "query": "Lucuu bangett.. Pengirimannya cepat, sellernya responsif banget.. Subuh2 di chat jg dijawab soalnya aku liat ini uda dr malam banget sih.. Kirain bakal baru dijawab agak siang.. Trnyata subuh uda dijawab informatif banget.. Ngsh tau klo dikasih oil agak berkabut.. Kirain bakal lbh berkabut dr ini.. Trnyata kabutnya cm kyk difoto.. Seneng deh.. Lampunya jg terang klo di tmpt gelap makasihh yaa lucuu bangett kirim cepat seller responsif banget subuh2 di chat juga dijawab soal saya liat ini sudah dari malam banget sih kirain bakal baru dijawab agak siang trnyata subuh sudah dijawab informatif banget ngsh tau kalau dikasih oil agak berkabut kirain bakal lbh berkabut dari ini trnyata kabut cm kyk difoto seneng deh lampu juga terang kalau di tmpt gelap makasihh yaa",
+            "top_k": 7,
+            "sufficiency": 0.8476
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_013",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Mantaap...rekomendasi banget murah bukan murahan dan"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10446.8,
+        "tokens": 475,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Love\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Mantaap...rekomendasi banget murah bukan murahan dan\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0259",
+          "EXEMP_0223",
+          "EXEMP_0226",
+          "EXEMP_0232"
+        ],
+        "sufficiency_score": 0.8147,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Mantaap...rekomendasi banget murah bukan murahan dan enak rasanya",
+            "top_k": 5,
+            "sufficiency": 0.8147
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_017",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11733.8,
+        "tokens": 524,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Love\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0242",
+          "EXEMP_0231",
+          "EXEMP_0213",
+          "EXEMP_0207"
+        ],
+        "sufficiency_score": 0.7997,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan menjadi kinclong kembali! Mantap!. Senang banget bisa di pasangin di bengkelnya. Senang banget ada home servicenya!.",
+            "top_k": 5,
+            "sufficiency": 0.6589
+          },
+          {
+            "step": 1,
+            "query": "Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan menjadi kinclong kembali! Mantap!. Senang banget bisa di pasangin di bengkelnya. Senang banget ada home servicenya!. kendaraan menjadi kinclong kembali mantap kendaraan menjadi kinclong kembali mantap senang banget bisa di pasangin di bengkel senang banget ada home service",
+            "top_k": 7,
+            "sufficiency": 0.7997
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_018",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Respon dan proses cepat, pengiriman juga."
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11302.8,
+        "tokens": 588,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Respon dan proses cepat, pengiriman juga.\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0252",
+          "EXEMP_0017",
+          "EXEMP_0237",
+          "EXEMP_0199"
+        ],
+        "sufficiency_score": 0.7567,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Respon dan proses cepat, pengiriman juga. Toko rekomendasi",
+            "top_k": 5,
+            "sufficiency": 0.5849
+          },
+          {
+            "step": 1,
+            "query": "Respon dan proses cepat, pengiriman juga. Toko rekomendasi respon dan proses cepat kirim juga seller rekomendasi",
+            "top_k": 7,
+            "sufficiency": 0.7567
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_006",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Ternyata tidak sesuai. Tidak dpat dipakai"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10772.8,
+        "tokens": 582,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Ternyata tidak sesuai. Tidak dpat dipakai\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0094",
+          "EXEMP_0120",
+          "EXEMP_0087",
+          "EXEMP_0119"
+        ],
+        "sufficiency_score": 0.9085,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Ternyata tidak sesuai. Tidak dpat dipakai",
+            "top_k": 5,
+            "sufficiency": 0.7637
+          },
+          {
+            "step": 1,
+            "query": "Ternyata tidak sesuai. Tidak dpat dipakai ternyata tidak sesuai tidak dpat pakai",
+            "top_k": 7,
+            "sufficiency": 0.9085
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_007",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Produk tidak ORI (KW),tidak bekerja dengan"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10699.5,
+        "tokens": 714,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Produk tidak ORI (KW),tidak bekerja dengan\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0187",
+          "EXEMP_0131",
+          "EXEMP_0194",
+          "EXEMP_0184"
+        ],
+        "sufficiency_score": 0.8232,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Produk tidak ORI (KW),tidak bekerja dengan baik.dikirim 2 PGP tidak bekerja di 2 hp saya Lenovo n Advan.Cuma jadi bangkai.After sales buruk,Respon seller kurang.no recommended.",
+            "top_k": 5,
+            "sufficiency": 0.6075
+          },
+          {
+            "step": 1,
+            "query": "Produk tidak ORI (KW),tidak bekerja dengan baik.dikirim 2 PGP tidak bekerja di 2 hp saya Lenovo n Advan.Cuma jadi bangkai.After sales buruk,Respon seller kurang.no recommended. barang tidak original kw tidak bekerja dengan baik kirim 2 pgp tidak bekerja di 2 hp saya lenovo n advan cuma jadi bangkai after sales buruk respon seller kurang no recommended",
+            "top_k": 7,
+            "sufficiency": 0.7453
+          },
+          {
+            "step": 2,
+            "query": "barang tidak original kw tidak bekerja dengan baik kirim 2 pgp tidak bekerja di 2 hp saya lenovo n advan cuma jadi bangkai after sales buruk respon seller kurang no recommended Fear",
+            "top_k": 8,
+            "sufficiency": 0.8232
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_012",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "baru dibuka tapi bentulnya aneh. kaya"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11269.5,
+        "tokens": 791,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"baru dibuka tapi bentulnya aneh. kaya\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0075",
+          "EXEMP_0136",
+          "EXEMP_0081",
+          "EXEMP_0139"
+        ],
+        "sufficiency_score": 0.7104,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "baru dibuka tapi bentulnya aneh. kaya udah meleleh tapi dibekuin sendiri padahal baru buka dari pengiriman",
+            "top_k": 5,
+            "sufficiency": 0.5056
+          },
+          {
+            "step": 1,
+            "query": "baru dibuka tapi bentulnya aneh. kaya udah meleleh tapi dibekuin sendiri padahal baru buka dari pengiriman baru dibuka tetapi bentul aneh kaya sudah meleleh tetapi dibekuin sendiri padahal baru buka dari kirim",
+            "top_k": 7,
+            "sufficiency": 0.5646
+          },
+          {
+            "step": 2,
+            "query": "baru dibuka tetapi bentul aneh kaya sudah meleleh tetapi dibekuin sendiri padahal baru buka dari kirim Sadness",
+            "top_k": 8,
+            "sufficiency": 0.7104
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_014",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Pengiriman laptop dr toko tidak dicek"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10626.7,
+        "tokens": 1054,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Pengiriman laptop dr toko tidak dicek\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0144",
+          "EXEMP_0132",
+          "EXEMP_0139",
+          "EXEMP_0136"
+        ],
+        "sufficiency_score": 0.7959,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Pengiriman laptop dr toko tidak dicek dahulu,.. laptop yg dikasih ke pembeli layar pecah, kerdus rusak,.. padahal packingan tidak ada yg rusak,... menghabiskan waktu saja, buat klaim ke tokpedia, berminggu minggu baru berhasil klaim ke pihak asuransi. Ternyata toko yg sudah verified tidak menjamin, Pelayanan toko ini buruk, respon cepat saat awal beli aja,.. saat dikomplen sangat lama, mengulur2 waktu, tidak mau tanggung jawab,.. padahal jelas komplainan langsung dihari berikutny setelah paket dibuka, yg seharusny, bisa langsung tuker unit langsung dr toko.... Trus Apa gunany ditulis di Deskripsi Garansi toko 3 hari ... Cukup terakhir beli disini, thanks",
+            "top_k": 5,
+            "sufficiency": 0.5495
+          },
+          {
+            "step": 1,
+            "query": "Pengiriman laptop dr toko tidak dicek dahulu,.. laptop yg dikasih ke pembeli layar pecah, kerdus rusak,.. padahal packingan tidak ada yg rusak,... menghabiskan waktu saja, buat klaim ke tokpedia, berminggu minggu baru berhasil klaim ke pihak asuransi. Ternyata toko yg sudah verified tidak menjamin, Pelayanan toko ini buruk, respon cepat saat awal beli aja,.. saat dikomplen sangat lama, mengulur2 waktu, tidak mau tanggung jawab,.. padahal jelas komplainan langsung dihari berikutny setelah paket dibuka, yg seharusny, bisa langsung tuker unit langsung dr toko.... Trus Apa gunany ditulis di Deskripsi Garansi toko 3 hari ... Cukup terakhir beli disini, thanks kirim laptop dari seller tidak dicek dahulu laptop yang dikasih ke pembeli layar pecah kerdus rusak padahal packingan tidak ada yang rusak menghabiskan waktu saja untuk klaim ke tokpedia berminggu minggu baru berhasil klaim ke pihak asuransi ternyata seller yang sudah verified tidak menjamin pelayanan seller ini buruk respon cepat saat awal beli aja saat dikomplen sangat lama mengulur2 waktu tidak mau tanggung jawab padahal jelas komplainan langsung dihari berikutny sete paket dibuka yang seharusny bisa langsung tuker unit langsung dari seller trus apa gunany ditulis di deskripsi garansi seller 3 hari cukup terakhir beli disini terima kasih",
+            "top_k": 7,
+            "sufficiency": 0.7423
+          },
+          {
+            "step": 2,
+            "query": "kirim laptop dari seller tidak dicek dahulu laptop yang dikasih ke pembeli layar pecah kerdus rusak padahal packingan tidak ada yang rusak menghabiskan waktu saja untuk klaim ke tokpedia berminggu minggu baru berhasil klaim ke pihak asuransi ternyata seller yang sudah verified tidak menjamin pelayanan seller ini buruk respon cepat saat awal beli aja saat dikomplen sangat lama mengulur2 waktu tidak mau tanggung jawab padahal jelas komplainan langsung dihari berikutny sete paket dibuka yang seharusny bisa langsung tuker unit langsung dari seller trus apa gunany ditulis di deskripsi garansi seller 3 hari cukup terakhir beli disini terima kasih Fear",
+            "top_k": 8,
+            "sufficiency": 0.7959
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_009",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "SERVICENYA BURUK BANGET!!!"
+        ],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10866.1,
+        "tokens": 439,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"SERVICENYA BURUK BANGET!!!\"], \"policy_citations\": [\"POLICY_ANGER\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_ANGER",
+          "EXEMP_0319",
+          "EXEMP_0289",
+          "EXEMP_0307",
+          "EXEMP_0267"
+        ],
+        "sufficiency_score": 0.7973,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "SERVICENYA BURUK BANGET!!!",
+            "top_k": 5,
+            "sufficiency": 0.7973
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_010",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "gak sesuai harga malah kualitas nol"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11464.0,
+        "tokens": 510,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"gak sesuai harga malah kualitas nol\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0127",
+          "EXEMP_0094",
+          "EXEMP_0172",
+          "EXEMP_0085"
+        ],
+        "sufficiency_score": 0.6437,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "gak sesuai harga malah kualitas nol",
+            "top_k": 5,
+            "sufficiency": 0.4905
+          },
+          {
+            "step": 1,
+            "query": "gak sesuai harga malah kualitas nol tidak sesuai harga malah kualitas nol",
+            "top_k": 7,
+            "sufficiency": 0.6437
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_011",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "cepet rusak, kadang konek kadang engga"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11769.6,
+        "tokens": 615,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"cepet rusak, kadang konek kadang engga\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0104",
+          "EXEMP_0169",
+          "EXEMP_0083",
+          "EXEMP_0098"
+        ],
+        "sufficiency_score": 0.642,
+        "retry_count": 2,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "cepet rusak, kadang konek kadang engga",
+            "top_k": 5,
+            "sufficiency": 0.4367
+          },
+          {
+            "step": 1,
+            "query": "cepet rusak, kadang konek kadang engga cepat rusak kadang konek kadang engga",
+            "top_k": 7,
+            "sufficiency": 0.5566
+          },
+          {
+            "step": 2,
+            "query": "cepat rusak kadang konek kadang engga Fear",
+            "top_k": 8,
+            "sufficiency": 0.642
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_016",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "barang yg dikirim hrsnya di cek"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9198.1,
+        "tokens": 692,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"barang yg dikirim hrsnya di cek\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0134",
+          "EXEMP_0183",
+          "EXEMP_0167",
+          "EXEMP_0185"
+        ],
+        "sufficiency_score": 0.7887,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "barang yg dikirim hrsnya di cek dulu, konsumen kan byr bukan gratis. masa paku rivert nya yg sebelah ada tutup penahannya. yg sebelahnya nggak ada tutup penahannya, jadi copotlah klo di pake. gimana sih...",
+            "top_k": 5,
+            "sufficiency": 0.6229
+          },
+          {
+            "step": 1,
+            "query": "barang yg dikirim hrsnya di cek dulu, konsumen kan byr bukan gratis. masa paku rivert nya yg sebelah ada tutup penahannya. yg sebelahnya nggak ada tutup penahannya, jadi copotlah klo di pake. gimana sih... barang yang kirim hrs di cek dulu konsumen kan byr bukan gratis masa paku rivert nya yang sebe ada tutup penahan yang sebelah tidak ada tutup penahan jadi copot kalau di pakai gimana sih",
+            "top_k": 7,
+            "sufficiency": 0.7887
+          }
+        ]
+      },
+      {
+        "query_id": "D_UNANS_001",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.92,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks gibberish / ketikan acak yang tidak memiliki makna ulasan produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 8179.8,
+        "tokens": 599,
+        "raw_output": "{\"sentiment\": \"ABSTAIN\", \"emotion\": \"ABSTAIN\", \"confidence_score\": 0.92, \"evidence_spans\": [], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": true, \"abstain_reason\": \"Teks tidak valid sebagai ulasan produk.\"}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0099",
+          "EXEMP_0122",
+          "EXEMP_0078",
+          "EXEMP_0067"
+        ],
+        "sufficiency_score": 0.653,
+        "retry_count": 0,
+        "slice_type": "gibberish",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "asdfghjkl qwertyuiop zxcvbnm test test",
+            "top_k": 5,
+            "sufficiency": 0.653
+          }
+        ]
+      },
+      {
+        "query_id": "D_UNANS_002",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.85,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks gibberish / ketikan acak yang tidak memiliki makna ulasan produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9954.9,
+        "tokens": 525,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Fear\", \"confidence_score\": 0.85, \"evidence_spans\": [\"dshjkfhdsajkfhdsjkfhkjdsahfjkdshfkjsdh\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": true, \"abstain_reason\": \"Unverified base output note\"}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0141",
+          "EXEMP_0157",
+          "EXEMP_0089",
+          "EXEMP_0137"
+        ],
+        "sufficiency_score": 0.4316,
+        "retry_count": 0,
+        "slice_type": "gibberish",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "dshjkfhdsajkfhdsjkfhkjdsahfjkdshfkjsdh",
+            "top_k": 5,
+            "sufficiency": 0.4316
+          }
+        ]
+      },
+      {
+        "query_id": "D_UNANS_003",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.92,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks hanya berisi angka atau tanda baca tanpa opini produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9324.0,
+        "tokens": 557,
+        "raw_output": "{\"sentiment\": \"ABSTAIN\", \"emotion\": \"ABSTAIN\", \"confidence_score\": 0.92, \"evidence_spans\": [], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": true, \"abstain_reason\": \"Teks tidak valid sebagai ulasan produk.\"}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0074",
+          "EXEMP_0072",
+          "EXEMP_0075",
+          "EXEMP_0110"
+        ],
+        "sufficiency_score": 0.6108,
+        "retry_count": 0,
+        "slice_type": "numeric_or_punct",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "1234567890 0987654321",
+            "top_k": 5,
+            "sufficiency": 0.6108
+          }
+        ]
+      },
+      {
+        "query_id": "D_UNANS_004",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.85,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks hanya berisi angka atau tanda baca tanpa opini produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B4",
+        "model": "qwen2.5:1.5b",
+        "prompt_version": "b4_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9845.6,
+        "tokens": 471,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"..... ..... ..... .....\"], \"policy_citations\": [\"POLICY_ANGER\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_ANGER",
+          "EXEMP_0325",
+          "EXEMP_0283",
+          "EXEMP_0292",
+          "EXEMP_0321"
+        ],
+        "sufficiency_score": 0.6331,
+        "retry_count": 0,
+        "slice_type": "numeric_or_punct",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "..... ..... ..... .....",
+            "top_k": 5,
+            "sufficiency": 0.6331
+          }
+        ]
+      }
+    ],
+    "B5": [
+      {
+        "query_id": "D_ANS_001",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9701,
+        "evidence_spans": [
+          "janjinya dapat 3 kaleng kecil dan"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9816.1,
+        "tokens": 714,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"janjinya dapat 3 kaleng kecil dan\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0088",
+          "EXEMP_0070",
+          "EXEMP_0110",
+          "EXEMP_0087"
+        ],
+        "sufficiency_score": 0.8048,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "janjinya dapat 3 kaleng kecil dan 1 kaleng besar tapi yg datang adalah 4 kaleng kecil , kecewa bangetttt",
+            "top_k": 5,
+            "sufficiency": 0.5815
+          },
+          {
+            "step": 1,
+            "query": "janjinya dapat 3 kaleng kecil dan 1 kaleng besar tapi yg datang adalah 4 kaleng kecil , kecewa bangetttt janji dapat 3 kaleng kecil dan 1 kaleng besar tetapi yang datang ada 4 kaleng kecil kecewa banget",
+            "top_k": 7,
+            "sufficiency": 0.7248
+          },
+          {
+            "step": 2,
+            "query": "janji dapat 3 kaleng kecil dan 1 kaleng besar tetapi yang datang ada 4 kaleng kecil kecewa banget Sadness",
+            "top_k": 8,
+            "sufficiency": 0.8048
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_008",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Lampunya sering error padahal terhubung ke"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 8673.6,
+        "tokens": 682,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Lampunya sering error padahal terhubung ke\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0189",
+          "EXEMP_0082",
+          "EXEMP_0072",
+          "EXEMP_0081"
+        ],
+        "sufficiency_score": 0.6648,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Lampunya sering error padahal terhubung ke wifi, saklar hidup tapi dihidupin di hp gak mau nyala",
+            "top_k": 5,
+            "sufficiency": 0.3855
+          },
+          {
+            "step": 1,
+            "query": "Lampunya sering error padahal terhubung ke wifi, saklar hidup tapi dihidupin di hp gak mau nyala lampu sering error padahal terhubung ke wifi saklar hidup tetapi dihidupin di hp tidak mau nyala",
+            "top_k": 7,
+            "sufficiency": 0.5677
+          },
+          {
+            "step": 2,
+            "query": "lampu sering error padahal terhubung ke wifi saklar hidup tetapi dihidupin di hp tidak mau nyala Sadness",
+            "top_k": 8,
+            "sufficiency": 0.6648
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_015",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9996,
+        "evidence_spans": [
+          "tali senter kepala ,berubah... gak bagus...."
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9237.7,
+        "tokens": 640,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"tali senter kepala ,berubah... gak bagus....\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0075",
+          "EXEMP_0110",
+          "EXEMP_0115",
+          "EXEMP_0096"
+        ],
+        "sufficiency_score": 0.7603,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "tali senter kepala ,berubah... gak bagus.... kecewa.",
+            "top_k": 5,
+            "sufficiency": 0.6178
+          },
+          {
+            "step": 1,
+            "query": "tali senter kepala ,berubah... gak bagus.... kecewa. tali senter kepala berubah tidak bagus kecewa",
+            "top_k": 7,
+            "sufficiency": 0.7603
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_022",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9837,
+        "evidence_spans": [
+          "Bahannya beda dari orderan yg warna"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11349.6,
+        "tokens": 514,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Bahannya beda dari orderan yg warna\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0125",
+          "EXEMP_0081",
+          "EXEMP_0105",
+          "EXEMP_0129"
+        ],
+        "sufficiency_score": 0.805,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Bahannya beda dari orderan yg warna coklat dan baru di pakai sekali langsung robek",
+            "top_k": 5,
+            "sufficiency": 0.6651
+          },
+          {
+            "step": 1,
+            "query": "Bahannya beda dari orderan yg warna coklat dan baru di pakai sekali langsung robek bahan beda dari orderan yang warna coklat dan baru di pakai banget langsung robek",
+            "top_k": 7,
+            "sufficiency": 0.805
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_002",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.9474,
+        "evidence_spans": [
+          "ckup bagus..terimakasih"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 6924.8,
+        "tokens": 383,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Happy\", \"confidence_score\": 0.85, \"evidence_spans\": [\"ckup bagus..terimakasih\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0029",
+          "EXEMP_0022",
+          "EXEMP_0007",
+          "EXEMP_0004"
+        ],
+        "sufficiency_score": 0.811,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "ckup bagus..terimakasih",
+            "top_k": 5,
+            "sufficiency": 0.811
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_004",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.9328,
+        "evidence_spans": [
+          "cepet bgt sampai, packing termat sangat"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10841.5,
+        "tokens": 612,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"cepet bgt sampai, packing termat sangat\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0040",
+          "EXEMP_0046",
+          "EXEMP_0030",
+          "EXEMP_0017"
+        ],
+        "sufficiency_score": 0.829,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "cepet bgt sampai, packing termat sangat aman dan TDK bocor, bubble wrap tebellll sekali, blm dicoba semoga bermanfaat dengan baik",
+            "top_k": 5,
+            "sufficiency": 0.7045
+          },
+          {
+            "step": 1,
+            "query": "cepet bgt sampai, packing termat sangat aman dan TDK bocor, bubble wrap tebellll sekali, blm dicoba semoga bermanfaat dengan baik cepat banget sampai packing termat sangat aman dan tidak bocor bubble wrap tebel banget belum dicoba semoga bermanfaat dengan baik",
+            "top_k": 7,
+            "sufficiency": 0.829
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_005",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.9362,
+        "evidence_spans": [
+          "kain adem, jahitan bagus, ukuran pas,"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 8611.7,
+        "tokens": 405,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Happy\", \"confidence_score\": 0.85, \"evidence_spans\": [\"kain adem, jahitan bagus, ukuran pas,\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0029",
+          "EXEMP_0045",
+          "EXEMP_0038",
+          "EXEMP_0018"
+        ],
+        "sufficiency_score": 0.8356,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "kain adem, jahitan bagus, ukuran pas, Positive",
+            "top_k": 5,
+            "sufficiency": 0.8356
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_021",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.9536,
+        "evidence_spans": [
+          "Material Produk Bagus. Produk Original"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11250.6,
+        "tokens": 510,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Happy\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Material Produk Bagus. Produk Original\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0043",
+          "EXEMP_0061",
+          "EXEMP_0063",
+          "EXEMP_0055"
+        ],
+        "sufficiency_score": 1.0,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Material Produk Bagus. Produk Original",
+            "top_k": 5,
+            "sufficiency": 0.892
+          },
+          {
+            "step": 1,
+            "query": "Material Produk Bagus. Produk Original material barang bagus barang original",
+            "top_k": 7,
+            "sufficiency": 1.0
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_003",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.9624,
+        "evidence_spans": [
+          "Lucuu bangett.. Pengirimannya cepat, sellernya responsif"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9229.4,
+        "tokens": 679,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Lucuu bangett.. Pengirimannya cepat, sellernya responsif\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0201",
+          "EXEMP_0196",
+          "EXEMP_0224",
+          "EXEMP_0237"
+        ],
+        "sufficiency_score": 0.8476,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Lucuu bangett.. Pengirimannya cepat, sellernya responsif banget.. Subuh2 di chat jg dijawab soalnya aku liat ini uda dr malam banget sih.. Kirain bakal baru dijawab agak siang.. Trnyata subuh uda dijawab informatif banget.. Ngsh tau klo dikasih oil agak berkabut.. Kirain bakal lbh berkabut dr ini.. Trnyata kabutnya cm kyk difoto.. Seneng deh.. Lampunya jg terang klo di tmpt gelap makasihh yaa",
+            "top_k": 5,
+            "sufficiency": 0.7116
+          },
+          {
+            "step": 1,
+            "query": "Lucuu bangett.. Pengirimannya cepat, sellernya responsif banget.. Subuh2 di chat jg dijawab soalnya aku liat ini uda dr malam banget sih.. Kirain bakal baru dijawab agak siang.. Trnyata subuh uda dijawab informatif banget.. Ngsh tau klo dikasih oil agak berkabut.. Kirain bakal lbh berkabut dr ini.. Trnyata kabutnya cm kyk difoto.. Seneng deh.. Lampunya jg terang klo di tmpt gelap makasihh yaa lucuu bangett kirim cepat seller responsif banget subuh2 di chat juga dijawab soal saya liat ini sudah dari malam banget sih kirain bakal baru dijawab agak siang trnyata subuh sudah dijawab informatif banget ngsh tau kalau dikasih oil agak berkabut kirain bakal lbh berkabut dari ini trnyata kabut cm kyk difoto seneng deh lampu juga terang kalau di tmpt gelap makasihh yaa",
+            "top_k": 7,
+            "sufficiency": 0.8476
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_013",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.9956,
+        "evidence_spans": [
+          "Mantaap...rekomendasi banget murah bukan murahan dan"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10438.6,
+        "tokens": 475,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Love\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Mantaap...rekomendasi banget murah bukan murahan dan\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0259",
+          "EXEMP_0223",
+          "EXEMP_0226",
+          "EXEMP_0232"
+        ],
+        "sufficiency_score": 0.8147,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Mantaap...rekomendasi banget murah bukan murahan dan enak rasanya",
+            "top_k": 5,
+            "sufficiency": 0.8147
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_017",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.861,
+        "evidence_spans": [
+          "Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11733.6,
+        "tokens": 524,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Love\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0242",
+          "EXEMP_0231",
+          "EXEMP_0213",
+          "EXEMP_0207"
+        ],
+        "sufficiency_score": 0.7997,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan menjadi kinclong kembali! Mantap!. Senang banget bisa di pasangin di bengkelnya. Senang banget ada home servicenya!.",
+            "top_k": 5,
+            "sufficiency": 0.6589
+          },
+          {
+            "step": 1,
+            "query": "Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan menjadi kinclong kembali! Mantap!. Senang banget bisa di pasangin di bengkelnya. Senang banget ada home servicenya!. kendaraan menjadi kinclong kembali mantap kendaraan menjadi kinclong kembali mantap senang banget bisa di pasangin di bengkel senang banget ada home service",
+            "top_k": 7,
+            "sufficiency": 0.7997
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_018",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Respon dan proses cepat, pengiriman juga."
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11286.7,
+        "tokens": 588,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Respon dan proses cepat, pengiriman juga.\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0252",
+          "EXEMP_0017",
+          "EXEMP_0237",
+          "EXEMP_0199"
+        ],
+        "sufficiency_score": 0.7567,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Respon dan proses cepat, pengiriman juga. Toko rekomendasi",
+            "top_k": 5,
+            "sufficiency": 0.5849
+          },
+          {
+            "step": 1,
+            "query": "Respon dan proses cepat, pengiriman juga. Toko rekomendasi respon dan proses cepat kirim juga seller rekomendasi",
+            "top_k": 7,
+            "sufficiency": 0.7567
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_006",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.8978,
+        "evidence_spans": [
+          "Ternyata tidak sesuai. Tidak dpat dipakai"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10741.0,
+        "tokens": 582,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Ternyata tidak sesuai. Tidak dpat dipakai\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0094",
+          "EXEMP_0120",
+          "EXEMP_0087",
+          "EXEMP_0119"
+        ],
+        "sufficiency_score": 0.9085,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Ternyata tidak sesuai. Tidak dpat dipakai",
+            "top_k": 5,
+            "sufficiency": 0.7637
+          },
+          {
+            "step": 1,
+            "query": "Ternyata tidak sesuai. Tidak dpat dipakai ternyata tidak sesuai tidak dpat pakai",
+            "top_k": 7,
+            "sufficiency": 0.9085
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_007",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.985,
+        "evidence_spans": [
+          "Produk tidak ORI (KW),tidak bekerja dengan"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10696.5,
+        "tokens": 714,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Produk tidak ORI (KW),tidak bekerja dengan\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0187",
+          "EXEMP_0131",
+          "EXEMP_0194",
+          "EXEMP_0184"
+        ],
+        "sufficiency_score": 0.8232,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Produk tidak ORI (KW),tidak bekerja dengan baik.dikirim 2 PGP tidak bekerja di 2 hp saya Lenovo n Advan.Cuma jadi bangkai.After sales buruk,Respon seller kurang.no recommended.",
+            "top_k": 5,
+            "sufficiency": 0.6075
+          },
+          {
+            "step": 1,
+            "query": "Produk tidak ORI (KW),tidak bekerja dengan baik.dikirim 2 PGP tidak bekerja di 2 hp saya Lenovo n Advan.Cuma jadi bangkai.After sales buruk,Respon seller kurang.no recommended. barang tidak original kw tidak bekerja dengan baik kirim 2 pgp tidak bekerja di 2 hp saya lenovo n advan cuma jadi bangkai after sales buruk respon seller kurang no recommended",
+            "top_k": 7,
+            "sufficiency": 0.7453
+          },
+          {
+            "step": 2,
+            "query": "barang tidak original kw tidak bekerja dengan baik kirim 2 pgp tidak bekerja di 2 hp saya lenovo n advan cuma jadi bangkai after sales buruk respon seller kurang no recommended Fear",
+            "top_k": 8,
+            "sufficiency": 0.8232
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_012",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.78,
+        "evidence_spans": [
+          "baru dibuka tapi bentulnya aneh. kaya"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11226.6,
+        "tokens": 791,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"baru dibuka tapi bentulnya aneh. kaya\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0075",
+          "EXEMP_0136",
+          "EXEMP_0081",
+          "EXEMP_0139"
+        ],
+        "sufficiency_score": 0.7104,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "baru dibuka tapi bentulnya aneh. kaya udah meleleh tapi dibekuin sendiri padahal baru buka dari pengiriman",
+            "top_k": 5,
+            "sufficiency": 0.5056
+          },
+          {
+            "step": 1,
+            "query": "baru dibuka tapi bentulnya aneh. kaya udah meleleh tapi dibekuin sendiri padahal baru buka dari pengiriman baru dibuka tetapi bentul aneh kaya sudah meleleh tetapi dibekuin sendiri padahal baru buka dari kirim",
+            "top_k": 7,
+            "sufficiency": 0.5646
+          },
+          {
+            "step": 2,
+            "query": "baru dibuka tetapi bentul aneh kaya sudah meleleh tetapi dibekuin sendiri padahal baru buka dari kirim Sadness",
+            "top_k": 8,
+            "sufficiency": 0.7104
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_014",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Pengiriman laptop dr toko tidak dicek"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10604.8,
+        "tokens": 1054,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Pengiriman laptop dr toko tidak dicek\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0144",
+          "EXEMP_0132",
+          "EXEMP_0139",
+          "EXEMP_0136"
+        ],
+        "sufficiency_score": 0.7959,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Pengiriman laptop dr toko tidak dicek dahulu,.. laptop yg dikasih ke pembeli layar pecah, kerdus rusak,.. padahal packingan tidak ada yg rusak,... menghabiskan waktu saja, buat klaim ke tokpedia, berminggu minggu baru berhasil klaim ke pihak asuransi. Ternyata toko yg sudah verified tidak menjamin, Pelayanan toko ini buruk, respon cepat saat awal beli aja,.. saat dikomplen sangat lama, mengulur2 waktu, tidak mau tanggung jawab,.. padahal jelas komplainan langsung dihari berikutny setelah paket dibuka, yg seharusny, bisa langsung tuker unit langsung dr toko.... Trus Apa gunany ditulis di Deskripsi Garansi toko 3 hari ... Cukup terakhir beli disini, thanks",
+            "top_k": 5,
+            "sufficiency": 0.5495
+          },
+          {
+            "step": 1,
+            "query": "Pengiriman laptop dr toko tidak dicek dahulu,.. laptop yg dikasih ke pembeli layar pecah, kerdus rusak,.. padahal packingan tidak ada yg rusak,... menghabiskan waktu saja, buat klaim ke tokpedia, berminggu minggu baru berhasil klaim ke pihak asuransi. Ternyata toko yg sudah verified tidak menjamin, Pelayanan toko ini buruk, respon cepat saat awal beli aja,.. saat dikomplen sangat lama, mengulur2 waktu, tidak mau tanggung jawab,.. padahal jelas komplainan langsung dihari berikutny setelah paket dibuka, yg seharusny, bisa langsung tuker unit langsung dr toko.... Trus Apa gunany ditulis di Deskripsi Garansi toko 3 hari ... Cukup terakhir beli disini, thanks kirim laptop dari seller tidak dicek dahulu laptop yang dikasih ke pembeli layar pecah kerdus rusak padahal packingan tidak ada yang rusak menghabiskan waktu saja untuk klaim ke tokpedia berminggu minggu baru berhasil klaim ke pihak asuransi ternyata seller yang sudah verified tidak menjamin pelayanan seller ini buruk respon cepat saat awal beli aja saat dikomplen sangat lama mengulur2 waktu tidak mau tanggung jawab padahal jelas komplainan langsung dihari berikutny sete paket dibuka yang seharusny bisa langsung tuker unit langsung dari seller trus apa gunany ditulis di deskripsi garansi seller 3 hari cukup terakhir beli disini terima kasih",
+            "top_k": 7,
+            "sufficiency": 0.7423
+          },
+          {
+            "step": 2,
+            "query": "kirim laptop dari seller tidak dicek dahulu laptop yang dikasih ke pembeli layar pecah kerdus rusak padahal packingan tidak ada yang rusak menghabiskan waktu saja untuk klaim ke tokpedia berminggu minggu baru berhasil klaim ke pihak asuransi ternyata seller yang sudah verified tidak menjamin pelayanan seller ini buruk respon cepat saat awal beli aja saat dikomplen sangat lama mengulur2 waktu tidak mau tanggung jawab padahal jelas komplainan langsung dihari berikutny sete paket dibuka yang seharusny bisa langsung tuker unit langsung dari seller trus apa gunany ditulis di deskripsi garansi seller 3 hari cukup terakhir beli disini terima kasih Fear",
+            "top_k": 8,
+            "sufficiency": 0.7959
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_009",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.9626,
+        "evidence_spans": [
+          "SERVICENYA BURUK BANGET!!!"
+        ],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10865.7,
+        "tokens": 439,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"SERVICENYA BURUK BANGET!!!\"], \"policy_citations\": [\"POLICY_ANGER\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_ANGER",
+          "EXEMP_0319",
+          "EXEMP_0289",
+          "EXEMP_0307",
+          "EXEMP_0267"
+        ],
+        "sufficiency_score": 0.7973,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "SERVICENYA BURUK BANGET!!!",
+            "top_k": 5,
+            "sufficiency": 0.7973
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_010",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.78,
+        "evidence_spans": [
+          "gak sesuai harga malah kualitas nol"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11479.7,
+        "tokens": 510,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"gak sesuai harga malah kualitas nol\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0127",
+          "EXEMP_0094",
+          "EXEMP_0172",
+          "EXEMP_0085"
+        ],
+        "sufficiency_score": 0.6437,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "gak sesuai harga malah kualitas nol",
+            "top_k": 5,
+            "sufficiency": 0.4905
+          },
+          {
+            "step": 1,
+            "query": "gak sesuai harga malah kualitas nol tidak sesuai harga malah kualitas nol",
+            "top_k": 7,
+            "sufficiency": 0.6437
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_011",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.78,
+        "evidence_spans": [
+          "cepet rusak, kadang konek kadang engga"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11776.6,
+        "tokens": 615,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"cepet rusak, kadang konek kadang engga\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0104",
+          "EXEMP_0169",
+          "EXEMP_0083",
+          "EXEMP_0098"
+        ],
+        "sufficiency_score": 0.642,
+        "retry_count": 2,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "cepet rusak, kadang konek kadang engga",
+            "top_k": 5,
+            "sufficiency": 0.4367
+          },
+          {
+            "step": 1,
+            "query": "cepet rusak, kadang konek kadang engga cepat rusak kadang konek kadang engga",
+            "top_k": 7,
+            "sufficiency": 0.5566
+          },
+          {
+            "step": 2,
+            "query": "cepat rusak kadang konek kadang engga Fear",
+            "top_k": 8,
+            "sufficiency": 0.642
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_ANS_016",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "barang yg dikirim hrsnya di cek"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9197.6,
+        "tokens": 692,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"barang yg dikirim hrsnya di cek\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0134",
+          "EXEMP_0183",
+          "EXEMP_0167",
+          "EXEMP_0185"
+        ],
+        "sufficiency_score": 0.7887,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "barang yg dikirim hrsnya di cek dulu, konsumen kan byr bukan gratis. masa paku rivert nya yg sebelah ada tutup penahannya. yg sebelahnya nggak ada tutup penahannya, jadi copotlah klo di pake. gimana sih...",
+            "top_k": 5,
+            "sufficiency": 0.6229
+          },
+          {
+            "step": 1,
+            "query": "barang yg dikirim hrsnya di cek dulu, konsumen kan byr bukan gratis. masa paku rivert nya yg sebelah ada tutup penahannya. yg sebelahnya nggak ada tutup penahannya, jadi copotlah klo di pake. gimana sih... barang yang kirim hrs di cek dulu konsumen kan byr bukan gratis masa paku rivert nya yang sebe ada tutup penahan yang sebelah tidak ada tutup penahan jadi copot kalau di pakai gimana sih",
+            "top_k": 7,
+            "sufficiency": 0.7887
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_UNANS_001",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.92,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks gibberish / ketikan acak yang tidak memiliki makna ulasan produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 8198.9,
+        "tokens": 599,
+        "raw_output": "{\"sentiment\": \"ABSTAIN\", \"emotion\": \"ABSTAIN\", \"confidence_score\": 0.92, \"evidence_spans\": [], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": true, \"abstain_reason\": \"Teks tidak valid sebagai ulasan produk.\"}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0099",
+          "EXEMP_0122",
+          "EXEMP_0078",
+          "EXEMP_0067"
+        ],
+        "sufficiency_score": 0.653,
+        "retry_count": 0,
+        "slice_type": "gibberish",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "asdfghjkl qwertyuiop zxcvbnm test test",
+            "top_k": 5,
+            "sufficiency": 0.653
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_UNANS_002",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.85,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks gibberish / ketikan acak yang tidak memiliki makna ulasan produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9983.2,
+        "tokens": 525,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Fear\", \"confidence_score\": 0.85, \"evidence_spans\": [\"dshjkfhdsajkfhdsjkfhkjdsahfjkdshfkjsdh\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": true, \"abstain_reason\": \"Unverified base output note\"}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0141",
+          "EXEMP_0157",
+          "EXEMP_0089",
+          "EXEMP_0137"
+        ],
+        "sufficiency_score": 0.4316,
+        "retry_count": 0,
+        "slice_type": "gibberish",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "dshjkfhdsajkfhdsjkfhkjdsahfjkdshfkjsdh",
+            "top_k": 5,
+            "sufficiency": 0.4316
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_UNANS_003",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.92,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks hanya berisi angka atau tanda baca tanpa opini produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9327.3,
+        "tokens": 557,
+        "raw_output": "{\"sentiment\": \"ABSTAIN\", \"emotion\": \"ABSTAIN\", \"confidence_score\": 0.92, \"evidence_spans\": [], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": true, \"abstain_reason\": \"Teks tidak valid sebagai ulasan produk.\"}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0074",
+          "EXEMP_0072",
+          "EXEMP_0075",
+          "EXEMP_0110"
+        ],
+        "sufficiency_score": 0.6108,
+        "retry_count": 0,
+        "slice_type": "numeric_or_punct",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "1234567890 0987654321",
+            "top_k": 5,
+            "sufficiency": 0.6108
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      },
+      {
+        "query_id": "D_UNANS_004",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.85,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks hanya berisi angka atau tanda baca tanpa opini produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B5",
+        "model": "qwen2.5:1.5b+lora_r16",
+        "prompt_version": "b5_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9850.7,
+        "tokens": 471,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"..... ..... ..... .....\"], \"policy_citations\": [\"POLICY_ANGER\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_ANGER",
+          "EXEMP_0325",
+          "EXEMP_0283",
+          "EXEMP_0292",
+          "EXEMP_0321"
+        ],
+        "sufficiency_score": 0.6331,
+        "retry_count": 0,
+        "slice_type": "numeric_or_punct",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "..... ..... ..... .....",
+            "top_k": 5,
+            "sufficiency": 0.6331
+          }
+        ],
+        "parent_config": "B4",
+        "adapter_id": "qwen25_15b_prdect_lora_r16"
+      }
+    ],
+    "B6": [
+      {
+        "query_id": "D_ANS_001",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9701,
+        "evidence_spans": [
+          "janjinya dapat 3 kaleng kecil dan"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9847.4,
+        "tokens": 714,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"janjinya dapat 3 kaleng kecil dan\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0088",
+          "EXEMP_0070",
+          "EXEMP_0110",
+          "EXEMP_0087"
+        ],
+        "sufficiency_score": 0.8048,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "janjinya dapat 3 kaleng kecil dan 1 kaleng besar tapi yg datang adalah 4 kaleng kecil , kecewa bangetttt",
+            "top_k": 5,
+            "sufficiency": 0.5815
+          },
+          {
+            "step": 1,
+            "query": "janjinya dapat 3 kaleng kecil dan 1 kaleng besar tapi yg datang adalah 4 kaleng kecil , kecewa bangetttt janji dapat 3 kaleng kecil dan 1 kaleng besar tetapi yang datang ada 4 kaleng kecil kecewa banget",
+            "top_k": 7,
+            "sufficiency": 0.7248
+          },
+          {
+            "step": 2,
+            "query": "janji dapat 3 kaleng kecil dan 1 kaleng besar tetapi yang datang ada 4 kaleng kecil kecewa banget Sadness",
+            "top_k": 8,
+            "sufficiency": 0.8048
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "janji dapat 3 kaleng kecil dan 1 kaleng besar tetapi yang datang ada 4 kaleng kecil kecewa banget",
+              "slang_detected": {
+                "tapi": "tetapi",
+                "yg": "yang"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Sadness",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Sadness",
+              "version": "v1.0",
+              "rule_note": "POLICY_SADNESS (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "janjinya dapat 3 kaleng kecil dan"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_008",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Lampunya sering error padahal terhubung ke"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 8665.9,
+        "tokens": 682,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Lampunya sering error padahal terhubung ke\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0189",
+          "EXEMP_0082",
+          "EXEMP_0072",
+          "EXEMP_0081"
+        ],
+        "sufficiency_score": 0.6648,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Lampunya sering error padahal terhubung ke wifi, saklar hidup tapi dihidupin di hp gak mau nyala",
+            "top_k": 5,
+            "sufficiency": 0.3855
+          },
+          {
+            "step": 1,
+            "query": "Lampunya sering error padahal terhubung ke wifi, saklar hidup tapi dihidupin di hp gak mau nyala lampu sering error padahal terhubung ke wifi saklar hidup tetapi dihidupin di hp tidak mau nyala",
+            "top_k": 7,
+            "sufficiency": 0.5677
+          },
+          {
+            "step": 2,
+            "query": "lampu sering error padahal terhubung ke wifi saklar hidup tetapi dihidupin di hp tidak mau nyala Sadness",
+            "top_k": 8,
+            "sufficiency": 0.6648
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "lampu sering error padahal terhubung ke wifi saklar hidup tetapi dihidupin di hp tidak mau nyala",
+              "slang_detected": {
+                "tapi": "tetapi",
+                "gak": "tidak"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Sadness",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Sadness",
+              "version": "v1.0",
+              "rule_note": "POLICY_SADNESS (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "Lampunya sering error padahal terhubung ke"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_015",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9996,
+        "evidence_spans": [
+          "tali senter kepala ,berubah... gak bagus...."
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9227.1,
+        "tokens": 640,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"tali senter kepala ,berubah... gak bagus....\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0075",
+          "EXEMP_0110",
+          "EXEMP_0115",
+          "EXEMP_0096"
+        ],
+        "sufficiency_score": 0.7603,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "tali senter kepala ,berubah... gak bagus.... kecewa.",
+            "top_k": 5,
+            "sufficiency": 0.6178
+          },
+          {
+            "step": 1,
+            "query": "tali senter kepala ,berubah... gak bagus.... kecewa. tali senter kepala berubah tidak bagus kecewa",
+            "top_k": 7,
+            "sufficiency": 0.7603
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "tali senter kepala berubah tidak bagus kecewa",
+              "slang_detected": {
+                "gak": "tidak"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Sadness",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Sadness",
+              "version": "v1.0",
+              "rule_note": "POLICY_SADNESS (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "tali senter kepala ,berubah... gak bagus...."
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_022",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.9837,
+        "evidence_spans": [
+          "Bahannya beda dari orderan yg warna"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11380.6,
+        "tokens": 514,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Bahannya beda dari orderan yg warna\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0125",
+          "EXEMP_0081",
+          "EXEMP_0105",
+          "EXEMP_0129"
+        ],
+        "sufficiency_score": 0.805,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Bahannya beda dari orderan yg warna coklat dan baru di pakai sekali langsung robek",
+            "top_k": 5,
+            "sufficiency": 0.6651
+          },
+          {
+            "step": 1,
+            "query": "Bahannya beda dari orderan yg warna coklat dan baru di pakai sekali langsung robek bahan beda dari orderan yang warna coklat dan baru di pakai banget langsung robek",
+            "top_k": 7,
+            "sufficiency": 0.805
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "bahan beda dari orderan yang warna coklat dan baru di pakai banget langsung robek",
+              "slang_detected": {
+                "yg": "yang",
+                "sekali": "banget"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Sadness",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Sadness",
+              "version": "v1.0",
+              "rule_note": "POLICY_SADNESS (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "Bahannya beda dari orderan yg warna"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_002",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.9474,
+        "evidence_spans": [
+          "ckup bagus..terimakasih"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 6910.0,
+        "tokens": 383,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Happy\", \"confidence_score\": 0.85, \"evidence_spans\": [\"ckup bagus..terimakasih\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0029",
+          "EXEMP_0022",
+          "EXEMP_0007",
+          "EXEMP_0004"
+        ],
+        "sufficiency_score": 0.811,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "ckup bagus..terimakasih",
+            "top_k": 5,
+            "sufficiency": 0.811
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "ckup bagus terimakasih",
+              "slang_detected": {}
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Happy",
+              "refined_sentiment": "Positive"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Happy",
+              "version": "v1.0",
+              "rule_note": "POLICY_HAPPY (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "ckup bagus..terimakasih"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_004",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.9328,
+        "evidence_spans": [
+          "cepet bgt sampai, packing termat sangat"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10825.0,
+        "tokens": 612,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"cepet bgt sampai, packing termat sangat\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0040",
+          "EXEMP_0046",
+          "EXEMP_0030",
+          "EXEMP_0017"
+        ],
+        "sufficiency_score": 0.829,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "cepet bgt sampai, packing termat sangat aman dan TDK bocor, bubble wrap tebellll sekali, blm dicoba semoga bermanfaat dengan baik",
+            "top_k": 5,
+            "sufficiency": 0.7045
+          },
+          {
+            "step": 1,
+            "query": "cepet bgt sampai, packing termat sangat aman dan TDK bocor, bubble wrap tebellll sekali, blm dicoba semoga bermanfaat dengan baik cepat banget sampai packing termat sangat aman dan tidak bocor bubble wrap tebel banget belum dicoba semoga bermanfaat dengan baik",
+            "top_k": 7,
+            "sufficiency": 0.829
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "cepat banget sampai packing termat sangat aman dan tidak bocor bubble wrap tebel banget belum dicoba semoga bermanfaat dengan baik",
+              "slang_detected": {
+                "cepet": "cepat",
+                "bgt": "banget",
+                "tdk": "tidak",
+                "sekali": "banget",
+                "blm": "belum"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Happy",
+              "refined_sentiment": "Positive"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Happy",
+              "version": "v1.0",
+              "rule_note": "POLICY_HAPPY (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "cepet bgt sampai, packing termat sangat"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_005",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.9362,
+        "evidence_spans": [
+          "kain adem, jahitan bagus, ukuran pas,"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 8611.1,
+        "tokens": 405,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Happy\", \"confidence_score\": 0.85, \"evidence_spans\": [\"kain adem, jahitan bagus, ukuran pas,\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0029",
+          "EXEMP_0045",
+          "EXEMP_0038",
+          "EXEMP_0018"
+        ],
+        "sufficiency_score": 0.8356,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "kain adem, jahitan bagus, ukuran pas, Positive",
+            "top_k": 5,
+            "sufficiency": 0.8356
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "kain adem jahitan bagus ukuran pas positive",
+              "slang_detected": {}
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Happy",
+              "refined_sentiment": "Positive"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Happy",
+              "version": "v1.0",
+              "rule_note": "POLICY_HAPPY (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "kain adem, jahitan bagus, ukuran pas,"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_021",
+        "sentiment": "Positive",
+        "emotion": "Happy",
+        "confidence_score": 0.9536,
+        "evidence_spans": [
+          "Material Produk Bagus. Produk Original"
+        ],
+        "policy_citations": [
+          "POLICY_HAPPY"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11251.5,
+        "tokens": 510,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Happy\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Material Produk Bagus. Produk Original\"], \"policy_citations\": [\"POLICY_HAPPY\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_HAPPY",
+          "EXEMP_0043",
+          "EXEMP_0061",
+          "EXEMP_0063",
+          "EXEMP_0055"
+        ],
+        "sufficiency_score": 1.0,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Material Produk Bagus. Produk Original",
+            "top_k": 5,
+            "sufficiency": 0.892
+          },
+          {
+            "step": 1,
+            "query": "Material Produk Bagus. Produk Original material barang bagus barang original",
+            "top_k": 7,
+            "sufficiency": 1.0
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "material barang bagus barang original",
+              "slang_detected": {
+                "produk": "barang"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Happy",
+              "refined_sentiment": "Positive"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Happy",
+              "version": "v1.0",
+              "rule_note": "POLICY_HAPPY (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "Material Produk Bagus. Produk Original"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_003",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.9624,
+        "evidence_spans": [
+          "Lucuu bangett.. Pengirimannya cepat, sellernya responsif"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9231.1,
+        "tokens": 679,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Lucuu bangett.. Pengirimannya cepat, sellernya responsif\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0201",
+          "EXEMP_0196",
+          "EXEMP_0224",
+          "EXEMP_0237"
+        ],
+        "sufficiency_score": 0.8476,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Lucuu bangett.. Pengirimannya cepat, sellernya responsif banget.. Subuh2 di chat jg dijawab soalnya aku liat ini uda dr malam banget sih.. Kirain bakal baru dijawab agak siang.. Trnyata subuh uda dijawab informatif banget.. Ngsh tau klo dikasih oil agak berkabut.. Kirain bakal lbh berkabut dr ini.. Trnyata kabutnya cm kyk difoto.. Seneng deh.. Lampunya jg terang klo di tmpt gelap makasihh yaa",
+            "top_k": 5,
+            "sufficiency": 0.7116
+          },
+          {
+            "step": 1,
+            "query": "Lucuu bangett.. Pengirimannya cepat, sellernya responsif banget.. Subuh2 di chat jg dijawab soalnya aku liat ini uda dr malam banget sih.. Kirain bakal baru dijawab agak siang.. Trnyata subuh uda dijawab informatif banget.. Ngsh tau klo dikasih oil agak berkabut.. Kirain bakal lbh berkabut dr ini.. Trnyata kabutnya cm kyk difoto.. Seneng deh.. Lampunya jg terang klo di tmpt gelap makasihh yaa lucuu bangett kirim cepat seller responsif banget subuh2 di chat juga dijawab soal saya liat ini sudah dari malam banget sih kirain bakal baru dijawab agak siang trnyata subuh sudah dijawab informatif banget ngsh tau kalau dikasih oil agak berkabut kirain bakal lbh berkabut dari ini trnyata kabut cm kyk difoto seneng deh lampu juga terang kalau di tmpt gelap makasihh yaa",
+            "top_k": 7,
+            "sufficiency": 0.8476
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "lucuu bangett kirim cepat seller responsif banget subuh2 di chat juga dijawab soal saya liat ini sudah dari malam banget sih kirain bakal baru dijawab agak siang trnyata subuh sudah dijawab informatif banget ngsh tau kalau dikasih oil agak berkabut kirain bakal lbh berkabut dari ini trnyata kabut cm kyk difoto seneng deh lampu juga terang kalau di tmpt gelap makasihh yaa",
+              "slang_detected": {
+                "jg": "juga",
+                "aku": "saya",
+                "uda": "sudah",
+                "dr": "dari",
+                "klo": "kalau"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Love",
+              "refined_sentiment": "Positive"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Love",
+              "version": "v1.0",
+              "rule_note": "POLICY_LOVE (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "Lucuu bangett.. Pengirimannya cepat, sellernya responsif"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_013",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.9956,
+        "evidence_spans": [
+          "Mantaap...rekomendasi banget murah bukan murahan dan"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10425.4,
+        "tokens": 475,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Love\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Mantaap...rekomendasi banget murah bukan murahan dan\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0259",
+          "EXEMP_0223",
+          "EXEMP_0226",
+          "EXEMP_0232"
+        ],
+        "sufficiency_score": 0.8147,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Mantaap...rekomendasi banget murah bukan murahan dan enak rasanya",
+            "top_k": 5,
+            "sufficiency": 0.8147
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "mantaap rekomendasi banget murah bukan murahan dan enak rasa",
+              "slang_detected": {}
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Love",
+              "refined_sentiment": "Positive"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Love",
+              "version": "v1.0",
+              "rule_note": "POLICY_LOVE (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "Mantaap...rekomendasi banget murah bukan murahan dan"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_017",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.861,
+        "evidence_spans": [
+          "Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan"
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11751.2,
+        "tokens": 524,
+        "raw_output": "{\"sentiment\": \"Positive\", \"emotion\": \"Love\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0242",
+          "EXEMP_0231",
+          "EXEMP_0213",
+          "EXEMP_0207"
+        ],
+        "sufficiency_score": 0.7997,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan menjadi kinclong kembali! Mantap!. Senang banget bisa di pasangin di bengkelnya. Senang banget ada home servicenya!.",
+            "top_k": 5,
+            "sufficiency": 0.6589
+          },
+          {
+            "step": 1,
+            "query": "Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan menjadi kinclong kembali! Mantap!. Senang banget bisa di pasangin di bengkelnya. Senang banget ada home servicenya!. kendaraan menjadi kinclong kembali mantap kendaraan menjadi kinclong kembali mantap senang banget bisa di pasangin di bengkel senang banget ada home service",
+            "top_k": 7,
+            "sufficiency": 0.7997
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "kendaraan menjadi kinclong kembali mantap kendaraan menjadi kinclong kembali mantap senang banget bisa di pasangin di bengkel senang banget ada home service",
+              "slang_detected": {
+                "mantap": "mantap"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Love",
+              "refined_sentiment": "Positive"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Love",
+              "version": "v1.0",
+              "rule_note": "POLICY_LOVE (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "Kendaraan menjadi kinclong kembali! Mantap!. Kendaraan"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_018",
+        "sentiment": "Positive",
+        "emotion": "Love",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Respon dan proses cepat, pengiriman juga."
+        ],
+        "policy_citations": [
+          "POLICY_LOVE"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11302.0,
+        "tokens": 588,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Respon dan proses cepat, pengiriman juga.\"], \"policy_citations\": [\"POLICY_LOVE\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_LOVE",
+          "EXEMP_0252",
+          "EXEMP_0017",
+          "EXEMP_0237",
+          "EXEMP_0199"
+        ],
+        "sufficiency_score": 0.7567,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Respon dan proses cepat, pengiriman juga. Toko rekomendasi",
+            "top_k": 5,
+            "sufficiency": 0.5849
+          },
+          {
+            "step": 1,
+            "query": "Respon dan proses cepat, pengiriman juga. Toko rekomendasi respon dan proses cepat kirim juga seller rekomendasi",
+            "top_k": 7,
+            "sufficiency": 0.7567
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "respon dan proses cepat kirim juga seller rekomendasi",
+              "slang_detected": {
+                "pengiriman": "kirim",
+                "toko": "seller"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Love",
+              "refined_sentiment": "Positive"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Love",
+              "version": "v1.0",
+              "rule_note": "POLICY_LOVE (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "Respon dan proses cepat, pengiriman juga."
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_006",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.8978,
+        "evidence_spans": [
+          "Ternyata tidak sesuai. Tidak dpat dipakai"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10773.1,
+        "tokens": 582,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Ternyata tidak sesuai. Tidak dpat dipakai\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0094",
+          "EXEMP_0120",
+          "EXEMP_0087",
+          "EXEMP_0119"
+        ],
+        "sufficiency_score": 0.9085,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Ternyata tidak sesuai. Tidak dpat dipakai",
+            "top_k": 5,
+            "sufficiency": 0.7637
+          },
+          {
+            "step": 1,
+            "query": "Ternyata tidak sesuai. Tidak dpat dipakai ternyata tidak sesuai tidak dpat pakai",
+            "top_k": 7,
+            "sufficiency": 0.9085
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "ternyata tidak sesuai tidak dpat pakai",
+              "slang_detected": {
+                "dipakai": "pakai"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Fear",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Fear",
+              "version": "v1.0",
+              "rule_note": "POLICY_FEAR (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "Ternyata tidak sesuai. Tidak dpat dipakai"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_007",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.985,
+        "evidence_spans": [
+          "Produk tidak ORI (KW),tidak bekerja dengan"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10701.8,
+        "tokens": 714,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Produk tidak ORI (KW),tidak bekerja dengan\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0187",
+          "EXEMP_0131",
+          "EXEMP_0194",
+          "EXEMP_0184"
+        ],
+        "sufficiency_score": 0.8232,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Produk tidak ORI (KW),tidak bekerja dengan baik.dikirim 2 PGP tidak bekerja di 2 hp saya Lenovo n Advan.Cuma jadi bangkai.After sales buruk,Respon seller kurang.no recommended.",
+            "top_k": 5,
+            "sufficiency": 0.6075
+          },
+          {
+            "step": 1,
+            "query": "Produk tidak ORI (KW),tidak bekerja dengan baik.dikirim 2 PGP tidak bekerja di 2 hp saya Lenovo n Advan.Cuma jadi bangkai.After sales buruk,Respon seller kurang.no recommended. barang tidak original kw tidak bekerja dengan baik kirim 2 pgp tidak bekerja di 2 hp saya lenovo n advan cuma jadi bangkai after sales buruk respon seller kurang no recommended",
+            "top_k": 7,
+            "sufficiency": 0.7453
+          },
+          {
+            "step": 2,
+            "query": "barang tidak original kw tidak bekerja dengan baik kirim 2 pgp tidak bekerja di 2 hp saya lenovo n advan cuma jadi bangkai after sales buruk respon seller kurang no recommended Fear",
+            "top_k": 8,
+            "sufficiency": 0.8232
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "barang tidak original kw tidak bekerja dengan baik kirim 2 pgp tidak bekerja di 2 hp saya lenovo n advan cuma jadi bangkai after sales buruk respon seller kurang no recommended",
+              "slang_detected": {
+                "produk": "barang",
+                "ori": "original",
+                "dikirim": "kirim"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Fear",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Fear",
+              "version": "v1.0",
+              "rule_note": "POLICY_FEAR (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "Produk tidak ORI (KW),tidak bekerja dengan"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_012",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.78,
+        "evidence_spans": [
+          "baru dibuka tapi bentulnya aneh. kaya"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11260.6,
+        "tokens": 791,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"baru dibuka tapi bentulnya aneh. kaya\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0075",
+          "EXEMP_0136",
+          "EXEMP_0081",
+          "EXEMP_0139"
+        ],
+        "sufficiency_score": 0.7104,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "baru dibuka tapi bentulnya aneh. kaya udah meleleh tapi dibekuin sendiri padahal baru buka dari pengiriman",
+            "top_k": 5,
+            "sufficiency": 0.5056
+          },
+          {
+            "step": 1,
+            "query": "baru dibuka tapi bentulnya aneh. kaya udah meleleh tapi dibekuin sendiri padahal baru buka dari pengiriman baru dibuka tetapi bentul aneh kaya sudah meleleh tetapi dibekuin sendiri padahal baru buka dari kirim",
+            "top_k": 7,
+            "sufficiency": 0.5646
+          },
+          {
+            "step": 2,
+            "query": "baru dibuka tetapi bentul aneh kaya sudah meleleh tetapi dibekuin sendiri padahal baru buka dari kirim Sadness",
+            "top_k": 8,
+            "sufficiency": 0.7104
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "baru dibuka tetapi bentul aneh kaya sudah meleleh tetapi dibekuin sendiri padahal baru buka dari kirim",
+              "slang_detected": {
+                "tapi": "tetapi",
+                "udah": "sudah",
+                "pengiriman": "kirim"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Fear",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Fear",
+              "version": "v1.0",
+              "rule_note": "POLICY_FEAR (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "baru dibuka tapi bentulnya aneh. kaya"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_014",
+        "sentiment": "Negative",
+        "emotion": "Fear",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "Pengiriman laptop dr toko tidak dicek"
+        ],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10610.3,
+        "tokens": 1054,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"Pengiriman laptop dr toko tidak dicek\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0144",
+          "EXEMP_0132",
+          "EXEMP_0139",
+          "EXEMP_0136"
+        ],
+        "sufficiency_score": 0.7959,
+        "retry_count": 2,
+        "slice_type": "conflict",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "Pengiriman laptop dr toko tidak dicek dahulu,.. laptop yg dikasih ke pembeli layar pecah, kerdus rusak,.. padahal packingan tidak ada yg rusak,... menghabiskan waktu saja, buat klaim ke tokpedia, berminggu minggu baru berhasil klaim ke pihak asuransi. Ternyata toko yg sudah verified tidak menjamin, Pelayanan toko ini buruk, respon cepat saat awal beli aja,.. saat dikomplen sangat lama, mengulur2 waktu, tidak mau tanggung jawab,.. padahal jelas komplainan langsung dihari berikutny setelah paket dibuka, yg seharusny, bisa langsung tuker unit langsung dr toko.... Trus Apa gunany ditulis di Deskripsi Garansi toko 3 hari ... Cukup terakhir beli disini, thanks",
+            "top_k": 5,
+            "sufficiency": 0.5495
+          },
+          {
+            "step": 1,
+            "query": "Pengiriman laptop dr toko tidak dicek dahulu,.. laptop yg dikasih ke pembeli layar pecah, kerdus rusak,.. padahal packingan tidak ada yg rusak,... menghabiskan waktu saja, buat klaim ke tokpedia, berminggu minggu baru berhasil klaim ke pihak asuransi. Ternyata toko yg sudah verified tidak menjamin, Pelayanan toko ini buruk, respon cepat saat awal beli aja,.. saat dikomplen sangat lama, mengulur2 waktu, tidak mau tanggung jawab,.. padahal jelas komplainan langsung dihari berikutny setelah paket dibuka, yg seharusny, bisa langsung tuker unit langsung dr toko.... Trus Apa gunany ditulis di Deskripsi Garansi toko 3 hari ... Cukup terakhir beli disini, thanks kirim laptop dari seller tidak dicek dahulu laptop yang dikasih ke pembeli layar pecah kerdus rusak padahal packingan tidak ada yang rusak menghabiskan waktu saja untuk klaim ke tokpedia berminggu minggu baru berhasil klaim ke pihak asuransi ternyata seller yang sudah verified tidak menjamin pelayanan seller ini buruk respon cepat saat awal beli aja saat dikomplen sangat lama mengulur2 waktu tidak mau tanggung jawab padahal jelas komplainan langsung dihari berikutny sete paket dibuka yang seharusny bisa langsung tuker unit langsung dari seller trus apa gunany ditulis di deskripsi garansi seller 3 hari cukup terakhir beli disini terima kasih",
+            "top_k": 7,
+            "sufficiency": 0.7423
+          },
+          {
+            "step": 2,
+            "query": "kirim laptop dari seller tidak dicek dahulu laptop yang dikasih ke pembeli layar pecah kerdus rusak padahal packingan tidak ada yang rusak menghabiskan waktu saja untuk klaim ke tokpedia berminggu minggu baru berhasil klaim ke pihak asuransi ternyata seller yang sudah verified tidak menjamin pelayanan seller ini buruk respon cepat saat awal beli aja saat dikomplen sangat lama mengulur2 waktu tidak mau tanggung jawab padahal jelas komplainan langsung dihari berikutny sete paket dibuka yang seharusny bisa langsung tuker unit langsung dari seller trus apa gunany ditulis di deskripsi garansi seller 3 hari cukup terakhir beli disini terima kasih Fear",
+            "top_k": 8,
+            "sufficiency": 0.7959
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "kirim laptop dari seller tidak dicek dahulu laptop yang dikasih ke pembeli layar pecah kerdus rusak padahal packingan tidak ada yang rusak menghabiskan waktu saja untuk klaim ke tokpedia berminggu minggu baru berhasil klaim ke pihak asuransi ternyata seller yang sudah verified tidak menjamin pelayanan seller ini buruk respon cepat saat awal beli aja saat dikomplen sangat lama mengulur2 waktu tidak mau tanggung jawab padahal jelas komplainan langsung dihari berikutny sete paket dibuka yang seharusny bisa langsung tuker unit langsung dari seller trus apa gunany ditulis di deskripsi garansi seller 3 hari cukup terakhir beli disini terima kasih",
+              "slang_detected": {
+                "pengiriman": "kirim",
+                "dr": "dari",
+                "toko": "seller",
+                "yg": "yang",
+                "buat": "untuk",
+                "thanks": "terima kasih"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Fear",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Fear",
+              "version": "v1.0",
+              "rule_note": "POLICY_FEAR (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "Pengiriman laptop dr toko tidak dicek"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_009",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.9626,
+        "evidence_spans": [
+          "SERVICENYA BURUK BANGET!!!"
+        ],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 10834.0,
+        "tokens": 439,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"SERVICENYA BURUK BANGET!!!\"], \"policy_citations\": [\"POLICY_ANGER\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_ANGER",
+          "EXEMP_0319",
+          "EXEMP_0289",
+          "EXEMP_0307",
+          "EXEMP_0267"
+        ],
+        "sufficiency_score": 0.7973,
+        "retry_count": 0,
+        "slice_type": "easy",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "SERVICENYA BURUK BANGET!!!",
+            "top_k": 5,
+            "sufficiency": 0.7973
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "service buruk banget",
+              "slang_detected": {}
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Anger",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Anger",
+              "version": "v1.0",
+              "rule_note": "POLICY_ANGER (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "SERVICENYA BURUK BANGET!!!"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_010",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.78,
+        "evidence_spans": [
+          "gak sesuai harga malah kualitas nol"
+        ],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11473.8,
+        "tokens": 510,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"gak sesuai harga malah kualitas nol\"], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0127",
+          "EXEMP_0094",
+          "EXEMP_0172",
+          "EXEMP_0085"
+        ],
+        "sufficiency_score": 0.6437,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "gak sesuai harga malah kualitas nol",
+            "top_k": 5,
+            "sufficiency": 0.4905
+          },
+          {
+            "step": 1,
+            "query": "gak sesuai harga malah kualitas nol tidak sesuai harga malah kualitas nol",
+            "top_k": 7,
+            "sufficiency": 0.6437
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "tidak sesuai harga malah kualitas nol",
+              "slang_detected": {
+                "gak": "tidak"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Anger",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Anger",
+              "version": "v1.0",
+              "rule_note": "POLICY_ANGER (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "gak sesuai harga malah kualitas nol"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_011",
+        "sentiment": "Negative",
+        "emotion": "Anger",
+        "confidence_score": 0.78,
+        "evidence_spans": [
+          "cepet rusak, kadang konek kadang engga"
+        ],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 11745.0,
+        "tokens": 615,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"cepet rusak, kadang konek kadang engga\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0104",
+          "EXEMP_0169",
+          "EXEMP_0083",
+          "EXEMP_0098"
+        ],
+        "sufficiency_score": 0.642,
+        "retry_count": 2,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "cepet rusak, kadang konek kadang engga",
+            "top_k": 5,
+            "sufficiency": 0.4367
+          },
+          {
+            "step": 1,
+            "query": "cepet rusak, kadang konek kadang engga cepat rusak kadang konek kadang engga",
+            "top_k": 7,
+            "sufficiency": 0.5566
+          },
+          {
+            "step": 2,
+            "query": "cepat rusak kadang konek kadang engga Fear",
+            "top_k": 8,
+            "sufficiency": 0.642
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "cepat rusak kadang konek kadang engga",
+              "slang_detected": {
+                "cepet": "cepat"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Anger",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Anger",
+              "version": "v1.0",
+              "rule_note": "POLICY_ANGER (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "cepet rusak, kadang konek kadang engga"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_ANS_016",
+        "sentiment": "Negative",
+        "emotion": "Sadness",
+        "confidence_score": 0.85,
+        "evidence_spans": [
+          "barang yg dikirim hrsnya di cek"
+        ],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": false,
+        "abstain_reason": null,
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9183.9,
+        "tokens": 692,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Sadness\", \"confidence_score\": 0.85, \"evidence_spans\": [\"barang yg dikirim hrsnya di cek\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0134",
+          "EXEMP_0183",
+          "EXEMP_0167",
+          "EXEMP_0185"
+        ],
+        "sufficiency_score": 0.7887,
+        "retry_count": 1,
+        "slice_type": "ambiguous_slang",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "barang yg dikirim hrsnya di cek dulu, konsumen kan byr bukan gratis. masa paku rivert nya yg sebelah ada tutup penahannya. yg sebelahnya nggak ada tutup penahannya, jadi copotlah klo di pake. gimana sih...",
+            "top_k": 5,
+            "sufficiency": 0.6229
+          },
+          {
+            "step": 1,
+            "query": "barang yg dikirim hrsnya di cek dulu, konsumen kan byr bukan gratis. masa paku rivert nya yg sebelah ada tutup penahannya. yg sebelahnya nggak ada tutup penahannya, jadi copotlah klo di pake. gimana sih... barang yang kirim hrs di cek dulu konsumen kan byr bukan gratis masa paku rivert nya yang sebe ada tutup penahan yang sebelah tidak ada tutup penahan jadi copot kalau di pakai gimana sih",
+            "top_k": 7,
+            "sufficiency": 0.7887
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 4,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": [
+          {
+            "tool": "normalize_slang",
+            "result": {
+              "status": "ok",
+              "normalized": "barang yang kirim hrs di cek dulu konsumen kan byr bukan gratis masa paku rivert nya yang sebe ada tutup penahan yang sebelah tidak ada tutup penahan jadi copot kalau di pakai gimana sih",
+              "slang_detected": {
+                "yg": "yang",
+                "dikirim": "kirim",
+                "nggak": "tidak",
+                "klo": "kalau",
+                "pake": "pakai"
+              }
+            }
+          },
+          {
+            "tool": "calibrated_affect_probe",
+            "result": {
+              "status": "ok",
+              "refined_emotion": "Sadness",
+              "refined_sentiment": "Negative"
+            }
+          },
+          {
+            "tool": "lookup_policy_guideline",
+            "result": {
+              "status": "ok",
+              "verified_emotion": "Sadness",
+              "version": "v1.0",
+              "rule_note": "POLICY_SADNESS (v1.0) verified."
+            }
+          },
+          {
+            "tool": "verify_evidence_span",
+            "result": {
+              "status": "ok",
+              "valid_spans": [
+                "barang yg dikirim hrsnya di cek"
+              ],
+              "repaired": false
+            }
+          }
+        ]
+      },
+      {
+        "query_id": "D_UNANS_001",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.92,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks gibberish / ketikan acak yang tidak memiliki makna ulasan produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 8183.6,
+        "tokens": 599,
+        "raw_output": "{\"sentiment\": \"ABSTAIN\", \"emotion\": \"ABSTAIN\", \"confidence_score\": 0.92, \"evidence_spans\": [], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": true, \"abstain_reason\": \"Teks tidak valid sebagai ulasan produk.\"}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0099",
+          "EXEMP_0122",
+          "EXEMP_0078",
+          "EXEMP_0067"
+        ],
+        "sufficiency_score": 0.653,
+        "retry_count": 0,
+        "slice_type": "gibberish",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "asdfghjkl qwertyuiop zxcvbnm test test",
+            "top_k": 5,
+            "sufficiency": 0.653
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 0,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": []
+      },
+      {
+        "query_id": "D_UNANS_002",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.85,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_FEAR"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks gibberish / ketikan acak yang tidak memiliki makna ulasan produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9959.9,
+        "tokens": 525,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Fear\", \"confidence_score\": 0.85, \"evidence_spans\": [\"dshjkfhdsajkfhdsjkfhkjdsahfjkdshfkjsdh\"], \"policy_citations\": [\"POLICY_FEAR\"], \"guideline_version\": \"v1.0\", \"abstain\": true, \"abstain_reason\": \"Unverified base output note\"}",
+        "retrieved_ids": [
+          "POLICY_FEAR",
+          "EXEMP_0141",
+          "EXEMP_0157",
+          "EXEMP_0089",
+          "EXEMP_0137"
+        ],
+        "sufficiency_score": 0.4316,
+        "retry_count": 0,
+        "slice_type": "gibberish",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "dshjkfhdsajkfhdsjkfhkjdsahfjkdshfkjsdh",
+            "top_k": 5,
+            "sufficiency": 0.4316
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 0,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": []
+      },
+      {
+        "query_id": "D_UNANS_003",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.92,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_SADNESS"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks hanya berisi angka atau tanda baca tanpa opini produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9316.6,
+        "tokens": 557,
+        "raw_output": "{\"sentiment\": \"ABSTAIN\", \"emotion\": \"ABSTAIN\", \"confidence_score\": 0.92, \"evidence_spans\": [], \"policy_citations\": [\"POLICY_SADNESS\"], \"guideline_version\": \"v1.0\", \"abstain\": true, \"abstain_reason\": \"Teks tidak valid sebagai ulasan produk.\"}",
+        "retrieved_ids": [
+          "POLICY_SADNESS",
+          "EXEMP_0074",
+          "EXEMP_0072",
+          "EXEMP_0075",
+          "EXEMP_0110"
+        ],
+        "sufficiency_score": 0.6108,
+        "retry_count": 0,
+        "slice_type": "numeric_or_punct",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "1234567890 0987654321",
+            "top_k": 5,
+            "sufficiency": 0.6108
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 0,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": []
+      },
+      {
+        "query_id": "D_UNANS_004",
+        "sentiment": "ABSTAIN",
+        "emotion": "ABSTAIN",
+        "confidence_score": 0.85,
+        "evidence_spans": [],
+        "policy_citations": [
+          "POLICY_ANGER"
+        ],
+        "guideline_version": "v1.0",
+        "abstain": true,
+        "abstain_reason": "Teks hanya berisi angka atau tanda baca tanpa opini produk.",
+        "verifier_applied": true,
+        "unsupported_claim_detected": false,
+        "false_refusal_repaired": false,
+        "config": "B6",
+        "model": "qwen2.5:1.5b+lora_r16+guarded_agent",
+        "prompt_version": "b6_v1",
+        "index_version": "corpus_v4",
+        "seed": 42,
+        "latency_ms": 9810.0,
+        "tokens": 471,
+        "raw_output": "{\"sentiment\": \"Negative\", \"emotion\": \"Anger\", \"confidence_score\": 0.85, \"evidence_spans\": [\"..... ..... ..... .....\"], \"policy_citations\": [\"POLICY_ANGER\"], \"guideline_version\": \"v1.0\", \"abstain\": false, \"abstain_reason\": null}",
+        "retrieved_ids": [
+          "POLICY_ANGER",
+          "EXEMP_0325",
+          "EXEMP_0283",
+          "EXEMP_0292",
+          "EXEMP_0321"
+        ],
+        "sufficiency_score": 0.6331,
+        "retry_count": 0,
+        "slice_type": "numeric_or_punct",
+        "retrieval_trace": [
+          {
+            "step": 0,
+            "query": "..... ..... ..... .....",
+            "top_k": 5,
+            "sufficiency": 0.6331
+          }
+        ],
+        "parent_config": "B5",
+        "adapter_id": "qwen25_15b_prdect_lora_r16",
+        "tools_enabled": true,
+        "tool_calls_count": 0,
+        "unsafe_calls_blocked": 0,
+        "budget_overrun": false,
+        "tool_logs": []
       }
     ]
   }

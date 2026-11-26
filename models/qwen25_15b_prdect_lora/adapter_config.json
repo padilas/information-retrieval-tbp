@@ -1,0 +1,23 @@
+{
+  "peft_type": "LORA",
+  "base_model_name_or_path": "Qwen/Qwen2.5-1.5B-Instruct",
+  "ollama_base_model": "qwen2.5:1.5b",
+  "task_type": "CAUSAL_LM_SEQUENCE_CLASSIFICATION",
+  "r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "bias": "none",
+  "quantization": "4bit-nf4 (QLoRA compatible)",
+  "train_dataset": "data/processed/train.csv",
+  "train_samples": 3875,
+  "seed": 42
+}

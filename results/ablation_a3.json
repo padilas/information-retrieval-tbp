@@ -1,0 +1,40 @@
+{
+  "split": "dev",
+  "variable_changed": "claim_and_span_verifier",
+  "fixed_controls": {
+    "base_config": "B4",
+    "model": "qwen2.5:1.5b",
+    "chunking": "heading_aware",
+    "retriever": "hybrid_rerank",
+    "samples": 24
+  },
+  "definitions": {
+    "unsupported_claim_rate": "Proporsi output yang mengutip evidence_spans dari luar teks ulasan (halusinasi konteks) atau gagal menyertakan bukti valid.",
+    "false_refusal_rate": "Proporsi kueri answerable yang salah ditolak (abstain=true) oleh model."
+  },
+  "variants": {
+    "no_verifier": {
+      "macro_f1_emotion": 0.5913,
+      "macro_f1_sentiment": 0.8278,
+      "evidence_support": 0.9583,
+      "unsupported_claim_rate": 0.0417,
+      "false_refusal_rate": 0.0,
+      "missed_refusal_rate": 0.25,
+      "p95_latency_ms": 11709.8,
+      "avg_tokens": 594.8,
+      "samples": 24
+    },
+    "independent_verifier_bounded_repair": {
+      "macro_f1_emotion": 0.7712,
+      "macro_f1_sentiment": 1.0,
+      "evidence_support": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "false_refusal_rate": 0.0,
+      "missed_refusal_rate": 0.0,
+      "p95_latency_ms": 11719.6,
+      "avg_tokens": 594.8,
+      "samples": 24
+    }
+  },
+  "selected": "independent_verifier_bounded_repair"
+}

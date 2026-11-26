@@ -1,0 +1,79 @@
+{
+  "split": "dev",
+  "variable_changed": "retrieval_policy_fixed_vs_adaptive",
+  "fixed_controls": {
+    "base_config": "B4",
+    "model": "qwen2.5:1.5b",
+    "chunking": "heading_aware",
+    "samples": 24
+  },
+  "policies": {
+    "fixed_retrieval_policy": {
+      "macro_f1_emotion": 0.6227,
+      "macro_f1_sentiment": 0.886,
+      "evidence_support": 1.0,
+      "p95_latency_ms": 10785.0,
+      "avg_tokens": 506.6,
+      "samples": 24,
+      "avg_retries": 0.0,
+      "avg_sufficiency_score": 0.6402,
+      "tokens_per_f1_unit": 813.6,
+      "slices": {
+        "easy": {
+          "samples": 6,
+          "macro_f1_emotion": 0.6667,
+          "accuracy_emotion": 0.8333
+        },
+        "ambiguous_multi_hop": {
+          "samples": 9,
+          "macro_f1_emotion": 0.4345,
+          "accuracy_emotion": 0.5556
+        },
+        "conflict": {
+          "samples": 5,
+          "macro_f1_emotion": 0.2667,
+          "accuracy_emotion": 0.4
+        },
+        "no_evidence": {
+          "samples": 4,
+          "macro_f1_emotion": 1.0,
+          "accuracy_emotion": 1.0
+        }
+      }
+    },
+    "adaptive_retrieval_policy": {
+      "macro_f1_emotion": 0.7712,
+      "macro_f1_sentiment": 1.0,
+      "evidence_support": 1.0,
+      "p95_latency_ms": 11701.1,
+      "avg_tokens": 594.8,
+      "samples": 24,
+      "avg_retries": 0.917,
+      "avg_sufficiency_score": 0.757,
+      "tokens_per_f1_unit": 771.3,
+      "slices": {
+        "easy": {
+          "samples": 6,
+          "macro_f1_emotion": 0.6,
+          "accuracy_emotion": 0.8333
+        },
+        "ambiguous_multi_hop": {
+          "samples": 9,
+          "macro_f1_emotion": 0.56,
+          "accuracy_emotion": 0.6667
+        },
+        "conflict": {
+          "samples": 5,
+          "macro_f1_emotion": 0.8,
+          "accuracy_emotion": 0.8
+        },
+        "no_evidence": {
+          "samples": 4,
+          "macro_f1_emotion": 1.0,
+          "accuracy_emotion": 1.0
+        }
+      }
+    }
+  },
+  "selected": "adaptive_retrieval_policy"
+}

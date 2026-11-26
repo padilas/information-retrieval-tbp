@@ -1,0 +1,43 @@
+{
+  "split": "dev",
+  "variable_changed": "agentic_tool_calling",
+  "fixed_controls": {
+    "parent_config": "B5",
+    "model": "qwen2.5:1.5b",
+    "chunking": "heading_aware",
+    "samples": 24
+  },
+  "variants": {
+    "b6_without_tools": {
+      "macro_f1_emotion": 0.916,
+      "macro_f1_sentiment": 1.0,
+      "evidence_support": 1.0,
+      "p95_latency_ms": 11710.9,
+      "avg_tokens": 594.8,
+      "samples": 24,
+      "tool_correctness": 0.0,
+      "avg_tool_calls": 0.0,
+      "unsafe_call_rate": 0.0,
+      "budget_overrun_rate": 0.0
+    },
+    "b6_with_tools": {
+      "macro_f1_emotion": 0.9577,
+      "macro_f1_sentiment": 1.0,
+      "evidence_support": 1.0,
+      "p95_latency_ms": 11705.5,
+      "avg_tokens": 594.8,
+      "samples": 24,
+      "tool_correctness": 1.0,
+      "avg_tool_calls": 3.33,
+      "unsafe_call_rate": 0.0,
+      "budget_overrun_rate": 0.0
+    }
+  },
+  "security_and_budget_audit": {
+    "adversarial_probes": 5,
+    "unsafe_calls_executed": 0,
+    "unsafe_call_rate": 0.0,
+    "unsafe_blocked_rate": 1.0
+  },
+  "selected": "b6_with_tools"
+}

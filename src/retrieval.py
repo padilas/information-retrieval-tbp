@@ -7,10 +7,18 @@ from collections import Counter
 import numpy as np
 import pandas as pd
 from scipy.sparse import csr_matrix, hstack
-from sentence_transformers import SentenceTransformer
+from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.preprocessing import normalize as sk_normalize
+
+try:
+    from sentence_transformers import SentenceTransformer
+    _HAS_ST = True
+except ImportError:
+    SentenceTransformer = None
+    _HAS_ST = False
 from config import (
     BM25_B,
     BM25_K1,
@@ -64,9 +72,39 @@ _QUERY_VEC_CACHE = {}
 _RERANK_BUNDLE_CACHE = {}
 EMB_CACHE_DIR = PROC_DIR / "emb_cache"
 
+class _FallbackSemanticEmbedder:
+    def __init__(self):
+        train_path = PROC_DIR / "train.csv"
+        corpus_texts = []
+        if train_path.exists():
+            df = pd.read_csv(train_path)
+            corpus_texts.extend(df["Customer Review"].astype(str).tolist())
+        if not corpus_texts:
+            corpus_texts = ["barang bagus mantap pengiriman cepat", "kecewa barang rusak parah"]
+        self.w_vec = TfidfVectorizer(ngram_range=(1, 2), min_df=2, max_features=12000, sublinear_tf=True)
+        self.c_vec = TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5), min_df=3, max_features=15000, sublinear_tf=True)
+        Xw = self.w_vec.fit_transform([t.lower() for t in corpus_texts])
+        Xc = self.c_vec.fit_transform([t.lower() for t in corpus_texts])
+        X = hstack([Xw * 1.4, Xc])
+        n_comp = min(256, max(16, min(X.shape) - 1))
+        self.svd = TruncatedSVD(n_components=n_comp, random_state=SEED)
+        self.svd.fit(X)
+
+    def encode(self, texts, batch_size=64, normalize_embeddings=True, show_progress_bar=False):
+        clean = [re.sub(r"^(query|passage):\s*", "", str(t)).lower() for t in texts]
+        X = hstack([self.w_vec.transform(clean) * 1.4, self.c_vec.transform(clean)])
+        vecs = self.svd.transform(X).astype(np.float32)
+        if normalize_embeddings:
+            vecs = sk_normalize(vecs, norm="l2").astype(np.float32)
+        return vecs
+
+
 def _get_embedder(model_name=EMBED_MODEL):
     if model_name not in _MODEL_CACHE:
-        _MODEL_CACHE[model_name] = SentenceTransformer(model_name)
+        if _HAS_ST:
+            _MODEL_CACHE[model_name] = SentenceTransformer(model_name)
+        else:
+            _MODEL_CACHE[model_name] = _FallbackSemanticEmbedder()
     return _MODEL_CACHE[model_name]
 
 def _strip_suffix(word):

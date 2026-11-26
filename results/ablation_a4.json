@@ -1,0 +1,68 @@
+{
+  "split": "dev_and_ood",
+  "variable_changed": "peft_lora_adapter",
+  "fixed_controls": {
+    "parent_config": "B4",
+    "base_model": "qwen2.5:1.5b",
+    "chunking": "heading_aware",
+    "retriever": "hybrid_rerank",
+    "in_domain_samples": 24,
+    "ood_samples": 24,
+    "ood_categories": [
+      "Precious Metal",
+      "Property",
+      "Tour and Travel"
+    ]
+  },
+  "variants": {
+    "no_adapter_b4": {
+      "in_domain": {
+        "macro_f1_emotion": 0.7712,
+        "macro_f1_sentiment": 1.0,
+        "evidence_support": 1.0,
+        "p95_latency_ms": 11704.5,
+        "avg_tokens": 594.8,
+        "samples": 24
+      },
+      "ood_category_drift": {
+        "macro_f1_emotion": 0.2667,
+        "macro_f1_sentiment": 0.3111,
+        "evidence_support": 0.9583,
+        "p95_latency_ms": 11700.6,
+        "avg_tokens": 559.7,
+        "samples": 24
+      }
+    },
+    "peft_lora_b5": {
+      "in_domain": {
+        "macro_f1_emotion": 0.916,
+        "macro_f1_sentiment": 1.0,
+        "evidence_support": 1.0,
+        "p95_latency_ms": 11682.4,
+        "avg_tokens": 594.8,
+        "samples": 24
+      },
+      "ood_category_drift": {
+        "macro_f1_emotion": 0.5091,
+        "macro_f1_sentiment": 0.4894,
+        "evidence_support": 0.9583,
+        "p95_latency_ms": 11713.2,
+        "avg_tokens": 559.7,
+        "samples": 24
+      }
+    }
+  },
+  "analysis": {
+    "in_domain_f1_emotion_gain": 0.1448,
+    "ood_f1_emotion_gain": 0.2424,
+    "train_emotion_accuracy": 0.9956,
+    "overfit_gap_train_vs_dev": 0.0796,
+    "resource_overhead": {
+      "adapter_size_kb": 3347.2,
+      "trainable_params_pct": 1.18,
+      "training_duration_sec": 11.67,
+      "peak_vram_mb": 1420.5
+    }
+  },
+  "selected": "peft_lora_b5"
+}

@@ -1,0 +1,12 @@
+{
+  "base_model": "qwen2.5:1.5b",
+  "adapter_dir": "qwen25_15b_prdect_lora",
+  "train_samples": 3875,
+  "epochs": 3,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "trainable_params_pct": 1.18,
+  "train_emotion_accuracy": 0.9956,
+  "training_duration_sec": 11.67,
+  "peak_memory_mb": 1420.5
+}
